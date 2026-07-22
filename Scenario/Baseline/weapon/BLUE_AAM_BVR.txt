@@ -1,0 +1,33 @@
+# Auto-split weapon definition.
+weapon_effects BLUE_AAM_BVR_EFFECT WSF_GRADUATED_LETHALITY
+   radius_and_pk 90 m 0.66
+end_weapon_effects
+
+platform_type BLUE_AAM_BVR_MISSILE WSF_PLATFORM
+   icon aim-120c
+   radar_signature BLUE_MISSILE_RADAR_SIG
+   weapon_effects BLUE_AAM_BVR_EFFECT
+   mover WSF_STRAIGHT_LINE_MOVER
+      average_speed 1700 kts
+      maximum_lateral_acceleration 25 g
+      guidance_mode lead_pursuit
+   end_mover
+   processor seeker WSF_PERFECT_TRACKER
+      update_interval 0.5 sec
+   end_processor
+   processor fuse WSF_AIR_TARGET_FUSE
+      fuse_function_range 30 m
+      max_time_of_flight_to_detonate 120 sec
+   end_processor
+end_platform_type
+
+weapon BLUE_AAM_BVR WSF_EXPLICIT_WEAPON
+   launched_platform_type BLUE_AAM_BVR_MISSILE
+   weapon_effects BLUE_AAM_BVR_EFFECT
+   quantity 4
+   firing_delay 0.2 sec
+   salvo_interval 4 sec
+   slew_mode azimuth_and_elevation
+   azimuth_slew_limits -120 deg 120 deg
+   elevation_slew_limits -30 deg 70 deg
+end_weapon

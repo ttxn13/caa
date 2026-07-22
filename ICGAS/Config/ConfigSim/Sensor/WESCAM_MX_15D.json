@@ -1,0 +1,43 @@
+﻿{
+    "act_domain_list": [
+        "AIR",
+        "SEA"
+    ],
+    "reliability": 0.88,
+    "task_mode_list": {
+        "TRACK": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.03,
+                "elevation_sigma_deg": 0.03,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": false,
+                "range_sigma_m": 15,
+                "speed_sigma_ms": 0
+            },
+            "cap_env": {
+                "az_fov_deg": 45,
+                "max_alt_m": 20000,
+                "max_el_deg": 65,
+                "max_range_m": 30000,
+                "min_alt_m": 0,
+                "min_el_deg": -10,
+                "min_range_m": 200
+            },
+            "cap_prob": {
+                "detection_prob": 0.82,
+                "false_alarm_prob": 0.015,
+                "sensitive_slope": 1.1
+            },
+            "cap_time": {
+                "delay_ms": 80,
+                "update_period_s": 0.5
+            },
+            "max_task_num": 6
+        }
+    },
+    "type": "OPTICAL",
+    "type_name": "WESCAM_MX_15D"
+}
+

@@ -1,0 +1,164 @@
+# Auto-split task processor and engagement logic definition.
+behavior BLUE_AUTO_ENGAGE_PRIORITY_TRACK
+   script_variables
+      double mObserveIntervalSec = 45.0;
+      string mNextAllowedShotTimeKey = "blue_next_allowed_shot_time";
+   end_script_variables
+
+   script bool ReadyForNextShot()
+      return (TIME_NOW >= PLATFORM.AuxDataDouble(mNextAllowedShotTimeKey));
+   end_script
+
+   script double StartObserveWindow()
+      double next_allowed_shot_time = TIME_NOW + mObserveIntervalSec;
+      PLATFORM.SetAuxData(mNextAllowedShotTimeKey, next_allowed_shot_time);
+      return next_allowed_shot_time;
+   end_script
+
+   script bool IsAirTarget(WsfTrack aTrack)
+      return (aTrack.TargetType() == "RED_FLT" ||
+              aTrack.TargetType() == "RED_WAN" ||
+              aTrack.TargetType() == "RED_ELC");
+   end_script
+
+   script bool IsCarrierTarget(WsfTrack aTrack)
+      return (aTrack.TargetType() == "RED_CAR");
+   end_script
+
+   script bool WeaponCanEngageTrack(WsfWeapon aWeapon, WsfTrack aTrack)
+      if (!aWeapon.IsValid() || aWeapon.QuantityRemaining() <= 0) return false;
+      if (!aTrack.Target().IsValid()) return false;
+      if (!ReadyForNextShot()) return false;
+
+      string weapon_name = aWeapon.Name();
+      double target_range_m = PLATFORM.SlantRangeTo(aTrack);
+      double attack_angle_deg = MATH.Fabs(PLATFORM.RelativeBearingTo(aTrack));
+
+      if (weapon_name == "bvr_aam")
+      {
+         if (!IsAirTarget(aTrack)) return false;
+         return ((target_range_m >= 5000.0) &&
+                 (target_range_m <= 80000.0) &&
+                 (attack_angle_deg <= 120.0));
+      }
+
+      if (weapon_name == "ir_aam")
+      {
+         if (!IsAirTarget(aTrack)) return false;
+         return ((target_range_m >= 1000.0) &&
+                 (target_range_m <= 25000.0) &&
+                 (attack_angle_deg <= 90.0));
+      }
+
+      if (weapon_name == "standoff")
+      {
+         if (!IsCarrierTarget(aTrack)) return false;
+         return ((target_range_m >= 45000.0) &&
+                 (target_range_m <= 160000.0) &&
+                 (attack_angle_deg <= 115.0));
+      }
+
+      if (weapon_name == "ascm")
+      {
+         if (!IsCarrierTarget(aTrack)) return false;
+         return ((target_range_m >= 12000.0) &&
+                 (target_range_m <= 80000.0) &&
+                 (attack_angle_deg <= 90.0));
+      }
+
+      return false;
+   end_script
+
+   script bool TrackCanBeEngaged(WsfTrack aTrack)
+      if (!aTrack.Target().IsValid()) return false;
+
+      for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+      {
+         WsfWeapon wep = PLATFORM.WeaponEntry(i);
+         if (WeaponCanEngageTrack(wep, aTrack)) return true;
+      }
+
+      return false;
+   end_script
+
+   script WsfLocalTrack SelectBestAttackAngleTrack()
+      WsfLocalTrack best_track;
+      double best_attack_angle_deg = 9999.0;
+
+      foreach (WsfLocalTrack track in PLATFORM.TrackList("data_mgr"))
+      {
+         if (TrackCanBeEngaged(track))
+         {
+            double attack_angle_deg = MATH.Fabs(PLATFORM.RelativeBearingTo(track));
+            if (attack_angle_deg < best_attack_angle_deg)
+            {
+               best_attack_angle_deg = attack_angle_deg;
+               best_track = track;
+            }
+         }
+      }
+
+      return best_track;
+   end_script
+
+   precondition
+      bool trackListEmpty = PLATFORM.TrackList("data_mgr").Empty();
+      if (trackListEmpty) return false;
+
+      foreach (WsfLocalTrack track in PLATFORM.TrackList("data_mgr"))
+      {
+         if (TrackCanBeEngaged(track)) return true;
+      }
+
+      return false;
+   end_precondition
+   execute
+      WsfLocalTrack track = SelectBestAttackAngleTrack();
+      if (track.Target().IsValid())
+      {
+         PLATFORM.SetCurrentTarget(track);
+         bool fired = false;
+         double target_range_m = PLATFORM.SlantRangeTo(track);
+         double attack_angle_deg = MATH.Fabs(PLATFORM.RelativeBearingTo(track));
+
+         for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+         {
+            WsfWeapon wep = PLATFORM.WeaponEntry(i);
+            if (!fired && WeaponCanEngageTrack(wep, track))
+            {
+               fired = wep.Fire(track);
+               if (fired)
+               {
+                  double next_allowed_shot_time = StartObserveWindow();
+                  writeln("[BLUE_ENGAGE] T=", TIME_NOW,
+                          " launcher=", PLATFORM.Name(),
+                          " weapon=", wep.Name(),
+                          " target=", track.Target().Name(),
+                          " range_m=", target_range_m,
+                          " attack_angle_deg=", attack_angle_deg,
+                          " observe_until=", next_allowed_shot_time);
+                  if (IsCarrierTarget(track))
+                  {
+                     writeln("[BLUE_STRIKE] T=", TIME_NOW,
+                             " launcher=", PLATFORM.Name(),
+                             " weapon=", wep.Name(),
+                             " target=", track.Target().Name(),
+                             " range_m=", target_range_m,
+                             " attack_angle_deg=", attack_angle_deg,
+                             " observe_until=", next_allowed_shot_time);
+                  }
+               }
+            }
+         }
+      }
+   end_execute
+end_behavior
+
+processor BLUE_STRIKE_ENGAGE_PROCESSOR WSF_TASK_PROCESSOR
+   update_interval 8 sec
+   behavior_tree
+      sequence
+         behavior_node BLUE_AUTO_ENGAGE_PRIORITY_TRACK
+      end_sequence
+   end_behavior_tree
+end_processor

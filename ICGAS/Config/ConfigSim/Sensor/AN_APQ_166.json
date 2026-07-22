@@ -1,0 +1,75 @@
+﻿{
+    "act_domain_list": [
+        "AIR",
+        "SEA",
+        "MIS"
+    ],
+    "reliability": 0.88,
+    "task_mode_list": {
+        "DETECT": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.35,
+                "elevation_sigma_deg": 0.5,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 130,
+                "speed_sigma_ms": 10
+            },
+            "cap_env": {
+                "az_fov_deg": 140,
+                "max_alt_m": 35000,
+                "max_el_deg": 60,
+                "max_range_m": 240000,
+                "min_alt_m": 0,
+                "min_el_deg": -15,
+                "min_range_m": 1000
+            },
+            "cap_prob": {
+                "detection_prob": 0.82,
+                "false_alarm_prob": 0.02,
+                "sensitive_slope": 1
+            },
+            "cap_time": {
+                "delay_ms": 160,
+                "update_period_s": 4
+            },
+            "max_task_num": 64
+        },
+        "TRACK": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.18,
+                "elevation_sigma_deg": 0.25,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 60,
+                "speed_sigma_ms": 6
+            },
+            "cap_env": {
+                "az_fov_deg": 100,
+                "max_alt_m": 30000,
+                "max_el_deg": 55,
+                "max_range_m": 160000,
+                "min_alt_m": 0,
+                "min_el_deg": -15,
+                "min_range_m": 1000
+            },
+            "cap_prob": {
+                "detection_prob": 0.86,
+                "false_alarm_prob": 0.015,
+                "sensitive_slope": 1.08
+            },
+            "cap_time": {
+                "delay_ms": 120,
+                "update_period_s": 1.2
+            },
+            "max_task_num": 24
+        }
+    },
+    "type": "RADAR",
+    "type_name": "AN_APQ_166"
+}
+

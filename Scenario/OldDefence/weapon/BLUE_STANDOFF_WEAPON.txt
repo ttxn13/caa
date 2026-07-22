@@ -1,0 +1,39 @@
+# Auto-split weapon definition.
+weapon_effects BLUE_STANDOFF_EFFECT WSF_GRADUATED_LETHALITY
+   radius_and_pk 170 m 0.78
+end_weapon_effects
+
+platform_type BLUE_STANDOFF_MISSILE WSF_PLATFORM
+   icon MISSILE
+   radar_signature BLUE_MISSILE_RADAR_SIG
+   weapon_effects BLUE_STANDOFF_EFFECT
+   sensor seeker BLUE_MISSILE_SEEKER
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   processor data_mgr WSF_TRACK_PROCESSOR
+      purge_interval 30 sec
+      report_interval 1 sec
+   end_processor
+   mover WSF_STRAIGHT_LINE_MOVER
+      average_speed 1450 kts
+      maximum_lateral_acceleration 12 g
+      guidance_mode lead_pursuit
+   end_mover
+   processor fuse WSF_GROUND_TARGET_FUSE
+      fuse_function_range 60 m
+      max_time_of_flight_to_detonate 500 sec
+   end_processor
+end_platform_type
+
+weapon BLUE_STANDOFF_WEAPON WSF_EXPLICIT_WEAPON
+   launched_platform_type BLUE_STANDOFF_MISSILE
+   weapon_effects BLUE_STANDOFF_EFFECT
+   quantity 4
+   firing_delay 1 sec
+   salvo_interval 5 sec
+   slew_mode azimuth_and_elevation
+   azimuth_slew_limits -150 deg 150 deg
+   elevation_slew_limits -20 deg 60 deg
+end_weapon

@@ -1,0 +1,35 @@
+{
+    "domain": "MIS",
+    "icon_path": "",
+    "kill_cap": {
+        "kill_prob": 0.66,
+        "kill_range_m": 3000
+    },
+    "launch_cap": {
+        "firing_delay_s": 0.2,
+        "max_range_m": 100000,
+        "min_range_m": 1000
+    },
+    "mover": "MIS_MOVER",
+    "mover_cap": {
+        "mis_mover": {
+            "life_range_m": 100000,
+            "life_time_s": 110,
+            "max_alt_m": 25000,
+            "max_climb_vel_ms": 100,
+            "max_drop_vel_ms": 140,
+            "max_linear_load_g": 12,
+            "max_radial_load_g": 35,
+            "max_speed_ms": 1360,
+            "min_alt_m": 0,
+            "min_speed_ms": 250
+        }
+    },
+    "sign": {
+        "infrared_wsr": 4,
+        "opt_area_m2": 0.25,
+        "radar_rcs_m2": 0.04
+    },
+    "type": "AAM",
+    "type_name": "PL-12"
+}

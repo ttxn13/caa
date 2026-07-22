@@ -1,0 +1,36 @@
+﻿#pragma once
+
+#include "Comm/CoreDefine.hpp"
+#include "Comm/CoreGraph.hpp"
+#include "Comm/CoreSystem.hpp"
+
+#include "Sim/CoreSimEnum.hpp"
+#include "Sim/DefPlatform.hpp"
+#include "Sim/DefSensor.hpp"
+#include "Sim/DefWeapon.hpp"
+#include "Model/DefCoor.hpp"
+#include "Model/DefDisPdu.hpp"
+#include "Model/DefEngage.hpp"
+
+#include "Store/InfoExpert.hpp"
+
+#include "Util/UtilEnum.hpp"
+#include "Util/UtilJson.hpp"
+#include "Util/UtilCoor.hpp"
+#include "Util/UtilDisPdu.hpp"
+
+#include "../Module/ModuleDatabase.hpp"
+#include "../Module/DataManage/ModuleGraph.hpp"
+#include "../Module/DataManage/ModuleMission.hpp"
+#include "../Module/OurAnalysis/ModuleEmyGroup.hpp"
+#include "../Module/OurAnalysis/ModuleEmyIntent.hpp"
+#include "../Module/OurAnalysis/ModuleEmyThreat.hpp"
+#include "../Module/OurAnalysis/ModuleOurCOG.hpp"
+#include "../Module/OurAnalysis/ModuleOurLOO.hpp"
+#include "../Module/OurAnalysis/ModuleOurCOA.hpp"
+#include "../Module/EmyAnalysis/ModuleOurGroup.hpp"
+#include "../Module/EmyAnalysis/ModuleOurIntent.hpp"
+#include "../Module/EmyAnalysis/ModuleOurThreat.hpp"
+#include "../Module/EmyAnalysis/ModuleEmyCOG.hpp"
+#include "../Module/EmyAnalysis/ModuleEmyLOO.hpp"
+#include "../Module/EmyAnalysis/ModuleEmyCOA.hpp"

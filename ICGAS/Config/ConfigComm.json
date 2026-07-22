@@ -1,0 +1,47 @@
+{
+    "ADMIN": {
+        "admin_mode": "1",
+        "database_mode": "1",
+        "embed_mode": "1",
+        "sim_iter_ms": "40"
+    },
+    "LOG_INFO": [
+        {
+            "pass": "8888",
+            "user": "Phoenix"
+        },
+        {
+            "pass": "0000",
+            "user": "WYM"
+        }
+    ],
+    "SOCKET": {
+        "afsim_client": {
+            "addr": "192.168.50.199",
+            "port": "8888"
+        },
+        "afsim_server": {
+            "addr": "192.168.50.199",
+            "port": "9999"
+        },
+        "tacview_server": {
+            "addr": "localhost",
+            "pass": "",
+            "port": "10009",
+            "user": "ICGAS"
+        }
+    },
+    "THREAD_ITER": {
+        "afs": {
+            "recv_iter_ms": "100",
+            "send_iter_ms": "100"
+        },
+        "tac": {
+            "recv_iter_ms": "100",
+            "send_iter_ms": "100"
+        }
+    },
+    "UI_ITER": {
+        "sync_icgas_iter_ms": "500"
+    }
+}

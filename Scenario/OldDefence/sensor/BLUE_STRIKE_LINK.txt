@@ -1,0 +1,4 @@
+# Auto-split reusable sensor/communication equipment definition.
+comm BLUE_STRIKE_LINK WSF_COMM_TRANSCEIVER
+   transfer_rate 50 mbits/sec
+end_comm

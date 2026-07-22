@@ -1,0 +1,20 @@
+﻿{
+    "type_name": "CVN-59",
+    "icon_path": "Watercraft.CVN-59.obj",
+    "domain": "SEA",
+    "type": "CAR",
+    "mover": "SEA_MOVER",
+    "cap": {
+        "sea_mover": {
+            "max_linear_acc_ms2": 0.03,
+            "max_radial_acc_ms2": 0.1471,
+            "max_speed_ms": 16,
+            "min_speed_ms": 0
+        }
+    },
+    "sign": {
+        "infrared_wsr": 500,
+        "opt_area_m2": 12000,
+        "radar_rcs_m2": 100000
+    }
+}

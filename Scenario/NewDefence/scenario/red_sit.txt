@@ -1,0 +1,1218 @@
+include ../platform/red_plat.txt
+
+# CAR - 1
+platform red_car_10101 RED_CAR commander SELF
+   route
+      position 38:55:48.000n 129:34:48.000e
+         altitude 0 m msl
+         speed 10 m/s
+      position 38:59:24.000n 129:42:00.000e
+         altitude 0 m msl
+         speed 10 m/s
+      position 38:55:48.000n 129:49:12.000e
+         altitude 0 m msl
+         speed 10 m/s
+      position 38:52:12.000n 129:42:00.000e
+         altitude 0 m msl
+         speed 10 m/s
+      position 38:55:48.000n 129:34:48.000e
+         altitude 0 m msl
+         speed 10 m/s
+
+   end_route
+   heading 80 deg
+end_platform
+# WAN - 2
+platform red_wan_10201 RED_WAN commander red_car_10101
+   route
+      navigation
+         label red_wan_10201_orbit
+            position 38:25:48.000n 130:10:48.000e altitude 11000 m msl
+               speed 165 m/s
+            position 38:34:12.000n 130:00:00.000e altitude 11000 m msl
+               speed 165 m/s
+            position 38:25:48.000n 129:49:12.000e altitude 11000 m msl
+               speed 165 m/s
+            position 38:17:24.000n 130:00:00.000e altitude 11000 m msl
+               speed 165 m/s
+         goto red_wan_10201_orbit
+      end_navigation
+   end_route
+   heading 90 deg
+end_platform
+# WAN - 3
+platform red_wan_10301 RED_WAN commander red_car_10101
+   route
+      navigation
+         label red_wan_10301_orbit
+            position 39:21:00.000n 130:10:48.000e altitude 11000 m msl
+               speed 165 m/s
+            position 39:30:00.000n 130:00:00.000e altitude 11000 m msl
+               speed 165 m/s
+            position 39:21:00.000n 129:49:12.000e altitude 11000 m msl
+               speed 165 m/s
+            position 39:12:00.000n 130:00:00.000e altitude 11000 m msl
+               speed 165 m/s
+         goto red_wan_10301_orbit
+      end_navigation
+   end_route
+   heading 90 deg
+end_platform
+# DST - 4
+platform red_dst_10401 RED_DST commander red_car_10101
+   route
+      position 38:37:12.000n 130:15:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:38:42.000n 130:22:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:37:12.000n 130:30:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:35:42.000n 130:22:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:37:12.000n 130:15:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_dst_10402 RED_DST commander red_dst_10401
+   route
+      position 38:28:48.000n 130:06:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:30:18.000n 130:13:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:28:48.000n 130:21:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:27:18.000n 130:13:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:28:48.000n 130:06:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_dst_10403 RED_DST commander red_dst_10401
+   route
+      position 38:31:12.000n 130:27:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:32:42.000n 130:34:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:31:12.000n 130:42:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:29:42.000n 130:34:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:31:12.000n 130:27:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_dst_10404 RED_DST commander red_dst_10401
+   route
+      position 38:46:48.000n 130:16:48.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:48:18.000n 130:24:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:46:48.000n 130:31:48.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:45:18.000n 130:24:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:46:48.000n 130:16:48.000e
+         altitude 0 m msl
+         speed 13 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+# DST - 5
+platform red_dst_10501 RED_DST commander red_car_10101
+   route
+      position 39:10:48.000n 130:15:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:12:18.000n 130:22:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:10:48.000n 130:30:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:09:18.000n 130:22:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:10:48.000n 130:15:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_dst_10502 RED_DST commander red_dst_10501
+   route
+      position 39:01:12.000n 130:06:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:02:42.000n 130:13:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:01:12.000n 130:21:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 38:59:42.000n 130:13:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:01:12.000n 130:06:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_dst_10503 RED_DST commander red_dst_10501
+   route
+      position 39:03:00.000n 130:27:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:04:30.000n 130:34:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:03:00.000n 130:42:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:01:30.000n 130:34:12.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:03:00.000n 130:27:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_dst_10504 RED_DST commander red_dst_10501
+   route
+      position 39:19:12.000n 130:16:48.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:20:42.000n 130:24:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:19:12.000n 130:31:48.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:17:42.000n 130:24:00.000e
+         altitude 0 m msl
+         speed 13 m/s
+      position 39:19:12.000n 130:16:48.000e
+         altitude 0 m msl
+         speed 13 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+# FLT - 6
+platform red_flt_10601 RED_FLT commander red_wan_10201
+   route
+      position 38:31:12.000n 130:51:00.000e
+         altitude 10500 m msl
+         speed 300 m/s
+      position 38:33:00.000n 131:27:00.000e
+         altitude 10800 m msl
+         speed 330 m/s
+      position 38:34:48.000n 132:09:00.000e
+         altitude 11000 m msl
+         speed 350 m/s
+      position 38:37:12.000n 132:33:00.000e
+         altitude 11000 m msl
+         speed 355 m/s
+      position 38:39:00.000n 131:21:00.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:42:00.000n 130:21:00.000e
+         altitude 10500 m msl
+         speed 355 m/s
+      position 38:50:24.000n 129:51:00.000e
+         altitude 10000 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10602 RED_FLT commander red_flt_10601
+   route
+      position 38:28:30.000n 130:48:18.000e
+         altitude 10400 m msl
+         speed 300 m/s
+      position 38:30:18.000n 131:24:18.000e
+         altitude 10700 m msl
+         speed 330 m/s
+      position 38:32:06.000n 132:06:18.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 38:34:30.000n 132:30:18.000e
+         altitude 10900 m msl
+         speed 355 m/s
+      position 38:36:18.000n 131:18:18.000e
+         altitude 10700 m msl
+         speed 360 m/s
+      position 38:39:18.000n 130:18:18.000e
+         altitude 10400 m msl
+         speed 355 m/s
+      position 38:47:42.000n 129:48:18.000e
+         altitude 9900 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10603 RED_FLT commander red_flt_10601
+   route
+      position 38:28:30.000n 130:53:42.000e
+         altitude 10400 m msl
+         speed 300 m/s
+      position 38:30:18.000n 131:29:42.000e
+         altitude 10700 m msl
+         speed 330 m/s
+      position 38:32:06.000n 132:11:42.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 38:34:30.000n 132:35:42.000e
+         altitude 10900 m msl
+         speed 355 m/s
+      position 38:36:18.000n 131:23:42.000e
+         altitude 10700 m msl
+         speed 360 m/s
+      position 38:39:18.000n 130:23:42.000e
+         altitude 10400 m msl
+         speed 355 m/s
+      position 38:47:42.000n 129:53:42.000e
+         altitude 9900 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10604 RED_FLT commander red_flt_10601
+   route
+      position 38:25:48.000n 130:46:12.000e
+         altitude 10300 m msl
+         speed 300 m/s
+      position 38:27:36.000n 131:22:12.000e
+         altitude 10600 m msl
+         speed 330 m/s
+      position 38:29:24.000n 132:04:12.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:31:48.000n 132:28:12.000e
+         altitude 10800 m msl
+         speed 355 m/s
+      position 38:33:36.000n 131:16:12.000e
+         altitude 10600 m msl
+         speed 360 m/s
+      position 38:36:36.000n 130:16:12.000e
+         altitude 10300 m msl
+         speed 355 m/s
+      position 38:45:00.000n 129:46:12.000e
+         altitude 9800 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10605 RED_FLT commander red_flt_10601
+   route
+      position 38:25:48.000n 130:55:48.000e
+         altitude 10300 m msl
+         speed 300 m/s
+      position 38:27:36.000n 131:31:48.000e
+         altitude 10600 m msl
+         speed 330 m/s
+      position 38:29:24.000n 132:13:48.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:31:48.000n 132:37:48.000e
+         altitude 10800 m msl
+         speed 355 m/s
+      position 38:33:36.000n 131:25:48.000e
+         altitude 10600 m msl
+         speed 360 m/s
+      position 38:36:36.000n 130:25:48.000e
+         altitude 10300 m msl
+         speed 355 m/s
+      position 38:45:00.000n 129:55:48.000e
+         altitude 9800 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10606 RED_FLT commander red_flt_10601
+   route
+      position 38:23:06.000n 130:51:00.000e
+         altitude 10200 m msl
+         speed 300 m/s
+      position 38:24:54.000n 131:27:00.000e
+         altitude 10500 m msl
+         speed 330 m/s
+      position 38:26:42.000n 132:09:00.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:29:06.000n 132:33:00.000e
+         altitude 10700 m msl
+         speed 355 m/s
+      position 38:30:54.000n 131:21:00.000e
+         altitude 10500 m msl
+         speed 360 m/s
+      position 38:33:54.000n 130:21:00.000e
+         altitude 10200 m msl
+         speed 355 m/s
+      position 38:42:18.000n 129:51:00.000e
+         altitude 9700 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+# FLT - 7
+platform red_flt_10701 RED_FLT commander red_wan_10301
+   route
+      position 39:15:00.000n 130:51:00.000e
+         altitude 10500 m msl
+         speed 300 m/s
+      position 39:12:00.000n 131:27:00.000e
+         altitude 10800 m msl
+         speed 330 m/s
+      position 39:09:00.000n 132:09:00.000e
+         altitude 11000 m msl
+         speed 350 m/s
+      position 39:06:00.000n 132:33:00.000e
+         altitude 11000 m msl
+         speed 355 m/s
+      position 39:03:00.000n 131:21:00.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 39:00:00.000n 130:21:00.000e
+         altitude 10500 m msl
+         speed 355 m/s
+      position 38:57:36.000n 129:51:00.000e
+         altitude 10000 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10702 RED_FLT commander red_flt_10701
+   route
+      position 39:12:18.000n 130:48:18.000e
+         altitude 10400 m msl
+         speed 300 m/s
+      position 39:09:18.000n 131:24:18.000e
+         altitude 10700 m msl
+         speed 330 m/s
+      position 39:06:18.000n 132:06:18.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 39:03:18.000n 132:30:18.000e
+         altitude 10900 m msl
+         speed 355 m/s
+      position 39:00:18.000n 131:18:18.000e
+         altitude 10700 m msl
+         speed 360 m/s
+      position 38:57:18.000n 130:18:18.000e
+         altitude 10400 m msl
+         speed 355 m/s
+      position 38:54:54.000n 129:48:18.000e
+         altitude 9900 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10703 RED_FLT commander red_flt_10701
+   route
+      position 39:12:18.000n 130:53:42.000e
+         altitude 10400 m msl
+         speed 300 m/s
+      position 39:09:18.000n 131:29:42.000e
+         altitude 10700 m msl
+         speed 330 m/s
+      position 39:06:18.000n 132:11:42.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 39:03:18.000n 132:35:42.000e
+         altitude 10900 m msl
+         speed 355 m/s
+      position 39:00:18.000n 131:23:42.000e
+         altitude 10700 m msl
+         speed 360 m/s
+      position 38:57:18.000n 130:23:42.000e
+         altitude 10400 m msl
+         speed 355 m/s
+      position 38:54:54.000n 129:53:42.000e
+         altitude 9900 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10704 RED_FLT commander red_flt_10701
+   route
+      position 39:09:36.000n 130:46:12.000e
+         altitude 10300 m msl
+         speed 300 m/s
+      position 39:06:36.000n 131:22:12.000e
+         altitude 10600 m msl
+         speed 330 m/s
+      position 39:03:36.000n 132:04:12.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 39:00:36.000n 132:28:12.000e
+         altitude 10800 m msl
+         speed 355 m/s
+      position 38:57:36.000n 131:16:12.000e
+         altitude 10600 m msl
+         speed 360 m/s
+      position 38:54:36.000n 130:16:12.000e
+         altitude 10300 m msl
+         speed 355 m/s
+      position 38:52:12.000n 129:46:12.000e
+         altitude 9800 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10705 RED_FLT commander red_flt_10701
+   route
+      position 39:09:36.000n 130:55:48.000e
+         altitude 10300 m msl
+         speed 300 m/s
+      position 39:06:36.000n 131:31:48.000e
+         altitude 10600 m msl
+         speed 330 m/s
+      position 39:03:36.000n 132:13:48.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 39:00:36.000n 132:37:48.000e
+         altitude 10800 m msl
+         speed 355 m/s
+      position 38:57:36.000n 131:25:48.000e
+         altitude 10600 m msl
+         speed 360 m/s
+      position 38:54:36.000n 130:25:48.000e
+         altitude 10300 m msl
+         speed 355 m/s
+      position 38:52:12.000n 129:55:48.000e
+         altitude 9800 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10706 RED_FLT commander red_flt_10701
+   route
+      position 39:06:54.000n 130:51:00.000e
+         altitude 10200 m msl
+         speed 300 m/s
+      position 39:03:54.000n 131:27:00.000e
+         altitude 10500 m msl
+         speed 330 m/s
+      position 39:00:54.000n 132:09:00.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:57:54.000n 132:33:00.000e
+         altitude 10700 m msl
+         speed 355 m/s
+      position 38:54:54.000n 131:21:00.000e
+         altitude 10500 m msl
+         speed 360 m/s
+      position 38:51:54.000n 130:21:00.000e
+         altitude 10200 m msl
+         speed 355 m/s
+      position 38:49:30.000n 129:51:00.000e
+         altitude 9700 m msl
+         speed 340 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+# FLT - 8
+platform red_flt_10801 RED_FLT commander red_wan_10201
+   route
+      position 38:42:00.000n 130:27:00.000e
+         altitude 10000 m msl
+         speed 295 m/s
+      position 38:45:00.000n 131:06:00.000e
+         altitude 10400 m msl
+         speed 325 m/s
+      position 38:48:00.000n 131:51:00.000e
+         altitude 10800 m msl
+         speed 345 m/s
+      position 38:49:12.000n 132:15:00.000e
+         altitude 11000 m msl
+         speed 350 m/s
+      position 38:52:48.000n 131:12:00.000e
+         altitude 10800 m msl
+         speed 355 m/s
+      position 38:55:12.000n 130:18:00.000e
+         altitude 10400 m msl
+         speed 350 m/s
+      position 38:55:12.000n 129:45:00.000e
+         altitude 10000 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10802 RED_FLT commander red_flt_10801
+   route
+      position 38:39:18.000n 130:24:18.000e
+         altitude 9900 m msl
+         speed 295 m/s
+      position 38:42:18.000n 131:03:18.000e
+         altitude 10300 m msl
+         speed 325 m/s
+      position 38:45:18.000n 131:48:18.000e
+         altitude 10700 m msl
+         speed 345 m/s
+      position 38:46:30.000n 132:12:18.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 38:50:06.000n 131:09:18.000e
+         altitude 10700 m msl
+         speed 355 m/s
+      position 38:52:30.000n 130:15:18.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 38:52:30.000n 129:42:18.000e
+         altitude 9900 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10803 RED_FLT commander red_flt_10801
+   route
+      position 38:39:18.000n 130:29:42.000e
+         altitude 9900 m msl
+         speed 295 m/s
+      position 38:42:18.000n 131:08:42.000e
+         altitude 10300 m msl
+         speed 325 m/s
+      position 38:45:18.000n 131:53:42.000e
+         altitude 10700 m msl
+         speed 345 m/s
+      position 38:46:30.000n 132:17:42.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 38:50:06.000n 131:14:42.000e
+         altitude 10700 m msl
+         speed 355 m/s
+      position 38:52:30.000n 130:20:42.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 38:52:30.000n 129:47:42.000e
+         altitude 9900 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10804 RED_FLT commander red_flt_10801
+   route
+      position 38:36:36.000n 130:22:12.000e
+         altitude 9800 m msl
+         speed 295 m/s
+      position 38:39:36.000n 131:01:12.000e
+         altitude 10200 m msl
+         speed 325 m/s
+      position 38:42:36.000n 131:46:12.000e
+         altitude 10600 m msl
+         speed 345 m/s
+      position 38:43:48.000n 132:10:12.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:47:24.000n 131:07:12.000e
+         altitude 10600 m msl
+         speed 355 m/s
+      position 38:49:48.000n 130:13:12.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 38:49:48.000n 129:40:12.000e
+         altitude 9800 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10805 RED_FLT commander red_flt_10801
+   route
+      position 38:36:36.000n 130:31:48.000e
+         altitude 9800 m msl
+         speed 295 m/s
+      position 38:39:36.000n 131:10:48.000e
+         altitude 10200 m msl
+         speed 325 m/s
+      position 38:42:36.000n 131:55:48.000e
+         altitude 10600 m msl
+         speed 345 m/s
+      position 38:43:48.000n 132:19:48.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:47:24.000n 131:16:48.000e
+         altitude 10600 m msl
+         speed 355 m/s
+      position 38:49:48.000n 130:22:48.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 38:49:48.000n 129:49:48.000e
+         altitude 9800 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10806 RED_FLT commander red_flt_10801
+   route
+      position 38:33:54.000n 130:27:00.000e
+         altitude 9700 m msl
+         speed 295 m/s
+      position 38:36:54.000n 131:06:00.000e
+         altitude 10100 m msl
+         speed 325 m/s
+      position 38:39:54.000n 131:51:00.000e
+         altitude 10500 m msl
+         speed 345 m/s
+      position 38:41:06.000n 132:15:00.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:44:42.000n 131:12:00.000e
+         altitude 10500 m msl
+         speed 355 m/s
+      position 38:47:06.000n 130:18:00.000e
+         altitude 10100 m msl
+         speed 350 m/s
+      position 38:47:06.000n 129:45:00.000e
+         altitude 9700 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+# FLT - 9
+platform red_flt_10901 RED_FLT commander red_wan_10301
+   route
+      position 39:03:00.000n 130:27:00.000e
+         altitude 10000 m msl
+         speed 295 m/s
+      position 39:03:00.000n 131:06:00.000e
+         altitude 10400 m msl
+         speed 325 m/s
+      position 39:01:12.000n 131:51:00.000e
+         altitude 10800 m msl
+         speed 345 m/s
+      position 38:58:48.000n 132:15:00.000e
+         altitude 11000 m msl
+         speed 350 m/s
+      position 38:56:24.000n 131:12:00.000e
+         altitude 10800 m msl
+         speed 355 m/s
+      position 38:55:12.000n 130:18:00.000e
+         altitude 10400 m msl
+         speed 350 m/s
+      position 38:55:12.000n 129:45:00.000e
+         altitude 10000 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10902 RED_FLT commander red_flt_10901
+   route
+      position 39:00:18.000n 130:24:18.000e
+         altitude 9900 m msl
+         speed 295 m/s
+      position 39:00:18.000n 131:03:18.000e
+         altitude 10300 m msl
+         speed 325 m/s
+      position 38:58:30.000n 131:48:18.000e
+         altitude 10700 m msl
+         speed 345 m/s
+      position 38:56:06.000n 132:12:18.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 38:53:42.000n 131:09:18.000e
+         altitude 10700 m msl
+         speed 355 m/s
+      position 38:52:30.000n 130:15:18.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 38:52:30.000n 129:42:18.000e
+         altitude 9900 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10903 RED_FLT commander red_flt_10901
+   route
+      position 39:00:18.000n 130:29:42.000e
+         altitude 9900 m msl
+         speed 295 m/s
+      position 39:00:18.000n 131:08:42.000e
+         altitude 10300 m msl
+         speed 325 m/s
+      position 38:58:30.000n 131:53:42.000e
+         altitude 10700 m msl
+         speed 345 m/s
+      position 38:56:06.000n 132:17:42.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 38:53:42.000n 131:14:42.000e
+         altitude 10700 m msl
+         speed 355 m/s
+      position 38:52:30.000n 130:20:42.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 38:52:30.000n 129:47:42.000e
+         altitude 9900 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10904 RED_FLT commander red_flt_10901
+   route
+      position 38:57:36.000n 130:22:12.000e
+         altitude 9800 m msl
+         speed 295 m/s
+      position 38:57:36.000n 131:01:12.000e
+         altitude 10200 m msl
+         speed 325 m/s
+      position 38:55:48.000n 131:46:12.000e
+         altitude 10600 m msl
+         speed 345 m/s
+      position 38:53:24.000n 132:10:12.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:51:00.000n 131:07:12.000e
+         altitude 10600 m msl
+         speed 355 m/s
+      position 38:49:48.000n 130:13:12.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 38:49:48.000n 129:40:12.000e
+         altitude 9800 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10905 RED_FLT commander red_flt_10901
+   route
+      position 38:57:36.000n 130:31:48.000e
+         altitude 9800 m msl
+         speed 295 m/s
+      position 38:57:36.000n 131:10:48.000e
+         altitude 10200 m msl
+         speed 325 m/s
+      position 38:55:48.000n 131:55:48.000e
+         altitude 10600 m msl
+         speed 345 m/s
+      position 38:53:24.000n 132:19:48.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:51:00.000n 131:16:48.000e
+         altitude 10600 m msl
+         speed 355 m/s
+      position 38:49:48.000n 130:22:48.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 38:49:48.000n 129:49:48.000e
+         altitude 9800 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_10906 RED_FLT commander red_flt_10901
+   route
+      position 38:54:54.000n 130:27:00.000e
+         altitude 9700 m msl
+         speed 295 m/s
+      position 38:54:54.000n 131:06:00.000e
+         altitude 10100 m msl
+         speed 325 m/s
+      position 38:53:06.000n 131:51:00.000e
+         altitude 10500 m msl
+         speed 345 m/s
+      position 38:50:42.000n 132:15:00.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:48:18.000n 131:12:00.000e
+         altitude 10500 m msl
+         speed 355 m/s
+      position 38:47:06.000n 130:18:00.000e
+         altitude 10100 m msl
+         speed 350 m/s
+      position 38:47:06.000n 129:45:00.000e
+         altitude 9700 m msl
+         speed 335 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+# FLT - 10 carrier rear upper CAP
+platform red_flt_11001 RED_FLT commander red_wan_10301
+   route
+      position 39:12:00.000n 129:27:00.000e
+         altitude 9800 m msl
+         speed 285 m/s
+      position 39:09:00.000n 130:06:00.000e
+         altitude 10200 m msl
+         speed 315 m/s
+      position 39:06:00.000n 131:00:00.000e
+         altitude 10600 m msl
+         speed 340 m/s
+      position 39:01:12.000n 131:48:00.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:57:36.000n 131:00:00.000e
+         altitude 10600 m msl
+         speed 355 m/s
+      position 38:56:24.000n 130:06:00.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 38:55:12.000n 129:43:12.000e
+         altitude 9800 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11002 RED_FLT commander red_flt_11001
+   route
+      position 39:09:18.000n 129:24:18.000e
+         altitude 9700 m msl
+         speed 285 m/s
+      position 39:06:18.000n 130:03:18.000e
+         altitude 10100 m msl
+         speed 315 m/s
+      position 39:03:18.000n 130:57:18.000e
+         altitude 10500 m msl
+         speed 340 m/s
+      position 38:58:30.000n 131:45:18.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:54:54.000n 130:57:18.000e
+         altitude 10500 m msl
+         speed 355 m/s
+      position 38:53:42.000n 130:03:18.000e
+         altitude 10100 m msl
+         speed 350 m/s
+      position 38:52:30.000n 129:40:30.000e
+         altitude 9700 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11003 RED_FLT commander red_flt_11001
+   route
+      position 39:09:18.000n 129:29:42.000e
+         altitude 9700 m msl
+         speed 285 m/s
+      position 39:06:18.000n 130:08:42.000e
+         altitude 10100 m msl
+         speed 315 m/s
+      position 39:03:18.000n 131:02:42.000e
+         altitude 10500 m msl
+         speed 340 m/s
+      position 38:58:30.000n 131:50:42.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:54:54.000n 131:02:42.000e
+         altitude 10500 m msl
+         speed 355 m/s
+      position 38:53:42.000n 130:08:42.000e
+         altitude 10100 m msl
+         speed 350 m/s
+      position 38:52:30.000n 129:45:54.000e
+         altitude 9700 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11004 RED_FLT commander red_flt_11001
+   route
+      position 39:06:36.000n 129:22:12.000e
+         altitude 9600 m msl
+         speed 285 m/s
+      position 39:03:36.000n 130:01:12.000e
+         altitude 10000 m msl
+         speed 315 m/s
+      position 39:00:36.000n 130:55:12.000e
+         altitude 10400 m msl
+         speed 340 m/s
+      position 38:55:48.000n 131:43:12.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:52:12.000n 130:55:12.000e
+         altitude 10400 m msl
+         speed 355 m/s
+      position 38:51:00.000n 130:01:12.000e
+         altitude 10000 m msl
+         speed 350 m/s
+      position 38:49:48.000n 129:38:24.000e
+         altitude 9600 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11005 RED_FLT commander red_flt_11001
+   route
+      position 39:06:36.000n 129:31:48.000e
+         altitude 9600 m msl
+         speed 285 m/s
+      position 39:03:36.000n 130:10:48.000e
+         altitude 10000 m msl
+         speed 315 m/s
+      position 39:00:36.000n 131:04:48.000e
+         altitude 10400 m msl
+         speed 340 m/s
+      position 38:55:48.000n 131:52:48.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:52:12.000n 131:04:48.000e
+         altitude 10400 m msl
+         speed 355 m/s
+      position 38:51:00.000n 130:10:48.000e
+         altitude 10000 m msl
+         speed 350 m/s
+      position 38:49:48.000n 129:48:00.000e
+         altitude 9600 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11006 RED_FLT commander red_flt_11001
+   route
+      position 39:03:54.000n 129:27:00.000e
+         altitude 9500 m msl
+         speed 285 m/s
+      position 39:00:54.000n 130:06:00.000e
+         altitude 9900 m msl
+         speed 315 m/s
+      position 38:57:54.000n 131:00:00.000e
+         altitude 10300 m msl
+         speed 340 m/s
+      position 38:53:06.000n 131:48:00.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 38:49:30.000n 131:00:00.000e
+         altitude 10300 m msl
+         speed 355 m/s
+      position 38:48:18.000n 130:06:00.000e
+         altitude 9900 m msl
+         speed 350 m/s
+      position 38:47:06.000n 129:43:12.000e
+         altitude 9500 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+# FLT - 11 carrier rear lower CAP
+platform red_flt_11101 RED_FLT commander red_wan_10201
+   route
+      position 38:39:36.000n 129:27:00.000e
+         altitude 9800 m msl
+         speed 285 m/s
+      position 38:43:12.000n 130:06:00.000e
+         altitude 10200 m msl
+         speed 315 m/s
+      position 38:48:00.000n 131:00:00.000e
+         altitude 10600 m msl
+         speed 340 m/s
+      position 38:52:48.000n 131:48:00.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:55:12.000n 131:00:00.000e
+         altitude 10600 m msl
+         speed 355 m/s
+      position 38:55:48.000n 130:06:00.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 38:55:12.000n 129:43:12.000e
+         altitude 9800 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11102 RED_FLT commander red_flt_11101
+   route
+      position 38:36:54.000n 129:24:18.000e
+         altitude 9700 m msl
+         speed 285 m/s
+      position 38:40:30.000n 130:03:18.000e
+         altitude 10100 m msl
+         speed 315 m/s
+      position 38:45:18.000n 130:57:18.000e
+         altitude 10500 m msl
+         speed 340 m/s
+      position 38:50:06.000n 131:45:18.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:52:30.000n 130:57:18.000e
+         altitude 10500 m msl
+         speed 355 m/s
+      position 38:53:06.000n 130:03:18.000e
+         altitude 10100 m msl
+         speed 350 m/s
+      position 38:52:30.000n 129:40:30.000e
+         altitude 9700 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11103 RED_FLT commander red_flt_11101
+   route
+      position 38:36:54.000n 129:29:42.000e
+         altitude 9700 m msl
+         speed 285 m/s
+      position 38:40:30.000n 130:08:42.000e
+         altitude 10100 m msl
+         speed 315 m/s
+      position 38:45:18.000n 131:02:42.000e
+         altitude 10500 m msl
+         speed 340 m/s
+      position 38:50:06.000n 131:50:42.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:52:30.000n 131:02:42.000e
+         altitude 10500 m msl
+         speed 355 m/s
+      position 38:53:06.000n 130:08:42.000e
+         altitude 10100 m msl
+         speed 350 m/s
+      position 38:52:30.000n 129:45:54.000e
+         altitude 9700 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11104 RED_FLT commander red_flt_11101
+   route
+      position 38:34:12.000n 129:22:12.000e
+         altitude 9600 m msl
+         speed 285 m/s
+      position 38:37:48.000n 130:01:12.000e
+         altitude 10000 m msl
+         speed 315 m/s
+      position 38:42:36.000n 130:55:12.000e
+         altitude 10400 m msl
+         speed 340 m/s
+      position 38:47:24.000n 131:43:12.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:49:48.000n 130:55:12.000e
+         altitude 10400 m msl
+         speed 355 m/s
+      position 38:50:24.000n 130:01:12.000e
+         altitude 10000 m msl
+         speed 350 m/s
+      position 38:49:48.000n 129:38:24.000e
+         altitude 9600 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11105 RED_FLT commander red_flt_11101
+   route
+      position 38:34:12.000n 129:31:48.000e
+         altitude 9600 m msl
+         speed 285 m/s
+      position 38:37:48.000n 130:10:48.000e
+         altitude 10000 m msl
+         speed 315 m/s
+      position 38:42:36.000n 131:04:48.000e
+         altitude 10400 m msl
+         speed 340 m/s
+      position 38:47:24.000n 131:52:48.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:49:48.000n 131:04:48.000e
+         altitude 10400 m msl
+         speed 355 m/s
+      position 38:50:24.000n 130:10:48.000e
+         altitude 10000 m msl
+         speed 350 m/s
+      position 38:49:48.000n 129:48:00.000e
+         altitude 9600 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+platform red_flt_11106 RED_FLT commander red_flt_11101
+   route
+      position 38:31:30.000n 129:27:00.000e
+         altitude 9500 m msl
+         speed 285 m/s
+      position 38:35:06.000n 130:06:00.000e
+         altitude 9900 m msl
+         speed 315 m/s
+      position 38:39:54.000n 131:00:00.000e
+         altitude 10300 m msl
+         speed 340 m/s
+      position 38:44:42.000n 131:48:00.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 38:47:06.000n 131:00:00.000e
+         altitude 10300 m msl
+         speed 355 m/s
+      position 38:47:42.000n 130:06:00.000e
+         altitude 9900 m msl
+         speed 350 m/s
+      position 38:47:06.000n 129:43:12.000e
+         altitude 9500 m msl
+         speed 330 m/s
+
+   end_route
+   heading 90 deg
+end_platform
+
+
+
+
+
+
+
+
+
+

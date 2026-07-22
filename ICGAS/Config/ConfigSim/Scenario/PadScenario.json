@@ -1,0 +1,4326 @@
+{
+    "scenario_id": "PadScenario",
+    "description": "Carrier-centered initial posture translated from pad sketch. Local origin is red CVN-59 at DefaultDefence carrier position; x/y coordinates are encoded into LLA.",
+    "local_origin": {
+        "plt_id": "10101",
+        "lat_deg": 38.9432,
+        "lon_deg": 128.285,
+        "alt_m": 0,
+        "x_axis": "east / incoming blue force",
+        "y_axis": "north",
+        "unit": "km"
+    },
+    "defense_rings_km": [
+        50,
+        400,
+        1000
+    ],
+    "plat_config": [
+        {
+            "plt_id": "10101",
+            "type_name": "CVN-59",
+            "cmd_id": "SELF",
+            "fmt_id": "3001",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.679687061263,
+                    "lon_rad": 2.238995630921
+                },
+                "vel_loc": {
+                    "speed_ms": 10,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10101_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10101_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.238995630921
+                        },
+                        "speed_ms": 10
+                    },
+                    {
+                        "point_id": "10101_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.242019371624
+                        },
+                        "speed_ms": 10
+                    },
+                    {
+                        "point_id": "10101_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.682038834419,
+                            "lon_rad": 2.238995630921
+                        },
+                        "speed_ms": 9
+                    },
+                    {
+                        "point_id": "10101_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.235971890218
+                        },
+                        "speed_ms": 9
+                    },
+                    {
+                        "point_id": "10101_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.677335288106,
+                            "lon_rad": 2.238995630921
+                        },
+                        "speed_ms": 10
+                    },
+                    {
+                        "point_id": "10101_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.238995630921
+                        },
+                        "speed_ms": 10
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-15": 160
+            },
+            "sensor_load": {
+                "AN_SPS_48G": 1
+            }
+        },
+        {
+            "plt_id": "10401",
+            "type_name": "052D",
+            "cmd_id": "10101",
+            "fmt_id": "3004",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.686820773171,
+                    "lon_rad": 2.249074766597
+                },
+                "vel_loc": {
+                    "speed_ms": 12,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10401_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10401_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.686820773171,
+                            "lon_rad": 2.249074766597
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10401_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.686820773171,
+                            "lon_rad": 2.250687428306
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10401_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688075052188,
+                            "lon_rad": 2.250687428306
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10401_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688075052188,
+                            "lon_rad": 2.247462104889
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10401_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.685566494154,
+                            "lon_rad": 2.247462104889
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10401_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.686820773171,
+                            "lon_rad": 2.249074766597
+                        },
+                        "speed_ms": 12
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-10": 120,
+                "HQ-15": 96
+            },
+            "sensor_load": {
+                "AN_SPY_6_V1": 1,
+                "IRST21": 1,
+                "WESCAM_MX_15D": 1
+            }
+        },
+        {
+            "plt_id": "10402",
+            "type_name": "052D",
+            "cmd_id": "10401",
+            "fmt_id": "3004",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.688231837065,
+                    "lon_rad": 2.249074766597
+                },
+                "vel_loc": {
+                    "speed_ms": 12,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10402_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10402_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688231837065,
+                            "lon_rad": 2.249074766597
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10402_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688231837065,
+                            "lon_rad": 2.250687428306
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10402_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.689486116082,
+                            "lon_rad": 2.250687428306
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10402_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.689486116082,
+                            "lon_rad": 2.247462104889
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10402_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.686977558048,
+                            "lon_rad": 2.247462104889
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10402_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688231837065,
+                            "lon_rad": 2.249074766597
+                        },
+                        "speed_ms": 12
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-10": 120,
+                "HQ-15": 96
+            },
+            "sensor_load": {
+                "AN_SPY_6_V1": 1,
+                "IRST21": 1,
+                "WESCAM_MX_15D": 1
+            }
+        },
+        {
+            "plt_id": "10403",
+            "type_name": "052D",
+            "cmd_id": "10101",
+            "fmt_id": "3005",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.686820773171,
+                    "lon_rad": 2.228916495245
+                },
+                "vel_loc": {
+                    "speed_ms": 12,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10403_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10403_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.686820773171,
+                            "lon_rad": 2.228916495245
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10403_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.686820773171,
+                            "lon_rad": 2.230529156953
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10403_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688075052188,
+                            "lon_rad": 2.230529156953
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10403_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688075052188,
+                            "lon_rad": 2.227303833536
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10403_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.685566494154,
+                            "lon_rad": 2.227303833536
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10403_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.686820773171,
+                            "lon_rad": 2.228916495245
+                        },
+                        "speed_ms": 12
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-10": 120,
+                "HQ-15": 96
+            },
+            "sensor_load": {
+                "AN_SPY_6_V1": 1,
+                "IRST21": 1,
+                "WESCAM_MX_15D": 1
+            }
+        },
+        {
+            "plt_id": "10404",
+            "type_name": "052D",
+            "cmd_id": "10403",
+            "fmt_id": "3005",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.688231837065,
+                    "lon_rad": 2.228916495245
+                },
+                "vel_loc": {
+                    "speed_ms": 12,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10404_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10404_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688231837065,
+                            "lon_rad": 2.228916495245
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10404_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688231837065,
+                            "lon_rad": 2.230529156953
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10404_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.689486116082,
+                            "lon_rad": 2.230529156953
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10404_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.689486116082,
+                            "lon_rad": 2.227303833536
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10404_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.686977558048,
+                            "lon_rad": 2.227303833536
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10404_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.688231837065,
+                            "lon_rad": 2.228916495245
+                        },
+                        "speed_ms": 12
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-10": 120,
+                "HQ-15": 96
+            },
+            "sensor_load": {
+                "AN_SPY_6_V1": 1,
+                "IRST21": 1,
+                "WESCAM_MX_15D": 1
+            }
+        },
+        {
+            "plt_id": "10405",
+            "type_name": "052D",
+            "cmd_id": "10101",
+            "fmt_id": "3006",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.67114228546,
+                    "lon_rad": 2.228916495245
+                },
+                "vel_loc": {
+                    "speed_ms": 12,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10405_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10405_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.67114228546,
+                            "lon_rad": 2.228916495245
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10405_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.67114228546,
+                            "lon_rad": 2.230529156953
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10405_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672396564477,
+                            "lon_rad": 2.230529156953
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10405_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672396564477,
+                            "lon_rad": 2.227303833536
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10405_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.669888006443,
+                            "lon_rad": 2.227303833536
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10405_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.67114228546,
+                            "lon_rad": 2.228916495245
+                        },
+                        "speed_ms": 12
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-10": 120,
+                "HQ-15": 96
+            },
+            "sensor_load": {
+                "AN_SPY_6_V1": 1,
+                "IRST21": 1,
+                "WESCAM_MX_15D": 1
+            }
+        },
+        {
+            "plt_id": "10406",
+            "type_name": "052D",
+            "cmd_id": "10405",
+            "fmt_id": "3006",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.672553349354,
+                    "lon_rad": 2.228916495245
+                },
+                "vel_loc": {
+                    "speed_ms": 12,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10406_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10406_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672553349354,
+                            "lon_rad": 2.228916495245
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10406_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672553349354,
+                            "lon_rad": 2.230529156953
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10406_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.673807628371,
+                            "lon_rad": 2.230529156953
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10406_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.673807628371,
+                            "lon_rad": 2.227303833536
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10406_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.671299070337,
+                            "lon_rad": 2.227303833536
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10406_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672553349354,
+                            "lon_rad": 2.228916495245
+                        },
+                        "speed_ms": 12
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-10": 120,
+                "HQ-15": 96
+            },
+            "sensor_load": {
+                "AN_SPY_6_V1": 1,
+                "IRST21": 1,
+                "WESCAM_MX_15D": 1
+            }
+        },
+        {
+            "plt_id": "10407",
+            "type_name": "052D",
+            "cmd_id": "10101",
+            "fmt_id": "3007",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.67114228546,
+                    "lon_rad": 2.249074766597
+                },
+                "vel_loc": {
+                    "speed_ms": 12,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10407_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10407_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.67114228546,
+                            "lon_rad": 2.249074766597
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10407_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.67114228546,
+                            "lon_rad": 2.250687428306
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10407_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672396564477,
+                            "lon_rad": 2.250687428306
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10407_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672396564477,
+                            "lon_rad": 2.247462104889
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10407_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.669888006443,
+                            "lon_rad": 2.247462104889
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10407_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.67114228546,
+                            "lon_rad": 2.249074766597
+                        },
+                        "speed_ms": 12
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-10": 120,
+                "HQ-15": 96
+            },
+            "sensor_load": {
+                "AN_SPY_6_V1": 1,
+                "IRST21": 1,
+                "WESCAM_MX_15D": 1
+            }
+        },
+        {
+            "plt_id": "10408",
+            "type_name": "052D",
+            "cmd_id": "10407",
+            "fmt_id": "3007",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 0.0,
+                    "lat_rad": 0.672553349354,
+                    "lon_rad": 2.249074766597
+                },
+                "vel_loc": {
+                    "speed_ms": 12,
+                    "track_ang_rad": 1.570796326795,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10408_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10408_wp_001",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672553349354,
+                            "lon_rad": 2.249074766597
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10408_wp_002",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672553349354,
+                            "lon_rad": 2.250687428306
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10408_wp_003",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.673807628371,
+                            "lon_rad": 2.250687428306
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10408_wp_004",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.673807628371,
+                            "lon_rad": 2.247462104889
+                        },
+                        "speed_ms": 11
+                    },
+                    {
+                        "point_id": "10408_wp_005",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.671299070337,
+                            "lon_rad": 2.247462104889
+                        },
+                        "speed_ms": 12
+                    },
+                    {
+                        "point_id": "10408_wp_006",
+                        "pos_lla": {
+                            "alt_m": 0.0,
+                            "lat_rad": 0.672553349354,
+                            "lon_rad": 2.249074766597
+                        },
+                        "speed_ms": 12
+                    }
+                ]
+            },
+            "weapon_load": {
+                "HQ-10": 120,
+                "HQ-15": 96
+            },
+            "sensor_load": {
+                "AN_SPY_6_V1": 1,
+                "IRST21": 1,
+                "WESCAM_MX_15D": 1
+            }
+        },
+        {
+            "plt_id": "10201",
+            "type_name": "E-3",
+            "cmd_id": "10101",
+            "fmt_id": "3002",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 11000.0,
+                    "lat_rad": 0.706842998564,
+                    "lon_rad": 2.299470444979
+                },
+                "vel_loc": {
+                    "speed_ms": 165,
+                    "track_ang_rad": 0.785398163397,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10201_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10201_wp_001",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.706842998564,
+                            "lon_rad": 2.299470444979
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10201_wp_002",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.712940499303,
+                            "lon_rad": 2.307310172683
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10201_wp_003",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.715466166805,
+                            "lon_rad": 2.299470444979
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10201_wp_004",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.712940499303,
+                            "lon_rad": 2.291630717275
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10201_wp_005",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.706842998564,
+                            "lon_rad": 2.288383395735
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10201_wp_006",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.700745497825,
+                            "lon_rad": 2.291630717275
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10201_wp_007",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.698219830323,
+                            "lon_rad": 2.299470444979
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10201_wp_008",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.700745497825,
+                            "lon_rad": 2.307310172683
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10201_wp_009",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.706842998564,
+                            "lon_rad": 2.310557494223
+                        },
+                        "speed_ms": 165
+                    }
+                ]
+            },
+            "weapon_load": {},
+            "sensor_load": {
+                "AN_APY_2": 1
+            }
+        },
+        {
+            "plt_id": "10301",
+            "type_name": "E-3",
+            "cmd_id": "10101",
+            "fmt_id": "3003",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 11000.0,
+                    "lat_rad": 0.652531123961,
+                    "lon_rad": 2.299470444979
+                },
+                "vel_loc": {
+                    "speed_ms": 165,
+                    "track_ang_rad": 0.785398163397,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10301_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10301_wp_001",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.652531123961,
+                            "lon_rad": 2.299470444979
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10301_wp_002",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.6586286247,
+                            "lon_rad": 2.307310172683
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10301_wp_003",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.661154292202,
+                            "lon_rad": 2.299470444979
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10301_wp_004",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.6586286247,
+                            "lon_rad": 2.291630717275
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10301_wp_005",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.652531123961,
+                            "lon_rad": 2.288383395735
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10301_wp_006",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.646433623223,
+                            "lon_rad": 2.291630717275
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10301_wp_007",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.64390795572,
+                            "lon_rad": 2.299470444979
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10301_wp_008",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.646433623223,
+                            "lon_rad": 2.307310172683
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "10301_wp_009",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.652531123961,
+                            "lon_rad": 2.310557494223
+                        },
+                        "speed_ms": 165
+                    }
+                ]
+            },
+            "weapon_load": {},
+            "sensor_load": {
+                "AN_APY_2": 1
+            }
+        },
+        {
+            "plt_id": "10601",
+            "type_name": "F-15",
+            "cmd_id": "10101",
+            "fmt_id": "3006",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9500.0,
+                    "lat_rad": 0.715894977665,
+                    "lon_rad": 2.323257205175
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10601_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10601_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.715894977665,
+                            "lon_rad": 2.323257205175
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10601_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.719030675207,
+                            "lon_rad": 2.337367995122
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10601_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.712759280122,
+                            "lon_rad": 2.340391735825
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10601_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.711975355737,
+                            "lon_rad": 2.314185983067
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10601_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.719814599592,
+                            "lon_rad": 2.312170155931
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10601_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.715894977665,
+                            "lon_rad": 2.323257205175
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10602",
+            "type_name": "F-15",
+            "cmd_id": "10601",
+            "fmt_id": "3006",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9420.0,
+                    "lat_rad": 0.714483913771,
+                    "lon_rad": 2.319628716332
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10602_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10602_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.714483913771,
+                            "lon_rad": 2.319628716332
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10602_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.717619611313,
+                            "lon_rad": 2.333739506279
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10602_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.711348216228,
+                            "lon_rad": 2.336763246982
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10602_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.710564291843,
+                            "lon_rad": 2.310557494223
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10602_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.718403535698,
+                            "lon_rad": 2.308541667088
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10602_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.714483913771,
+                            "lon_rad": 2.319628716332
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10603",
+            "type_name": "F-15",
+            "cmd_id": "10601",
+            "fmt_id": "3006",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9340.0,
+                    "lat_rad": 0.717306041558,
+                    "lon_rad": 2.319628716332
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10603_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10603_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.717306041558,
+                            "lon_rad": 2.319628716332
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10603_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.720441739101,
+                            "lon_rad": 2.333739506279
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10603_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.714170344016,
+                            "lon_rad": 2.336763246982
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10603_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.713386419631,
+                            "lon_rad": 2.310557494223
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10603_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.721225663486,
+                            "lon_rad": 2.308541667088
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10603_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.717306041558,
+                            "lon_rad": 2.319628716332
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10604",
+            "type_name": "F-15",
+            "cmd_id": "10601",
+            "fmt_id": "3006",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9260.0,
+                    "lat_rad": 0.713072849877,
+                    "lon_rad": 2.316000227488
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10604_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10604_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.713072849877,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10604_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.716208547419,
+                            "lon_rad": 2.330111017435
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10604_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.709937152334,
+                            "lon_rad": 2.333134758138
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10604_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.709153227949,
+                            "lon_rad": 2.30692900538
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10604_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.716992471804,
+                            "lon_rad": 2.304913178244
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10604_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.713072849877,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10605",
+            "type_name": "F-15",
+            "cmd_id": "10601",
+            "fmt_id": "3006",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9180.0,
+                    "lat_rad": 0.715894977665,
+                    "lon_rad": 2.316000227488
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10605_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10605_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.715894977665,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10605_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.719030675207,
+                            "lon_rad": 2.330111017435
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10605_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.712759280122,
+                            "lon_rad": 2.333134758138
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10605_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.711975355737,
+                            "lon_rad": 2.30692900538
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10605_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.719814599592,
+                            "lon_rad": 2.304913178244
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10605_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.715894977665,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10606",
+            "type_name": "F-15",
+            "cmd_id": "10601",
+            "fmt_id": "3006",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9100.0,
+                    "lat_rad": 0.718717105452,
+                    "lon_rad": 2.316000227488
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10606_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10606_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.718717105452,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10606_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.721852802995,
+                            "lon_rad": 2.330111017435
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10606_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.71558140791,
+                            "lon_rad": 2.333134758138
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10606_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.714797483525,
+                            "lon_rad": 2.30692900538
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10606_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.72263672738,
+                            "lon_rad": 2.304913178244
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10606_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.718717105452,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10701",
+            "type_name": "F-15",
+            "cmd_id": "10101",
+            "fmt_id": "3007",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9500.0,
+                    "lat_rad": 0.643479144861,
+                    "lon_rad": 2.323257205175
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10701_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10701_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.643479144861,
+                            "lon_rad": 2.323257205175
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10701_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.646614842403,
+                            "lon_rad": 2.337367995122
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10701_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.640343447319,
+                            "lon_rad": 2.340391735825
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10701_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.639559522933,
+                            "lon_rad": 2.314185983067
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10701_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.647398766789,
+                            "lon_rad": 2.312170155931
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10701_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9500.0,
+                            "lat_rad": 0.643479144861,
+                            "lon_rad": 2.323257205175
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10702",
+            "type_name": "F-15",
+            "cmd_id": "10701",
+            "fmt_id": "3007",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9420.0,
+                    "lat_rad": 0.642068080967,
+                    "lon_rad": 2.319628716332
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10702_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10702_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.642068080967,
+                            "lon_rad": 2.319628716332
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10702_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.645203778509,
+                            "lon_rad": 2.333739506279
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10702_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.638932383425,
+                            "lon_rad": 2.336763246982
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10702_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.638148459039,
+                            "lon_rad": 2.310557494223
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10702_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.645987702895,
+                            "lon_rad": 2.308541667088
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10702_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9420.0,
+                            "lat_rad": 0.642068080967,
+                            "lon_rad": 2.319628716332
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10703",
+            "type_name": "F-15",
+            "cmd_id": "10701",
+            "fmt_id": "3007",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9340.0,
+                    "lat_rad": 0.644890208755,
+                    "lon_rad": 2.319628716332
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10703_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10703_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.644890208755,
+                            "lon_rad": 2.319628716332
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10703_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.648025906297,
+                            "lon_rad": 2.333739506279
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10703_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.641754511213,
+                            "lon_rad": 2.336763246982
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10703_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.640970586827,
+                            "lon_rad": 2.310557494223
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10703_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.648809830683,
+                            "lon_rad": 2.308541667088
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10703_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9340.0,
+                            "lat_rad": 0.644890208755,
+                            "lon_rad": 2.319628716332
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10704",
+            "type_name": "F-15",
+            "cmd_id": "10701",
+            "fmt_id": "3007",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9260.0,
+                    "lat_rad": 0.640657017073,
+                    "lon_rad": 2.316000227488
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10704_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10704_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.640657017073,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10704_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.643792714615,
+                            "lon_rad": 2.330111017435
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10704_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.637521319531,
+                            "lon_rad": 2.333134758138
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10704_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.636737395145,
+                            "lon_rad": 2.30692900538
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10704_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.644576639001,
+                            "lon_rad": 2.304913178244
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10704_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9260.0,
+                            "lat_rad": 0.640657017073,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10705",
+            "type_name": "F-15",
+            "cmd_id": "10701",
+            "fmt_id": "3007",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9180.0,
+                    "lat_rad": 0.643479144861,
+                    "lon_rad": 2.316000227488
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10705_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10705_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.643479144861,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10705_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.646614842403,
+                            "lon_rad": 2.330111017435
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10705_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.640343447319,
+                            "lon_rad": 2.333134758138
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10705_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.639559522933,
+                            "lon_rad": 2.30692900538
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10705_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.647398766789,
+                            "lon_rad": 2.304913178244
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10705_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9180.0,
+                            "lat_rad": 0.643479144861,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "10706",
+            "type_name": "F-15",
+            "cmd_id": "10701",
+            "fmt_id": "3007",
+            "side": "RED",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9100.0,
+                    "lat_rad": 0.646301272649,
+                    "lon_rad": 2.316000227488
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 1.29249666779,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "10706_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "10706_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.646301272649,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10706_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.649436970191,
+                            "lon_rad": 2.330111017435
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "10706_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.643165575107,
+                            "lon_rad": 2.333134758138
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "10706_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.642381650721,
+                            "lon_rad": 2.30692900538
+                        },
+                        "speed_ms": 270
+                    },
+                    {
+                        "point_id": "10706_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.650220894577,
+                            "lon_rad": 2.304913178244
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "10706_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9100.0,
+                            "lat_rad": 0.646301272649,
+                            "lon_rad": 2.316000227488
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20301",
+            "type_name": "F-18E",
+            "cmd_id": "20101",
+            "fmt_id": "4003",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9000.0,
+                    "lat_rad": 0.702028906251,
+                    "lon_rad": 2.359945259038
+                },
+                "vel_loc": {
+                    "speed_ms": 220,
+                    "track_ang_rad": 4.570841943267,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20301_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20301_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.702028906251,
+                            "lon_rad": 2.359945259038
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20301_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.700241558652,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 230
+                    },
+                    {
+                        "point_id": "20301_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.697560537253,
+                            "lon_rad": 2.333739506279
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20301_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.694879515855,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20301_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.702028906251,
+                            "lon_rad": 2.359945259038
+                        },
+                        "speed_ms": 220
+                    }
+                ]
+            },
+            "weapon_load": {},
+            "sensor_load": {
+                "AN_ASQ_228_ATFLIR": 1
+            }
+        },
+        {
+            "plt_id": "20302",
+            "type_name": "F-18E",
+            "cmd_id": "20301",
+            "fmt_id": "4003",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 8900.0,
+                    "lat_rad": 0.704380679408,
+                    "lon_rad": 2.359945259038
+                },
+                "vel_loc": {
+                    "speed_ms": 220,
+                    "track_ang_rad": 4.556172261941,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20302_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20302_wp_001",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.704380679408,
+                            "lon_rad": 2.359945259038
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20302_wp_002",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.702405189956,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 230
+                    },
+                    {
+                        "point_id": "20302_wp_003",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.699441955779,
+                            "lon_rad": 2.333739506279
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20302_wp_004",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.696478721601,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20302_wp_005",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.704380679408,
+                            "lon_rad": 2.359945259038
+                        },
+                        "speed_ms": 220
+                    }
+                ]
+            },
+            "weapon_load": {},
+            "sensor_load": {
+                "AN_ASQ_228_ATFLIR": 1
+            }
+        },
+        {
+            "plt_id": "20401",
+            "type_name": "F-18E",
+            "cmd_id": "20101",
+            "fmt_id": "4004",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9000.0,
+                    "lat_rad": 0.654993443118,
+                    "lon_rad": 2.359945259038
+                },
+                "vel_loc": {
+                    "speed_ms": 220,
+                    "track_ang_rad": 4.868605698829,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20401_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20401_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.654993443118,
+                            "lon_rad": 2.359945259038
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20401_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.656968932569,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 230
+                    },
+                    {
+                        "point_id": "20401_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.659932166747,
+                            "lon_rad": 2.333739506279
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20401_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.662895400924,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20401_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9000.0,
+                            "lat_rad": 0.654993443118,
+                            "lon_rad": 2.359945259038
+                        },
+                        "speed_ms": 220
+                    }
+                ]
+            },
+            "weapon_load": {},
+            "sensor_load": {
+                "AN_ASQ_228_ATFLIR": 1
+            }
+        },
+        {
+            "plt_id": "20402",
+            "type_name": "F-18E",
+            "cmd_id": "20401",
+            "fmt_id": "4004",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 8900.0,
+                    "lat_rad": 0.657345216274,
+                    "lon_rad": 2.359945259038
+                },
+                "vel_loc": {
+                    "speed_ms": 220,
+                    "track_ang_rad": 4.853936017502,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20402_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20402_wp_001",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.657345216274,
+                            "lon_rad": 2.359945259038
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20402_wp_002",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.659132563873,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 230
+                    },
+                    {
+                        "point_id": "20402_wp_003",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.661813585272,
+                            "lon_rad": 2.333739506279
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20402_wp_004",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.664494606671,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20402_wp_005",
+                        "pos_lla": {
+                            "alt_m": 8900.0,
+                            "lat_rad": 0.657345216274,
+                            "lon_rad": 2.359945259038
+                        },
+                        "speed_ms": 220
+                    }
+                ]
+            },
+            "weapon_load": {},
+            "sensor_load": {
+                "AN_ASQ_228_ATFLIR": 1
+            }
+        },
+        {
+            "plt_id": "20501",
+            "type_name": "F-15",
+            "cmd_id": "20101",
+            "fmt_id": "4005",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9800.0,
+                    "lat_rad": 0.715747582998,
+                    "lon_rad": 2.376475041547
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 4.329729290494,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20501_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20501_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.715747582998,
+                            "lon_rad": 2.376475041547
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20501_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.710699109955,
+                            "lon_rad": 2.360348424465
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20501_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.701323374304,
+                            "lon_rad": 2.340190153112
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20501_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.69230824387,
+                            "lon_rad": 2.326079363165
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20501_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.699520348217,
+                            "lon_rad": 2.348253461653
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20501_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.715747582998,
+                            "lon_rad": 2.376475041547
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20502",
+            "type_name": "F-15",
+            "cmd_id": "20501",
+            "fmt_id": "4005",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9720.0,
+                    "lat_rad": 0.714336519104,
+                    "lon_rad": 2.38010353039
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 4.329729290494,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20502_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20502_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.714336519104,
+                            "lon_rad": 2.38010353039
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20502_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.709288046061,
+                            "lon_rad": 2.363976913308
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20502_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.69991231041,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20502_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.690897179976,
+                            "lon_rad": 2.329707852008
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20502_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.698109284323,
+                            "lon_rad": 2.351881950496
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20502_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.714336519104,
+                            "lon_rad": 2.38010353039
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20503",
+            "type_name": "F-15",
+            "cmd_id": "20501",
+            "fmt_id": "4005",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9640.0,
+                    "lat_rad": 0.717158646892,
+                    "lon_rad": 2.38010353039
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 4.329729290494,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20503_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20503_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.717158646892,
+                            "lon_rad": 2.38010353039
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20503_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.712110173849,
+                            "lon_rad": 2.363976913308
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20503_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.702734438198,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20503_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.693719307764,
+                            "lon_rad": 2.329707852008
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20503_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.700931412111,
+                            "lon_rad": 2.351881950496
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20503_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.717158646892,
+                            "lon_rad": 2.38010353039
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20504",
+            "type_name": "F-15",
+            "cmd_id": "20501",
+            "fmt_id": "4005",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9560.0,
+                    "lat_rad": 0.71292545521,
+                    "lon_rad": 2.383732019234
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 4.329729290494,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20504_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20504_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.71292545521,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20504_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.707876982167,
+                            "lon_rad": 2.367605402152
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20504_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.698501246516,
+                            "lon_rad": 2.347447130799
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20504_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.689486116082,
+                            "lon_rad": 2.333336340852
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20504_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.696698220429,
+                            "lon_rad": 2.35551043934
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20504_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.71292545521,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20505",
+            "type_name": "F-15",
+            "cmd_id": "20501",
+            "fmt_id": "4005",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9480.0,
+                    "lat_rad": 0.715747582998,
+                    "lon_rad": 2.383732019234
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 4.329729290494,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20505_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20505_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.715747582998,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20505_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.710699109955,
+                            "lon_rad": 2.367605402152
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20505_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.701323374304,
+                            "lon_rad": 2.347447130799
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20505_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.69230824387,
+                            "lon_rad": 2.333336340852
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20505_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.699520348217,
+                            "lon_rad": 2.35551043934
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20505_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.715747582998,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20506",
+            "type_name": "F-15",
+            "cmd_id": "20501",
+            "fmt_id": "4005",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9400.0,
+                    "lat_rad": 0.718569710786,
+                    "lon_rad": 2.383732019234
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 4.329729290494,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20506_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20506_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.718569710786,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20506_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.713521237743,
+                            "lon_rad": 2.367605402152
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20506_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.704145502092,
+                            "lon_rad": 2.347447130799
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20506_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.695130371658,
+                            "lon_rad": 2.333336340852
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20506_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.702342476005,
+                            "lon_rad": 2.35551043934
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20506_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.718569710786,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20601",
+            "type_name": "F-15",
+            "cmd_id": "20101",
+            "fmt_id": "4006",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9800.0,
+                    "lat_rad": 0.643626539527,
+                    "lon_rad": 2.376475041547
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 5.095048670276,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20601_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20601_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.643626539527,
+                            "lon_rad": 2.376475041547
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20601_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.64867501257,
+                            "lon_rad": 2.360348424465
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20601_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.658050748221,
+                            "lon_rad": 2.340190153112
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20601_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.667065878655,
+                            "lon_rad": 2.326079363165
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20601_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.659853774308,
+                            "lon_rad": 2.348253461653
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20601_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9800.0,
+                            "lat_rad": 0.643626539527,
+                            "lon_rad": 2.376475041547
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20602",
+            "type_name": "F-15",
+            "cmd_id": "20601",
+            "fmt_id": "4006",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9720.0,
+                    "lat_rad": 0.642215475633,
+                    "lon_rad": 2.38010353039
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 5.095048670276,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20602_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20602_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.642215475633,
+                            "lon_rad": 2.38010353039
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20602_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.647263948676,
+                            "lon_rad": 2.363976913308
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20602_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.656639684327,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20602_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.665654814761,
+                            "lon_rad": 2.329707852008
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20602_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.658442710414,
+                            "lon_rad": 2.351881950496
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20602_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9720.0,
+                            "lat_rad": 0.642215475633,
+                            "lon_rad": 2.38010353039
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20603",
+            "type_name": "F-15",
+            "cmd_id": "20601",
+            "fmt_id": "4006",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9640.0,
+                    "lat_rad": 0.645037603421,
+                    "lon_rad": 2.38010353039
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 5.095048670276,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20603_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20603_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.645037603421,
+                            "lon_rad": 2.38010353039
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20603_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.650086076464,
+                            "lon_rad": 2.363976913308
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20603_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.659461812115,
+                            "lon_rad": 2.343818641955
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20603_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.668476942549,
+                            "lon_rad": 2.329707852008
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20603_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.661264838202,
+                            "lon_rad": 2.351881950496
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20603_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9640.0,
+                            "lat_rad": 0.645037603421,
+                            "lon_rad": 2.38010353039
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20604",
+            "type_name": "F-15",
+            "cmd_id": "20601",
+            "fmt_id": "4006",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9560.0,
+                    "lat_rad": 0.640804411739,
+                    "lon_rad": 2.383732019234
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 5.095048670276,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20604_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20604_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.640804411739,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20604_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.645852884782,
+                            "lon_rad": 2.367605402152
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20604_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.655228620433,
+                            "lon_rad": 2.347447130799
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20604_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.664243750867,
+                            "lon_rad": 2.333336340852
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20604_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.65703164652,
+                            "lon_rad": 2.35551043934
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20604_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9560.0,
+                            "lat_rad": 0.640804411739,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20605",
+            "type_name": "F-15",
+            "cmd_id": "20601",
+            "fmt_id": "4006",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9480.0,
+                    "lat_rad": 0.643626539527,
+                    "lon_rad": 2.383732019234
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 5.095048670276,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20605_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20605_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.643626539527,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20605_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.64867501257,
+                            "lon_rad": 2.367605402152
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20605_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.658050748221,
+                            "lon_rad": 2.347447130799
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20605_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.667065878655,
+                            "lon_rad": 2.333336340852
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20605_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.659853774308,
+                            "lon_rad": 2.35551043934
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20605_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9480.0,
+                            "lat_rad": 0.643626539527,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20606",
+            "type_name": "F-15",
+            "cmd_id": "20601",
+            "fmt_id": "4006",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 9400.0,
+                    "lat_rad": 0.646448667315,
+                    "lon_rad": 2.383732019234
+                },
+                "vel_loc": {
+                    "speed_ms": 260,
+                    "track_ang_rad": 5.095048670276,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20606_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20606_wp_001",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.646448667315,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    },
+                    {
+                        "point_id": "20606_wp_002",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.651497140358,
+                            "lon_rad": 2.367605402152
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20606_wp_003",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.660872876009,
+                            "lon_rad": 2.347447130799
+                        },
+                        "speed_ms": 285
+                    },
+                    {
+                        "point_id": "20606_wp_004",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.669888006443,
+                            "lon_rad": 2.333336340852
+                        },
+                        "speed_ms": 290
+                    },
+                    {
+                        "point_id": "20606_wp_005",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.662675902096,
+                            "lon_rad": 2.35551043934
+                        },
+                        "speed_ms": 275
+                    },
+                    {
+                        "point_id": "20606_wp_006",
+                        "pos_lla": {
+                            "alt_m": 9400.0,
+                            "lat_rad": 0.646448667315,
+                            "lon_rad": 2.383732019234
+                        },
+                        "speed_ms": 260
+                    }
+                ]
+            },
+            "weapon_load": {
+                "PL-10": 2,
+                "PL-12": 4
+            },
+            "sensor_load": {
+                "AN_APG_63_V3": 1,
+                "IRST21": 1
+            }
+        },
+        {
+            "plt_id": "20701",
+            "type_name": "B-52",
+            "cmd_id": "20201",
+            "fmt_id": "4007",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10500.0,
+                    "lat_rad": 0.707908339143,
+                    "lon_rad": 2.398044391894
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 4.399061812801,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20701_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20701_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.707908339143,
+                            "lon_rad": 2.398044391894
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20701_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.702828509124,
+                            "lon_rad": 2.377886120541
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20701_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.697184253548,
+                            "lon_rad": 2.357727849189
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20701_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.691539997972,
+                            "lon_rad": 2.341601232106
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20701_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.707908339143,
+                            "lon_rad": 2.398044391894
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20702",
+            "type_name": "B-52",
+            "cmd_id": "20701",
+            "fmt_id": "4007",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10400.0,
+                    "lat_rad": 0.706183705494,
+                    "lon_rad": 2.402479211592
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 4.399061812801,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20702_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20702_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.706183705494,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20702_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.701103875476,
+                            "lon_rad": 2.382320940239
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20702_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.6954596199,
+                            "lon_rad": 2.362162668886
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20702_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.689815364324,
+                            "lon_rad": 2.346036051804
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20702_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.706183705494,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20703",
+            "type_name": "B-52",
+            "cmd_id": "20701",
+            "fmt_id": "4007",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10300.0,
+                    "lat_rad": 0.709632972791,
+                    "lon_rad": 2.402479211592
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 4.399061812801,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20703_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20703_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.709632972791,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20703_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.704553142772,
+                            "lon_rad": 2.382320940239
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20703_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.698908887196,
+                            "lon_rad": 2.362162668886
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20703_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.69326463162,
+                            "lon_rad": 2.346036051804
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20703_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.709632972791,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20801",
+            "type_name": "B-52",
+            "cmd_id": "20201",
+            "fmt_id": "4008",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10500.0,
+                    "lat_rad": 0.679687061263,
+                    "lon_rad": 2.398044391894
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 4.712388980385,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20801_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20801_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.398044391894
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20801_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.377886120541
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20801_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.357727849189
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20801_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.341601232106
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20801_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.679687061263,
+                            "lon_rad": 2.398044391894
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20802",
+            "type_name": "B-52",
+            "cmd_id": "20801",
+            "fmt_id": "4008",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10400.0,
+                    "lat_rad": 0.677962427614,
+                    "lon_rad": 2.402479211592
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 4.712388980385,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20802_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20802_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.677962427614,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20802_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.677962427614,
+                            "lon_rad": 2.382320940239
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20802_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.677962427614,
+                            "lon_rad": 2.362162668886
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20802_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.677962427614,
+                            "lon_rad": 2.346036051804
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20802_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.677962427614,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20803",
+            "type_name": "B-52",
+            "cmd_id": "20801",
+            "fmt_id": "4008",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10300.0,
+                    "lat_rad": 0.681411694911,
+                    "lon_rad": 2.402479211592
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 4.712388980385,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20803_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20803_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.681411694911,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20803_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.681411694911,
+                            "lon_rad": 2.382320940239
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20803_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.681411694911,
+                            "lon_rad": 2.362162668886
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20803_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.681411694911,
+                            "lon_rad": 2.346036051804
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20803_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.681411694911,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20901",
+            "type_name": "B-52",
+            "cmd_id": "20201",
+            "fmt_id": "4009",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10500.0,
+                    "lat_rad": 0.651465783383,
+                    "lon_rad": 2.398044391894
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 5.025716147969,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20901_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20901_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.651465783383,
+                            "lon_rad": 2.398044391894
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20901_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.656545613401,
+                            "lon_rad": 2.377886120541
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20901_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.662189868977,
+                            "lon_rad": 2.357727849189
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20901_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.667834124553,
+                            "lon_rad": 2.341601232106
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20901_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10500.0,
+                            "lat_rad": 0.651465783383,
+                            "lon_rad": 2.398044391894
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20902",
+            "type_name": "B-52",
+            "cmd_id": "20901",
+            "fmt_id": "4009",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10400.0,
+                    "lat_rad": 0.649741149735,
+                    "lon_rad": 2.402479211592
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 5.025716147969,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20902_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20902_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.649741149735,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20902_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.654820979753,
+                            "lon_rad": 2.382320940239
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20902_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.660465235329,
+                            "lon_rad": 2.362162668886
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20902_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.666109490905,
+                            "lon_rad": 2.346036051804
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20902_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10400.0,
+                            "lat_rad": 0.649741149735,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20903",
+            "type_name": "B-52",
+            "cmd_id": "20901",
+            "fmt_id": "4009",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 10300.0,
+                    "lat_rad": 0.653190417031,
+                    "lon_rad": 2.402479211592
+                },
+                "vel_loc": {
+                    "speed_ms": 210,
+                    "track_ang_rad": 5.025716147969,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20903_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20903_wp_001",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.653190417031,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    },
+                    {
+                        "point_id": "20903_wp_002",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.658270247049,
+                            "lon_rad": 2.382320940239
+                        },
+                        "speed_ms": 220
+                    },
+                    {
+                        "point_id": "20903_wp_003",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.663914502625,
+                            "lon_rad": 2.362162668886
+                        },
+                        "speed_ms": 225
+                    },
+                    {
+                        "point_id": "20903_wp_004",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.669558758201,
+                            "lon_rad": 2.346036051804
+                        },
+                        "speed_ms": 215
+                    },
+                    {
+                        "point_id": "20903_wp_005",
+                        "pos_lla": {
+                            "alt_m": 10300.0,
+                            "lat_rad": 0.653190417031,
+                            "lon_rad": 2.402479211592
+                        },
+                        "speed_ms": 210
+                    }
+                ]
+            },
+            "weapon_load": {
+                "KD-20": 2,
+                "KD-88": 4
+            },
+            "sensor_load": {
+                "AN_APQ_166": 1
+            }
+        },
+        {
+            "plt_id": "20101",
+            "type_name": "E-3",
+            "cmd_id": "SELF",
+            "fmt_id": "4001",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 11000.0,
+                    "lat_rad": 0.726722524396,
+                    "lon_rad": 2.420420073096
+                },
+                "vel_loc": {
+                    "speed_ms": 165,
+                    "track_ang_rad": 0.785398163397,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20101_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20101_wp_001",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.726722524396,
+                            "lon_rad": 2.420420073096
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20101_wp_002",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.733374343383,
+                            "lon_rad": 2.428972503318
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20101_wp_003",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.736129617022,
+                            "lon_rad": 2.420420073096
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20101_wp_004",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.733374343383,
+                            "lon_rad": 2.411867642873
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20101_wp_005",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.726722524396,
+                            "lon_rad": 2.408325110284
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20101_wp_006",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.720070705408,
+                            "lon_rad": 2.411867642873
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20101_wp_007",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.717315431769,
+                            "lon_rad": 2.420420073096
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20101_wp_008",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.720070705408,
+                            "lon_rad": 2.428972503318
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20101_wp_009",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.726722524396,
+                            "lon_rad": 2.432515035907
+                        },
+                        "speed_ms": 165
+                    }
+                ]
+            },
+            "weapon_load": {},
+            "sensor_load": {
+                "AN_APY_2": 1
+            }
+        },
+        {
+            "plt_id": "20201",
+            "type_name": "E-3",
+            "cmd_id": "SELF",
+            "fmt_id": "4002",
+            "side": "BLUE",
+            "init_state": {
+                "pos_lla": {
+                    "alt_m": 11000.0,
+                    "lat_rad": 0.632651598129,
+                    "lon_rad": 2.420420073096
+                },
+                "vel_loc": {
+                    "speed_ms": 165,
+                    "track_ang_rad": 0.785398163397,
+                    "path_ang_rad": 0
+                }
+            },
+            "init_route": {
+                "route_id": "20201_route",
+                "is_circulate": true,
+                "point_list": [
+                    {
+                        "point_id": "20201_wp_001",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.632651598129,
+                            "lon_rad": 2.420420073096
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20201_wp_002",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.639303417117,
+                            "lon_rad": 2.428972503318
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20201_wp_003",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.642058690756,
+                            "lon_rad": 2.420420073096
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20201_wp_004",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.639303417117,
+                            "lon_rad": 2.411867642873
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20201_wp_005",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.632651598129,
+                            "lon_rad": 2.408325110284
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20201_wp_006",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.625999779142,
+                            "lon_rad": 2.411867642873
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20201_wp_007",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.623244505503,
+                            "lon_rad": 2.420420073096
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20201_wp_008",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.625999779142,
+                            "lon_rad": 2.428972503318
+                        },
+                        "speed_ms": 165
+                    },
+                    {
+                        "point_id": "20201_wp_009",
+                        "pos_lla": {
+                            "alt_m": 11000.0,
+                            "lat_rad": 0.632651598129,
+                            "lon_rad": 2.432515035907
+                        },
+                        "speed_ms": 165
+                    }
+                ]
+            },
+            "weapon_load": {},
+            "sensor_load": {
+                "AN_APY_2": 1
+            }
+        }
+    ]
+}

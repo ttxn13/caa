@@ -1,0 +1,35 @@
+{
+    "type_name": "KD-88",
+    "icon_path": "",
+    "domain": "MIS",
+    "type": "ASM",
+    "mover": "MIS_MOVER",
+    "mover_cap": {
+        "mis_mover": {
+            "min_speed_ms": 180,
+            "max_speed_ms": 290,
+            "min_alt_m": 5,
+            "max_alt_m": 8000,
+            "max_linear_load_g": 4,
+            "max_radial_load_g": 10,
+            "max_climb_vel_ms": 30,
+            "max_drop_vel_ms": 50,
+            "life_range_m": 180000,
+            "life_time_s": 650
+        }
+    },
+    "launch_cap": {
+        "max_range_m": 180000,
+        "min_range_m": 5000,
+        "firing_delay_s": 0.4
+    },
+    "kill_cap": {
+        "kill_range_m": 180,
+        "kill_prob": 0.75
+    },
+    "sign": {
+        "radar_rcs_m2": 0.12,
+        "opt_area_m2": 0.7,
+        "infrared_wsr": 12
+    }
+}

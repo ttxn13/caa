@@ -1,0 +1,30 @@
+# Auto-split reusable sensor/communication equipment definition.
+sensor BLUE_MISSILE_SEEKER WSF_RADAR_SENSOR
+   one_m2_detect_range 18 nm
+   frame_time 0.5 sec
+   scan_mode azimuth_and_elevation
+   azimuth_scan_limits -45 deg 45 deg
+   elevation_scan_limits -30 deg 30 deg
+   transmitter
+      antenna_pattern BLUE_MISSILE_SEEKER_ANT
+      power 30 kw
+      frequency 10000 mhz
+      internal_loss 2 dB
+   end_transmitter
+   receiver
+      antenna_pattern BLUE_MISSILE_SEEKER_ANT
+      bandwidth 1 mhz
+      noise_power -160 dBw
+      internal_loss 5 dB
+   end_receiver
+   probability_of_false_alarm 1.0e-6
+   required_pd 0.55
+   swerling_case 1
+   hits_to_establish_track 1 2
+   hits_to_maintain_track 1 2
+   track_quality 0.85
+   reports_range
+   reports_bearing
+   reports_elevation
+   reports_velocity
+end_sensor

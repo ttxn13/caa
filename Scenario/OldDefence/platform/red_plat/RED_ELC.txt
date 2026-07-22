@@ -1,0 +1,11 @@
+# Platform type definition only. Runtime equipment is attached in scenario/*.txt.
+platform_type RED_ELC WSF_PLATFORM
+   side red    icon EA-18G
+   infrared_signature RED_AIR_IR_SIG
+   optical_signature RED_AIR_OPT_SIG
+   radar_signature RED_FIGHTER_RADAR_SIG
+   mover WSF_AIR_MOVER
+      default_radial_acceleration 2.0 g
+      update_interval 1 sec
+   end_mover
+end_platform_type

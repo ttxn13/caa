@@ -1,0 +1,4 @@
+# Auto-split reusable signature or antenna definition.
+infrared_signature BLUE_AIR_IR_SIG
+   constant 25 watts/steradian
+end_infrared_signature

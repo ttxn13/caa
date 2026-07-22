@@ -1,0 +1,24 @@
+{
+    "cap": {
+        "air_mover": {
+            "max_alt_m": 12000,
+            "max_climb_vel_ms": 12,
+            "max_drop_vel_ms": 20,
+            "max_linear_load_g": 4,
+            "max_radial_load_g": 3,
+            "max_speed_ms": 260,
+            "min_alt_m": 1000,
+            "min_speed_ms": 120
+        }
+    },
+    "domain": "AIR",
+    "icon_path": "FixedWing.E-3.obj",
+    "mover": "AIR_MOVER",
+    "sign": {
+        "infrared_wsr": 40,
+        "opt_area_m2": 50,
+        "radar_rcs_m2": 60
+    },
+    "type": "WAN",
+    "type_name": "E-3"
+}

@@ -1,0 +1,75 @@
+﻿{
+    "act_domain_list": [
+        "AIR",
+        "SEA",
+        "MIS"
+    ],
+    "reliability": 0.87,
+    "task_mode_list": {
+        "DETECT": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.08,
+                "elevation_sigma_deg": 0.08,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": false,
+                "range_sigma_m": 35,
+                "speed_sigma_ms": 0
+            },
+            "cap_env": {
+                "az_fov_deg": 70,
+                "max_alt_m": 22000,
+                "max_el_deg": 55,
+                "max_range_m": 60000,
+                "min_alt_m": 0,
+                "min_el_deg": -15,
+                "min_range_m": 300
+            },
+            "cap_prob": {
+                "detection_prob": 0.78,
+                "false_alarm_prob": 0.025,
+                "sensitive_slope": 1
+            },
+            "cap_time": {
+                "delay_ms": 120,
+                "update_period_s": 1.5
+            },
+            "max_task_num": 18
+        },
+        "TRACK": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.03,
+                "elevation_sigma_deg": 0.03,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": false,
+                "range_sigma_m": 15,
+                "speed_sigma_ms": 0
+            },
+            "cap_env": {
+                "az_fov_deg": 45,
+                "max_alt_m": 22000,
+                "max_el_deg": 55,
+                "max_range_m": 45000,
+                "min_alt_m": 0,
+                "min_el_deg": -15,
+                "min_range_m": 300
+            },
+            "cap_prob": {
+                "detection_prob": 0.84,
+                "false_alarm_prob": 0.018,
+                "sensitive_slope": 1.1
+            },
+            "cap_time": {
+                "delay_ms": 90,
+                "update_period_s": 0.6
+            },
+            "max_task_num": 8
+        }
+    },
+    "type": "OPTICAL",
+    "type_name": "AN_ASQ_228_ATFLIR"
+}
+

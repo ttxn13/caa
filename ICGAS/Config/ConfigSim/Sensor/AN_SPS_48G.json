@@ -1,0 +1,43 @@
+﻿{
+    "act_domain_list": [
+        "AIR",
+        "MIS"
+    ],
+    "reliability": 0.9,
+    "task_mode_list": {
+        "DETECT": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.35,
+                "elevation_sigma_deg": 0.45,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 120,
+                "speed_sigma_ms": 10
+            },
+            "cap_env": {
+                "az_fov_deg": 360,
+                "max_alt_m": 35000,
+                "max_el_deg": 80,
+                "max_range_m": 320000,
+                "min_alt_m": 0,
+                "min_el_deg": -5,
+                "min_range_m": 1500
+            },
+            "cap_prob": {
+                "detection_prob": 0.86,
+                "false_alarm_prob": 0.018,
+                "sensitive_slope": 1
+            },
+            "cap_time": {
+                "delay_ms": 180,
+                "update_period_s": 5
+            },
+            "max_task_num": 180
+        }
+    },
+    "type": "RADAR",
+    "type_name": "AN_SPS_48G"
+}
+

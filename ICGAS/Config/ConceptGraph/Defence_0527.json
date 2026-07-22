@@ -1,0 +1,1796 @@
+{
+    "scenario_id": "Defence",
+    "scenario_name": "航母编队防空反导场景",
+    "scenario_type": "DEFENSE",
+    "node_type_list": [
+        "MIS",
+        "TSK",
+        "ACT",
+        "OBJ",
+        "COG",
+        "DEC",
+        "EFT",
+        "LOO",
+        "COA",
+        "PLT"
+    ],
+    "edge_type_list": [
+        "MIS_TO_COG",
+        "MIS_TO_OBJ",
+        "OBJ_TO_LOO",
+        "LOO_TO_COA",
+        "COG_TO_DEC",
+        "OBJ_TO_DEC",
+        "DEC_TO_DEC",
+        "DEC_TO_EFT",
+        "EFT_TO_ACT",
+        "ACT_TO_ACT",
+        "ACT_TO_TSK",
+        "TSK_TO_PLT"
+    ],
+    "node_list": [
+        {
+            "id": "MIS-1",
+            "type": "MIS",
+            "name": "保障航母编队生存和持续行动能力",
+            "description": "在敌空袭、反舰导弹突防、电子干扰和侦察引导威胁条件下，保持航母编队核心单元安全、持续空情认知、防空反导链路和动态重规划能力。"
+        },
+        {
+            "id": "TSK-1",
+            "type": "TSK",
+            "name": "建立远程预警与空情监视",
+            "description": "通过舰载预警机、舰载雷达和外部情报源形成持续空情认知。"
+        },
+        {
+            "id": "TSK-2",
+            "type": "TSK",
+            "name": "识别敌方主攻方向和威胁分群",
+            "description": "对敌机群、导弹群和干扰平台进行分群、意图识别和威胁排序。"
+        },
+        {
+            "id": "TSK-3",
+            "type": "TSK",
+            "name": "保护航母及关键护航舰艇",
+            "description": "明确航母为最高防护对象，组织护航舰艇、舰载机和防空火力形成重点防护。"
+        },
+        {
+            "id": "TSK-4",
+            "type": "TSK",
+            "name": "维持编队指挥控制与数据链稳定",
+            "description": "保证探测、跟踪、火力分配和拦截评估之间的信息闭环连续。"
+        },
+        {
+            "id": "TSK-5",
+            "type": "TSK",
+            "name": "建立多层防空反导拦截体系",
+            "description": "形成外层截击、中层区域防空、近程点防御和软杀伤配合。"
+        },
+        {
+            "id": "TSK-6",
+            "type": "TSK",
+            "name": "压制或迟滞敌侦察引导与电子干扰能力",
+            "description": "削弱敌方发现、跟踪、引导和协同攻击能力。"
+        },
+        {
+            "id": "TSK-7",
+            "type": "TSK",
+            "name": "组织拦截后评估与再分配",
+            "description": "评估拦截效果，发现漏网目标后快速补充拦截资源。"
+        },
+        {
+            "id": "TSK-8",
+            "type": "TSK",
+            "name": "保持方案动态调整能力",
+            "description": "当敌主攻方向变化、我方资源受损或决定性条件未达成时进行重规划。"
+        },
+        {
+            "id": "OBJ-1",
+            "type": "OBJ",
+            "name": "保持航母及核心护航舰艇安全",
+            "description": "确保航母和关键护航舰艇不遭受重大毁伤，维持编队基本作战能力。"
+        },
+        {
+            "id": "OBJ-2",
+            "type": "OBJ",
+            "name": "建立连续可信的空情态势",
+            "description": "持续掌握敌空中目标、导弹目标、干扰目标的分布、航迹、威胁等级和行动趋势。"
+        },
+        {
+            "id": "OBJ-3",
+            "type": "OBJ",
+            "name": "削弱敌空中突击链效能",
+            "description": "降低敌侦察定位、电子干扰、协同攻击和导弹齐射能力。"
+        },
+        {
+            "id": "OBJ-4",
+            "type": "OBJ",
+            "name": "形成多层接续防空反导能力",
+            "description": "建立外层截击、中程拦截、近程防御和末端补防的连续处置链。"
+        },
+        {
+            "id": "OBJ-5",
+            "type": "OBJ",
+            "name": "保持指挥控制和动态重规划能力",
+            "description": "在敌情变化、我方节点受损或资源消耗异常时保持方案调整能力。"
+        },
+        {
+            "id": "COG-1",
+            "type": "COG",
+            "name": "航母生存与规避机动能力",
+            "description": "我方核心防护重心，航母作为编队核心平台，其生存能力直接决定防御任务成败。",
+            "side": "own"
+        },
+        {
+            "id": "COG-2",
+            "type": "COG",
+            "name": "护航舰艇防护阵位保持能力",
+            "description": "我方防护体系重心，护航舰艇阵位决定防护扇面、拦截通道和末端补防能力。",
+            "side": "own"
+        },
+        {
+            "id": "COG-3",
+            "type": "COG",
+            "name": "远程预警探测能力",
+            "description": "我方感知重心，预警机、舰载雷达和外部情报源构成持续空情态势基础。",
+            "side": "own"
+        },
+        {
+            "id": "COG-4",
+            "type": "COG",
+            "name": "态势融合与威胁识别能力",
+            "description": "我方认知重心，目标分群、威胁排序和趋势判断支撑火力分配。",
+            "side": "own"
+        },
+        {
+            "id": "COG-5",
+            "type": "COG",
+            "name": "敌侦察引导链",
+            "description": "敌方体系重心，支撑敌方发现、定位、引导和协同攻击。",
+            "side": "enemy"
+        },
+        {
+            "id": "COG-6",
+            "type": "COG",
+            "name": "敌电子干扰链",
+            "description": "敌方体系重心，削弱我方探测、通信和指控链路稳定性。",
+            "side": "enemy"
+        },
+        {
+            "id": "COG-7",
+            "type": "COG",
+            "name": "外中层防空拦截能力",
+            "description": "我方火力处置重心，支撑外层截击和中程区域防空接续。",
+            "side": "own"
+        },
+        {
+            "id": "COG-8",
+            "type": "COG",
+            "name": "近程点防御与漏网目标处置能力",
+            "description": "我方末端防御重心，支撑饱和攻击条件下的最后防护。",
+            "side": "own"
+        },
+        {
+            "id": "COG-9",
+            "type": "COG",
+            "name": "指挥控制链路保持能力",
+            "description": "我方指控重心，支撑态势共享、指令下达、资源调度和跨平台协同。",
+            "side": "own"
+        },
+        {
+            "id": "COG-10",
+            "type": "COG",
+            "name": "动态重规划与资源再分配能力",
+            "description": "我方适应性重心，支撑敌情变化和资源损耗条件下的方案修正。",
+            "side": "own"
+        },
+        {
+            "id": "DEC-1",
+            "type": "DEC",
+            "name": "航母重点防护态势建立",
+            "description": "航母处于可接受风险范围内，重点防护扇面与规避机动方案保持有效。"
+        },
+        {
+            "id": "DEC-2",
+            "type": "DEC",
+            "name": "护航舰艇防护阵位保持有效",
+            "description": "护航舰艇能够持续承担探测、拦截和防护任务。"
+        },
+        {
+            "id": "DEC-3",
+            "type": "DEC",
+            "name": "关键威胁方向形成连续预警覆盖",
+            "description": "主要威胁方向持续被预警探测和稳定跟踪。"
+        },
+        {
+            "id": "DEC-4",
+            "type": "DEC",
+            "name": "敌主攻分群完成识别与威胁排序",
+            "description": "敌主攻分群、佯攻分群和干扰分群被区分并形成处置优先级。"
+        },
+        {
+            "id": "DEC-5",
+            "type": "DEC",
+            "name": "敌侦察引导节点效能下降",
+            "description": "敌目标定位连续性下降，攻击协同精度降低。"
+        },
+        {
+            "id": "DEC-6",
+            "type": "DEC",
+            "name": "敌电子干扰平台被压制或驱离",
+            "description": "我方探测、跟踪和通信链路受干扰程度降低。"
+        },
+        {
+            "id": "DEC-7",
+            "type": "DEC",
+            "name": "外层拦截窗口建立",
+            "description": "敌攻击平台或高威胁目标在远端处置窗口内被削弱。"
+        },
+        {
+            "id": "DEC-8",
+            "type": "DEC",
+            "name": "中程区域防空火力完成接续准备",
+            "description": "来袭目标进入中程拦截链并完成火力分配。"
+        },
+        {
+            "id": "DEC-9",
+            "type": "DEC",
+            "name": "近程点防御链路闭合",
+            "description": "漏网目标被重新捕获并进入末端处置流程。"
+        },
+        {
+            "id": "DEC-10",
+            "type": "DEC",
+            "name": "指挥控制链路保持可用",
+            "description": "态势共享、指令下达和资源调度流程保持连续。"
+        },
+        {
+            "id": "DEC-11",
+            "type": "DEC",
+            "name": "触发重规划条件被及时识别",
+            "description": "系统能够依据敌情变化、资源消耗或条件偏差生成修正方案。"
+        },
+        {
+            "id": "EFT-1",
+            "type": "EFT",
+            "name": "远程预警探测链路建立",
+            "description": "预警机、舰载雷达或外部情报源形成早期发现能力。"
+        },
+        {
+            "id": "EFT-2",
+            "type": "EFT",
+            "name": "海基区域搜索形成稳定补充航迹",
+            "description": "护航舰艇对主要威胁方向完成航迹补充和持续跟踪。"
+        },
+        {
+            "id": "EFT-3",
+            "type": "EFT",
+            "name": "敌主攻分群、佯攻分群和干扰分群被区分并排序",
+            "description": "威胁分群识别形成主攻方向、佯攻方向和干扰方向判别结果。"
+        },
+        {
+            "id": "EFT-4",
+            "type": "EFT",
+            "name": "态势共享、指令下达和资源调度流程保持连续",
+            "description": "探测、跟踪、火力分配、指令下达和评估反馈的信息闭环保持可用。"
+        },
+        {
+            "id": "EFT-5",
+            "type": "EFT",
+            "name": "敌侦察定位连续性下降且电子干扰影响减弱",
+            "description": "电子压制、诱骗或驱离行动降低敌侦察引导和电子干扰效能。"
+        },
+        {
+            "id": "EFT-6",
+            "type": "EFT",
+            "name": "敌攻击平台或高威胁空中目标被前出截击削弱",
+            "description": "舰载战斗机在远端对敌攻击平台或高威胁编队实施截击。"
+        },
+        {
+            "id": "EFT-7",
+            "type": "EFT",
+            "name": "远程舰空导弹建立外层拦截窗口",
+            "description": "区域防空舰远程舰空导弹对高威胁目标形成外层处置条件。"
+        },
+        {
+            "id": "EFT-8",
+            "type": "EFT",
+            "name": "来袭目标进入中程拦截链并完成火力分配",
+            "description": "中程区域防空体系完成接续拦截准备和火力分配。"
+        },
+        {
+            "id": "EFT-9",
+            "type": "EFT",
+            "name": "漏网目标被重新捕获并进入末端处置流程",
+            "description": "近程点防御、末端火力和软杀伤措施进入闭合处置链。"
+        },
+        {
+            "id": "EFT-10",
+            "type": "EFT",
+            "name": "航母受击风险被控制在可接受范围内",
+            "description": "航母规避机动和护航阵位调整使核心单元风险降低。"
+        },
+        {
+            "id": "EFT-11",
+            "type": "EFT",
+            "name": "拦截效果、残余威胁和资源消耗被评估",
+            "description": "拦截效果评估形成残余威胁、毁伤结果和武器消耗判据。"
+        },
+        {
+            "id": "EFT-12",
+            "type": "EFT",
+            "name": "系统根据敌情变化或我方资源变化生成修正方案",
+            "description": "动态重规划形成后续行动、资源再分配和方案调整结果。"
+        },
+        {
+            "id": "ACT-1",
+            "type": "ACT",
+            "name": "前出空情探测",
+            "description": "预警机、舰载雷达和外部情报源前出建立早期预警与远程探测链路。"
+        },
+        {
+            "id": "ACT-2",
+            "type": "ACT",
+            "name": "海基区域搜索",
+            "description": "护航舰艇对主要威胁方向实施区域搜索、航迹补充和目标持续跟踪。"
+        },
+        {
+            "id": "ACT-3",
+            "type": "ACT",
+            "name": "威胁分群识别",
+            "description": "对敌空袭编队、导弹群和干扰平台进行分群、意图识别和威胁排序。"
+        },
+        {
+            "id": "ACT-4",
+            "type": "ACT",
+            "name": "态势共享与链路保持",
+            "description": "保持探测、跟踪、指令下达、火力分配和评估反馈的信息闭环。"
+        },
+        {
+            "id": "ACT-5",
+            "type": "ACT",
+            "name": "电子压制与诱骗",
+            "description": "对敌侦察引导节点和电子干扰平台实施干扰、压制、诱骗或驱离。"
+        },
+        {
+            "id": "ACT-6",
+            "type": "ACT",
+            "name": "舰载机前出截击",
+            "description": "使用舰载战斗机对敌攻击平台、高威胁编队或突防目标进行前出拦截。"
+        },
+        {
+            "id": "ACT-7",
+            "type": "ACT",
+            "name": "远程舰空导弹拦截",
+            "description": "使用区域防空舰远程舰空导弹建立外层拦截窗口。"
+        },
+        {
+            "id": "ACT-8",
+            "type": "ACT",
+            "name": "中程区域防空接续",
+            "description": "对进入中程拦截窗口的来袭导弹和空中目标进行火力分配与接续拦截。"
+        },
+        {
+            "id": "ACT-9",
+            "type": "ACT",
+            "name": "近程点防御与软杀伤",
+            "description": "对漏网目标实施末端点防御、近程火力拦截、电子干扰和诱偏处置。"
+        },
+        {
+            "id": "ACT-10",
+            "type": "ACT",
+            "name": "航母规避与护航阵位调整",
+            "description": "调整航母规避机动和护航舰艇防护阵位，保持重点防护扇面。"
+        },
+        {
+            "id": "ACT-11",
+            "type": "ACT",
+            "name": "拦截效果评估",
+            "description": "对已拦截目标、漏网目标、毁伤效果和武器消耗进行综合评估。"
+        },
+        {
+            "id": "ACT-12",
+            "type": "ACT",
+            "name": "动态重规划",
+            "description": "根据敌情变化、资源损耗、链路状态和防御效果生成修正方案。"
+        },
+        {
+            "id": "LOO-1",
+            "type": "LOO",
+            "name": "核心防护作战线",
+            "description": "对应 OBJ-1，围绕航母生存、防护阵位和护航舰艇持续防护能力组织决定性条件、效果和行动。"
+        },
+        {
+            "id": "LOO-2",
+            "type": "LOO",
+            "name": "感知预警作战线",
+            "description": "对应 OBJ-2，围绕远程预警、区域搜索、态势融合和威胁排序组织决定性条件、效果和行动。"
+        },
+        {
+            "id": "LOO-3",
+            "type": "LOO",
+            "name": "敌体系削弱作战线",
+            "description": "对应 OBJ-3，围绕敌侦察引导链、电子干扰链和攻击协同链削弱组织决定性条件、效果和行动。"
+        },
+        {
+            "id": "LOO-4",
+            "type": "LOO",
+            "name": "分层拦截作战线",
+            "description": "对应 OBJ-4，围绕外层截击、中程防空、近程点防御和漏网目标处置组织决定性条件、效果和行动。"
+        },
+        {
+            "id": "LOO-5",
+            "type": "LOO",
+            "name": "指挥控制与重规划作战线",
+            "description": "对应 OBJ-5，围绕指挥控制链路、效果评估和动态方案修正组织决定性条件、效果和行动。"
+        },
+        {
+            "id": "COA-1",
+            "type": "COA",
+            "name": "前出截击优先型",
+            "description": "优先在远端建立空情优势和外层处置条件，在敌攻击链充分展开前削弱其高威胁目标。"
+        },
+        {
+            "id": "COA-2",
+            "type": "COA",
+            "name": "分层稳健防御型",
+            "description": "以航母编队整体防御体系为中心，强调预警、压制、拦截、防护和重规划的链条完整性。"
+        },
+        {
+            "id": "COA-3",
+            "type": "COA",
+            "name": "诱骗迟滞与重点防护型",
+            "description": "优先降低航母暴露风险，通过诱骗、干扰、机动和重点防护扰乱敌攻击链。"
+        },
+        {
+            "id": "PLT-1",
+            "type": "PLT",
+            "name": "航空母舰",
+            "description": "舰载机起降保障、编队核心指挥、远程支援与防护组织。"
+        },
+        {
+            "id": "PLT-2",
+            "type": "PLT",
+            "name": "驱逐舰",
+            "description": "区域防空、远程探测、舰空导弹拦截、火力分配与末端支援。"
+        },
+        {
+            "id": "PLT-3",
+            "type": "PLT",
+            "name": "护卫舰",
+            "description": "近中程防空、护航阵位保持、区域搜索和点防御支援。"
+        },
+        {
+            "id": "PLT-4",
+            "type": "PLT",
+            "name": "预警机",
+            "description": "远程空情探测、威胁分群识别、态势转发与空中指挥协调。"
+        },
+        {
+            "id": "PLT-5",
+            "type": "PLT",
+            "name": "电子战飞机",
+            "description": "电子侦察、干扰压制、诱骗支援和敌侦察引导削弱。"
+        },
+        {
+            "id": "PLT-6",
+            "type": "PLT",
+            "name": "战斗机",
+            "description": "前出截击、制空巡逻、突防目标处置和威胁驱离。"
+        },
+        {
+            "id": "PLT-7",
+            "type": "PLT",
+            "name": "轰炸机",
+            "description": "远程火力投送、通道压制、高价值目标打击和远程威慑支援；本防御场景不配置直接任务承接边。"
+        }
+    ],
+    "edge_list": [
+        {
+            "id": "EDGE-001",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：航母生存与规避机动能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-002",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：护航舰艇防护阵位保持能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-003",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：远程预警探测能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-004",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：态势融合与威胁识别能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-005",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：敌侦察引导链",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-006",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：敌电子干扰链",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-007",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：外中层防空拦截能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-7",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-008",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：近程点防御与漏网目标处置能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-8",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-009",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：指挥控制链路保持能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-9",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-010",
+            "type": "MIS_TO_COG",
+            "name": "MIS-1牵引作战重心分析：动态重规划与资源再分配能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "COG-10",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-011",
+            "type": "MIS_TO_OBJ",
+            "name": "MIS-1牵引作战目标：保持航母及核心护航舰艇安全",
+            "font_node_id": "MIS-1",
+            "back_node_id": "OBJ-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-012",
+            "type": "MIS_TO_OBJ",
+            "name": "MIS-1牵引作战目标：建立连续可信的空情态势",
+            "font_node_id": "MIS-1",
+            "back_node_id": "OBJ-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-013",
+            "type": "MIS_TO_OBJ",
+            "name": "MIS-1牵引作战目标：削弱敌空中突击链效能",
+            "font_node_id": "MIS-1",
+            "back_node_id": "OBJ-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-014",
+            "type": "MIS_TO_OBJ",
+            "name": "MIS-1牵引作战目标：形成多层接续防空反导能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "OBJ-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-015",
+            "type": "MIS_TO_OBJ",
+            "name": "MIS-1牵引作战目标：保持指挥控制和动态重规划能力",
+            "font_node_id": "MIS-1",
+            "back_node_id": "OBJ-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-016",
+            "type": "OBJ_TO_LOO",
+            "name": "OBJ-1对应LOO-1",
+            "font_node_id": "OBJ-1",
+            "back_node_id": "LOO-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-017",
+            "type": "OBJ_TO_LOO",
+            "name": "OBJ-2对应LOO-2",
+            "font_node_id": "OBJ-2",
+            "back_node_id": "LOO-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-018",
+            "type": "OBJ_TO_LOO",
+            "name": "OBJ-3对应LOO-3",
+            "font_node_id": "OBJ-3",
+            "back_node_id": "LOO-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-019",
+            "type": "OBJ_TO_LOO",
+            "name": "OBJ-4对应LOO-4",
+            "font_node_id": "OBJ-4",
+            "back_node_id": "LOO-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-020",
+            "type": "OBJ_TO_LOO",
+            "name": "OBJ-5对应LOO-5",
+            "font_node_id": "OBJ-5",
+            "back_node_id": "LOO-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-021",
+            "type": "LOO_TO_COA",
+            "name": "LOO-2作为第1阶段支撑COA-1",
+            "font_node_id": "LOO-2",
+            "back_node_id": "COA-1",
+            "weight": "1.000",
+            "sequence": 1
+        },
+        {
+            "id": "EDGE-022",
+            "type": "LOO_TO_COA",
+            "name": "LOO-3作为第2阶段支撑COA-1",
+            "font_node_id": "LOO-3",
+            "back_node_id": "COA-1",
+            "weight": "1.000",
+            "sequence": 2
+        },
+        {
+            "id": "EDGE-023",
+            "type": "LOO_TO_COA",
+            "name": "LOO-4作为第3阶段支撑COA-1",
+            "font_node_id": "LOO-4",
+            "back_node_id": "COA-1",
+            "weight": "1.000",
+            "sequence": 3
+        },
+        {
+            "id": "EDGE-024",
+            "type": "LOO_TO_COA",
+            "name": "LOO-1作为第4阶段支撑COA-1",
+            "font_node_id": "LOO-1",
+            "back_node_id": "COA-1",
+            "weight": "1.000",
+            "sequence": 4
+        },
+        {
+            "id": "EDGE-025",
+            "type": "LOO_TO_COA",
+            "name": "LOO-5作为第5阶段支撑COA-1",
+            "font_node_id": "LOO-5",
+            "back_node_id": "COA-1",
+            "weight": "1.000",
+            "sequence": 5
+        },
+        {
+            "id": "EDGE-026",
+            "type": "LOO_TO_COA",
+            "name": "LOO-2作为第1阶段支撑COA-2",
+            "font_node_id": "LOO-2",
+            "back_node_id": "COA-2",
+            "weight": "1.000",
+            "sequence": 1
+        },
+        {
+            "id": "EDGE-027",
+            "type": "LOO_TO_COA",
+            "name": "LOO-3作为第2阶段支撑COA-2",
+            "font_node_id": "LOO-3",
+            "back_node_id": "COA-2",
+            "weight": "1.000",
+            "sequence": 2
+        },
+        {
+            "id": "EDGE-028",
+            "type": "LOO_TO_COA",
+            "name": "LOO-4作为第3阶段支撑COA-2",
+            "font_node_id": "LOO-4",
+            "back_node_id": "COA-2",
+            "weight": "1.000",
+            "sequence": 3
+        },
+        {
+            "id": "EDGE-029",
+            "type": "LOO_TO_COA",
+            "name": "LOO-1作为第4阶段支撑COA-2",
+            "font_node_id": "LOO-1",
+            "back_node_id": "COA-2",
+            "weight": "1.000",
+            "sequence": 4
+        },
+        {
+            "id": "EDGE-030",
+            "type": "LOO_TO_COA",
+            "name": "LOO-5作为第5阶段支撑COA-2",
+            "font_node_id": "LOO-5",
+            "back_node_id": "COA-2",
+            "weight": "1.000",
+            "sequence": 5
+        },
+        {
+            "id": "EDGE-031",
+            "type": "LOO_TO_COA",
+            "name": "LOO-2作为第1阶段支撑COA-3",
+            "font_node_id": "LOO-2",
+            "back_node_id": "COA-3",
+            "weight": "1.000",
+            "sequence": 1
+        },
+        {
+            "id": "EDGE-032",
+            "type": "LOO_TO_COA",
+            "name": "LOO-3作为第2阶段支撑COA-3",
+            "font_node_id": "LOO-3",
+            "back_node_id": "COA-3",
+            "weight": "1.000",
+            "sequence": 2
+        },
+        {
+            "id": "EDGE-033",
+            "type": "LOO_TO_COA",
+            "name": "LOO-1作为第3阶段支撑COA-3",
+            "font_node_id": "LOO-1",
+            "back_node_id": "COA-3",
+            "weight": "1.000",
+            "sequence": 3
+        },
+        {
+            "id": "EDGE-034",
+            "type": "LOO_TO_COA",
+            "name": "LOO-4作为第4阶段支撑COA-3",
+            "font_node_id": "LOO-4",
+            "back_node_id": "COA-3",
+            "weight": "1.000",
+            "sequence": 4
+        },
+        {
+            "id": "EDGE-035",
+            "type": "LOO_TO_COA",
+            "name": "LOO-5作为第5阶段支撑COA-3",
+            "font_node_id": "LOO-5",
+            "back_node_id": "COA-3",
+            "weight": "1.000",
+            "sequence": 5
+        },
+        {
+            "id": "EDGE-036",
+            "type": "COG_TO_DEC",
+            "name": "COG-1牵引DEC-1的决定性条件设定",
+            "font_node_id": "COG-1",
+            "back_node_id": "DEC-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-037",
+            "type": "COG_TO_DEC",
+            "name": "COG-2牵引DEC-2的决定性条件设定",
+            "font_node_id": "COG-2",
+            "back_node_id": "DEC-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-038",
+            "type": "COG_TO_DEC",
+            "name": "COG-3牵引DEC-3的决定性条件设定",
+            "font_node_id": "COG-3",
+            "back_node_id": "DEC-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-039",
+            "type": "COG_TO_DEC",
+            "name": "COG-4牵引DEC-4的决定性条件设定",
+            "font_node_id": "COG-4",
+            "back_node_id": "DEC-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-040",
+            "type": "COG_TO_DEC",
+            "name": "COG-5牵引DEC-5的决定性条件设定",
+            "font_node_id": "COG-5",
+            "back_node_id": "DEC-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-041",
+            "type": "COG_TO_DEC",
+            "name": "COG-6牵引DEC-6的决定性条件设定",
+            "font_node_id": "COG-6",
+            "back_node_id": "DEC-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-042",
+            "type": "COG_TO_DEC",
+            "name": "COG-7牵引DEC-7的决定性条件设定",
+            "font_node_id": "COG-7",
+            "back_node_id": "DEC-7",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-043",
+            "type": "COG_TO_DEC",
+            "name": "COG-7牵引DEC-8的决定性条件设定",
+            "font_node_id": "COG-7",
+            "back_node_id": "DEC-8",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-044",
+            "type": "COG_TO_DEC",
+            "name": "COG-8牵引DEC-9的决定性条件设定",
+            "font_node_id": "COG-8",
+            "back_node_id": "DEC-9",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-045",
+            "type": "COG_TO_DEC",
+            "name": "COG-9牵引DEC-10的决定性条件设定",
+            "font_node_id": "COG-9",
+            "back_node_id": "DEC-10",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-046",
+            "type": "COG_TO_DEC",
+            "name": "COG-10牵引DEC-11的决定性条件设定",
+            "font_node_id": "COG-10",
+            "back_node_id": "DEC-11",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-047",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-1需要DEC-1作为支撑条件",
+            "font_node_id": "OBJ-1",
+            "back_node_id": "DEC-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-048",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-1需要DEC-2作为支撑条件",
+            "font_node_id": "OBJ-1",
+            "back_node_id": "DEC-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-049",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-2需要DEC-3作为支撑条件",
+            "font_node_id": "OBJ-2",
+            "back_node_id": "DEC-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-050",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-2需要DEC-4作为支撑条件",
+            "font_node_id": "OBJ-2",
+            "back_node_id": "DEC-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-051",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-3需要DEC-5作为支撑条件",
+            "font_node_id": "OBJ-3",
+            "back_node_id": "DEC-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-052",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-3需要DEC-6作为支撑条件",
+            "font_node_id": "OBJ-3",
+            "back_node_id": "DEC-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-053",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-4需要DEC-7作为支撑条件",
+            "font_node_id": "OBJ-4",
+            "back_node_id": "DEC-7",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-054",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-4需要DEC-8作为支撑条件",
+            "font_node_id": "OBJ-4",
+            "back_node_id": "DEC-8",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-055",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-4需要DEC-9作为支撑条件",
+            "font_node_id": "OBJ-4",
+            "back_node_id": "DEC-9",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-056",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-5需要DEC-10作为支撑条件",
+            "font_node_id": "OBJ-5",
+            "back_node_id": "DEC-10",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-057",
+            "type": "OBJ_TO_DEC",
+            "name": "OBJ-5需要DEC-11作为支撑条件",
+            "font_node_id": "OBJ-5",
+            "back_node_id": "DEC-11",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-058",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-3先于DEC-4",
+            "font_node_id": "DEC-3",
+            "back_node_id": "DEC-4",
+            "weight": "1.000",
+            "sequence": 1,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-059",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-4先于DEC-5",
+            "font_node_id": "DEC-4",
+            "back_node_id": "DEC-5",
+            "weight": "1.000",
+            "sequence": 2,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-060",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-5先于DEC-6",
+            "font_node_id": "DEC-5",
+            "back_node_id": "DEC-6",
+            "weight": "1.000",
+            "sequence": 3,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-061",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-6先于DEC-7",
+            "font_node_id": "DEC-6",
+            "back_node_id": "DEC-7",
+            "weight": "1.000",
+            "sequence": 4,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-062",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-7先于DEC-8",
+            "font_node_id": "DEC-7",
+            "back_node_id": "DEC-8",
+            "weight": "1.000",
+            "sequence": 5,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-063",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-8先于DEC-9",
+            "font_node_id": "DEC-8",
+            "back_node_id": "DEC-9",
+            "weight": "1.000",
+            "sequence": 6,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-064",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-9先于DEC-1",
+            "font_node_id": "DEC-9",
+            "back_node_id": "DEC-1",
+            "weight": "1.000",
+            "sequence": 7,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-065",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-1先于DEC-2",
+            "font_node_id": "DEC-1",
+            "back_node_id": "DEC-2",
+            "weight": "1.000",
+            "sequence": 8,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-066",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-2先于DEC-10",
+            "font_node_id": "DEC-2",
+            "back_node_id": "DEC-10",
+            "weight": "1.000",
+            "sequence": 9,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-067",
+            "type": "DEC_TO_DEC",
+            "name": "基准方案决定性条件序列：DEC-10先于DEC-11",
+            "font_node_id": "DEC-10",
+            "back_node_id": "DEC-11",
+            "weight": "1.000",
+            "sequence": 10,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-068",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-1由EFT-10形成或验证",
+            "font_node_id": "DEC-1",
+            "back_node_id": "EFT-10",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-069",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-2由EFT-10形成或验证",
+            "font_node_id": "DEC-2",
+            "back_node_id": "EFT-10",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-070",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-3由EFT-1形成或验证",
+            "font_node_id": "DEC-3",
+            "back_node_id": "EFT-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-071",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-3由EFT-2形成或验证",
+            "font_node_id": "DEC-3",
+            "back_node_id": "EFT-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-072",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-3由EFT-4形成或验证",
+            "font_node_id": "DEC-3",
+            "back_node_id": "EFT-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-073",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-4由EFT-3形成或验证",
+            "font_node_id": "DEC-4",
+            "back_node_id": "EFT-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-074",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-5由EFT-5形成或验证",
+            "font_node_id": "DEC-5",
+            "back_node_id": "EFT-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-075",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-6由EFT-5形成或验证",
+            "font_node_id": "DEC-6",
+            "back_node_id": "EFT-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-076",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-7由EFT-6形成或验证",
+            "font_node_id": "DEC-7",
+            "back_node_id": "EFT-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-077",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-7由EFT-7形成或验证",
+            "font_node_id": "DEC-7",
+            "back_node_id": "EFT-7",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-078",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-8由EFT-8形成或验证",
+            "font_node_id": "DEC-8",
+            "back_node_id": "EFT-8",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-079",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-9由EFT-9形成或验证",
+            "font_node_id": "DEC-9",
+            "back_node_id": "EFT-9",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-080",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-10由EFT-4形成或验证",
+            "font_node_id": "DEC-10",
+            "back_node_id": "EFT-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-081",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-11由EFT-11形成或验证",
+            "font_node_id": "DEC-11",
+            "back_node_id": "EFT-11",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-082",
+            "type": "DEC_TO_EFT",
+            "name": "DEC-11由EFT-12形成或验证",
+            "font_node_id": "DEC-11",
+            "back_node_id": "EFT-12",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-083",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-1需要或对应ACT-1实现",
+            "font_node_id": "EFT-1",
+            "back_node_id": "ACT-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-084",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-2需要或对应ACT-2实现",
+            "font_node_id": "EFT-2",
+            "back_node_id": "ACT-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-085",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-3需要或对应ACT-3实现",
+            "font_node_id": "EFT-3",
+            "back_node_id": "ACT-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-086",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-4需要或对应ACT-4实现",
+            "font_node_id": "EFT-4",
+            "back_node_id": "ACT-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-087",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-5需要或对应ACT-5实现",
+            "font_node_id": "EFT-5",
+            "back_node_id": "ACT-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-088",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-6需要或对应ACT-6实现",
+            "font_node_id": "EFT-6",
+            "back_node_id": "ACT-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-089",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-7需要或对应ACT-7实现",
+            "font_node_id": "EFT-7",
+            "back_node_id": "ACT-7",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-090",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-8需要或对应ACT-8实现",
+            "font_node_id": "EFT-8",
+            "back_node_id": "ACT-8",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-091",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-9需要或对应ACT-9实现",
+            "font_node_id": "EFT-9",
+            "back_node_id": "ACT-9",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-092",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-10需要或对应ACT-10实现",
+            "font_node_id": "EFT-10",
+            "back_node_id": "ACT-10",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-093",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-11需要或对应ACT-11实现",
+            "font_node_id": "EFT-11",
+            "back_node_id": "ACT-11",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-094",
+            "type": "EFT_TO_ACT",
+            "name": "EFT-12需要或对应ACT-12实现",
+            "font_node_id": "EFT-12",
+            "back_node_id": "ACT-12",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-095",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-1先于ACT-2",
+            "font_node_id": "ACT-1",
+            "back_node_id": "ACT-2",
+            "weight": "1.000",
+            "sequence": 1,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-096",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-2先于ACT-3",
+            "font_node_id": "ACT-2",
+            "back_node_id": "ACT-3",
+            "weight": "1.000",
+            "sequence": 2,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-097",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-3先于ACT-4",
+            "font_node_id": "ACT-3",
+            "back_node_id": "ACT-4",
+            "weight": "1.000",
+            "sequence": 3,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-098",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-4先于ACT-5",
+            "font_node_id": "ACT-4",
+            "back_node_id": "ACT-5",
+            "weight": "1.000",
+            "sequence": 4,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-099",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-5先于ACT-6",
+            "font_node_id": "ACT-5",
+            "back_node_id": "ACT-6",
+            "weight": "1.000",
+            "sequence": 5,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-100",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-6先于ACT-7",
+            "font_node_id": "ACT-6",
+            "back_node_id": "ACT-7",
+            "weight": "1.000",
+            "sequence": 6,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-101",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-7先于ACT-8",
+            "font_node_id": "ACT-7",
+            "back_node_id": "ACT-8",
+            "weight": "1.000",
+            "sequence": 7,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-102",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-8先于ACT-9",
+            "font_node_id": "ACT-8",
+            "back_node_id": "ACT-9",
+            "weight": "1.000",
+            "sequence": 8,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-103",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-9先于ACT-10",
+            "font_node_id": "ACT-9",
+            "back_node_id": "ACT-10",
+            "weight": "1.000",
+            "sequence": 9,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-104",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-10先于ACT-11",
+            "font_node_id": "ACT-10",
+            "back_node_id": "ACT-11",
+            "weight": "1.000",
+            "sequence": 10,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-105",
+            "type": "ACT_TO_ACT",
+            "name": "基准行动序列：ACT-11先于ACT-12",
+            "font_node_id": "ACT-11",
+            "back_node_id": "ACT-12",
+            "weight": "1.000",
+            "sequence": 11,
+            "sequence_set": "BASELINE_DEFENCE_FLOW"
+        },
+        {
+            "id": "EDGE-106",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-1支撑关键任务TSK-1",
+            "font_node_id": "ACT-1",
+            "back_node_id": "TSK-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-107",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-2支撑关键任务TSK-1",
+            "font_node_id": "ACT-2",
+            "back_node_id": "TSK-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-108",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-3支撑关键任务TSK-2",
+            "font_node_id": "ACT-3",
+            "back_node_id": "TSK-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-109",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-4支撑关键任务TSK-1",
+            "font_node_id": "ACT-4",
+            "back_node_id": "TSK-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-110",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-4支撑关键任务TSK-2",
+            "font_node_id": "ACT-4",
+            "back_node_id": "TSK-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-111",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-4支撑关键任务TSK-4",
+            "font_node_id": "ACT-4",
+            "back_node_id": "TSK-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-112",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-5支撑关键任务TSK-6",
+            "font_node_id": "ACT-5",
+            "back_node_id": "TSK-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-113",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-6支撑关键任务TSK-5",
+            "font_node_id": "ACT-6",
+            "back_node_id": "TSK-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-114",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-6支撑关键任务TSK-6",
+            "font_node_id": "ACT-6",
+            "back_node_id": "TSK-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-115",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-7支撑关键任务TSK-5",
+            "font_node_id": "ACT-7",
+            "back_node_id": "TSK-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-116",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-8支撑关键任务TSK-3",
+            "font_node_id": "ACT-8",
+            "back_node_id": "TSK-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-117",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-8支撑关键任务TSK-5",
+            "font_node_id": "ACT-8",
+            "back_node_id": "TSK-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-118",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-8支撑关键任务TSK-7",
+            "font_node_id": "ACT-8",
+            "back_node_id": "TSK-7",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-119",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-9支撑关键任务TSK-3",
+            "font_node_id": "ACT-9",
+            "back_node_id": "TSK-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-120",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-9支撑关键任务TSK-5",
+            "font_node_id": "ACT-9",
+            "back_node_id": "TSK-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-121",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-10支撑关键任务TSK-3",
+            "font_node_id": "ACT-10",
+            "back_node_id": "TSK-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-122",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-10支撑关键任务TSK-8",
+            "font_node_id": "ACT-10",
+            "back_node_id": "TSK-8",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-123",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-11支撑关键任务TSK-7",
+            "font_node_id": "ACT-11",
+            "back_node_id": "TSK-7",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-124",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-12支撑关键任务TSK-4",
+            "font_node_id": "ACT-12",
+            "back_node_id": "TSK-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-125",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-12支撑关键任务TSK-7",
+            "font_node_id": "ACT-12",
+            "back_node_id": "TSK-7",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-126",
+            "type": "ACT_TO_TSK",
+            "name": "ACT-12支撑关键任务TSK-8",
+            "font_node_id": "ACT-12",
+            "back_node_id": "TSK-8",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-127",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-1可由PLT-2承担或支撑",
+            "font_node_id": "TSK-1",
+            "back_node_id": "PLT-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-128",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-1可由PLT-3承担或支撑",
+            "font_node_id": "TSK-1",
+            "back_node_id": "PLT-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-129",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-1可由PLT-4承担或支撑",
+            "font_node_id": "TSK-1",
+            "back_node_id": "PLT-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-130",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-2可由PLT-4承担或支撑",
+            "font_node_id": "TSK-2",
+            "back_node_id": "PLT-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-131",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-2可由PLT-5承担或支撑",
+            "font_node_id": "TSK-2",
+            "back_node_id": "PLT-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-132",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-2可由PLT-6承担或支撑",
+            "font_node_id": "TSK-2",
+            "back_node_id": "PLT-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-133",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-3可由PLT-1承担或支撑",
+            "font_node_id": "TSK-3",
+            "back_node_id": "PLT-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-134",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-3可由PLT-2承担或支撑",
+            "font_node_id": "TSK-3",
+            "back_node_id": "PLT-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-135",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-3可由PLT-3承担或支撑",
+            "font_node_id": "TSK-3",
+            "back_node_id": "PLT-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-136",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-3可由PLT-6承担或支撑",
+            "font_node_id": "TSK-3",
+            "back_node_id": "PLT-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-137",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-4可由PLT-1承担或支撑",
+            "font_node_id": "TSK-4",
+            "back_node_id": "PLT-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-138",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-4可由PLT-2承担或支撑",
+            "font_node_id": "TSK-4",
+            "back_node_id": "PLT-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-139",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-4可由PLT-3承担或支撑",
+            "font_node_id": "TSK-4",
+            "back_node_id": "PLT-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-140",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-4可由PLT-4承担或支撑",
+            "font_node_id": "TSK-4",
+            "back_node_id": "PLT-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-141",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-4可由PLT-5承担或支撑",
+            "font_node_id": "TSK-4",
+            "back_node_id": "PLT-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-142",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-5可由PLT-2承担或支撑",
+            "font_node_id": "TSK-5",
+            "back_node_id": "PLT-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-143",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-5可由PLT-3承担或支撑",
+            "font_node_id": "TSK-5",
+            "back_node_id": "PLT-3",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-144",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-5可由PLT-6承担或支撑",
+            "font_node_id": "TSK-5",
+            "back_node_id": "PLT-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-145",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-6可由PLT-5承担或支撑",
+            "font_node_id": "TSK-6",
+            "back_node_id": "PLT-5",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-146",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-6可由PLT-6承担或支撑",
+            "font_node_id": "TSK-6",
+            "back_node_id": "PLT-6",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-147",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-7可由PLT-2承担或支撑",
+            "font_node_id": "TSK-7",
+            "back_node_id": "PLT-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-148",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-7可由PLT-4承担或支撑",
+            "font_node_id": "TSK-7",
+            "back_node_id": "PLT-4",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-149",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-8可由PLT-1承担或支撑",
+            "font_node_id": "TSK-8",
+            "back_node_id": "PLT-1",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-150",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-8可由PLT-2承担或支撑",
+            "font_node_id": "TSK-8",
+            "back_node_id": "PLT-2",
+            "weight": "1.000"
+        },
+        {
+            "id": "EDGE-151",
+            "type": "TSK_TO_PLT",
+            "name": "TSK-8可由PLT-4承担或支撑",
+            "font_node_id": "TSK-8",
+            "back_node_id": "PLT-4",
+            "weight": "1.000"
+        }
+    ],
+    "consistency_rules": [
+        {
+            "id": "R-1",
+            "rule": "场景必须存在且仅存在一个 MIS 节点。"
+        },
+        {
+            "id": "R-2",
+            "rule": "每个 OBJ 必须由 MIS_TO_OBJ 连接到 MIS-1。"
+        },
+        {
+            "id": "R-3",
+            "rule": "每个 COG 必须由 MIS_TO_COG 连接到 MIS-1，并至少牵引一个 DEC。"
+        },
+        {
+            "id": "R-4",
+            "rule": "每个 OBJ 必须通过 OBJ_TO_LOO 对应一条 LOO。"
+        },
+        {
+            "id": "R-5",
+            "rule": "每个 LOO 可通过 LOO_TO_COA 支撑一个或多个 COA；sequence 表示该 LOO 在该 COA 中的阶段顺序。"
+        },
+        {
+            "id": "R-6",
+            "rule": "每个 DEC 必须由 OBJ_TO_DEC 连接到至少一个 OBJ，并由 DEC_TO_EFT 连接到至少一个 EFT。"
+        },
+        {
+            "id": "R-7",
+            "rule": "每个 EFT 必须存在且仅存在一个 EFT_TO_ACT 出边，以满足当前枚举中 EFT_TO_ACT 的 1->1 约束。"
+        },
+        {
+            "id": "R-8",
+            "rule": "ACT_TO_ACT 和 DEC_TO_DEC 仅表达基准流程顺序，不表达严格物理因果或唯一战术顺序。"
+        },
+        {
+            "id": "R-9",
+            "rule": "每个 TSK 必须通过 TSK_TO_PLT 连接至少一个可用平台。"
+        },
+        {
+            "id": "R-10",
+            "rule": "所有边的起始节点和终止节点必须存在，所有节点 ID 与边 ID 必须唯一。"
+        }
+    ]
+}

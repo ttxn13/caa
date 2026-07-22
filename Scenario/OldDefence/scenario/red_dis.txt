@@ -1,0 +1,61 @@
+include red_sit.txt
+
+dis_interface   
+   entity_type RED_WAN     1:2:225:8:0:0:0
+   entity_type RED_ELC     1:2:225:6:0:0:0
+   entity_type RED_FLT     1:2:225:1:0:0:0
+   entity_type RED_CAR     1:3:225:1:0:0:0
+   entity_type RED_DST     1:3:225:4:0:0:0
+
+   entity_type RED_AAM_BVR_MISSILE      2:6:225:1:0:0:0
+   entity_type RED_AAM_IR_MISSILE       2:6:225:1:0:0:0
+   entity_type RED_LONG_SAM_MISSILE     2:6:225:1:0:0:0
+   entity_type RED_MEDIUM_SAM_MISSILE   2:6:225:1:0:0:0
+   entity_type RED_CIWS_ROUND           2:6:225:1:0:0:0
+
+   # CAR - 1
+   entity_id red_car_10101      10101
+   # WAN - 2
+   entity_id red_wan_10201      10201
+   # WAN - 3
+   entity_id red_wan_10301      10301
+   # DST - 4
+   entity_id red_dst_10401      10401
+   entity_id red_dst_10402      10402
+   entity_id red_dst_10403      10403
+   entity_id red_dst_10404      10404
+   # DST - 5
+   entity_id red_dst_10501      10501
+   entity_id red_dst_10502      10502
+   entity_id red_dst_10503      10503
+   entity_id red_dst_10504      10504
+   # FLT - 6
+   entity_id red_flt_10601      10601
+   entity_id red_flt_10602      10602
+   entity_id red_flt_10603      10603
+   entity_id red_flt_10604      10604
+   entity_id red_flt_10605      10605
+   entity_id red_flt_10606      10606
+   # FLT - 7
+   entity_id red_flt_10701      10701
+   entity_id red_flt_10702      10702
+   entity_id red_flt_10703      10703
+   entity_id red_flt_10704      10704
+   entity_id red_flt_10705      10705
+   entity_id red_flt_10706      10706
+   # FLT - 8
+   entity_id red_flt_10801      10801
+   entity_id red_flt_10802      10802
+   entity_id red_flt_10803      10803
+   entity_id red_flt_10804      10804
+   entity_id red_flt_10805      10805
+   entity_id red_flt_10806      10806
+   # FLT - 9
+   entity_id red_flt_10901      10901
+   entity_id red_flt_10902      10902
+   entity_id red_flt_10903      10903
+   entity_id red_flt_10904      10904
+   entity_id red_flt_10905      10905
+   entity_id red_flt_10906      10906
+
+end_dis_interface

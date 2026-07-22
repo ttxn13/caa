@@ -1,0 +1,65 @@
+include ../platform/blue_plat.txt
+
+# FLT - 1
+platform blue_flt_01 BLUE_FLT commander SELF
+   route
+      label blue_flt_01_loop position 38:45:00.000n 133:30:00.000e
+         altitude 10000 m msl
+         speed 250 m/s
+      position 38:40:36.000n 133:47:00.000e
+         altitude 10000 m msl
+         speed 250 m/s
+      position 38:30:00.000n 133:54:00.000e
+         altitude 10000 m msl
+         speed 250 m/s
+      position 38:19:24.000n 133:47:00.000e
+         altitude 10000 m msl
+         speed 250 m/s
+      position 38:15:00.000n 133:30:00.000e
+         altitude 10000 m msl
+         speed 250 m/s
+      position 38:19:24.000n 133:13:00.000e
+         altitude 10000 m msl
+         speed 250 m/s
+      position 38:30:00.000n 133:06:00.000e
+         altitude 10000 m msl
+         speed 250 m/s
+      position 38:40:36.000n 133:13:00.000e
+         altitude 10000 m msl
+         speed 250 m/s
+      goto blue_flt_01_loop
+   end_route
+   heading 270 deg
+end_platform
+
+# FLT - 2
+platform blue_flt_02 BLUE_FLT commander blue_flt_01
+   route
+      label blue_flt_02_loop position 39:45:00.000n 133:30:00.000e
+         altitude 10200 m msl
+         speed 250 m/s
+      position 39:40:36.000n 133:47:00.000e
+         altitude 10200 m msl
+         speed 250 m/s
+      position 39:30:00.000n 133:54:00.000e
+         altitude 10200 m msl
+         speed 250 m/s
+      position 39:19:24.000n 133:47:00.000e
+         altitude 10200 m msl
+         speed 250 m/s
+      position 39:15:00.000n 133:30:00.000e
+         altitude 10200 m msl
+         speed 250 m/s
+      position 39:19:24.000n 133:13:00.000e
+         altitude 10200 m msl
+         speed 250 m/s
+      position 39:30:00.000n 133:06:00.000e
+         altitude 10200 m msl
+         speed 250 m/s
+      position 39:40:36.000n 133:13:00.000e
+         altitude 10200 m msl
+         speed 250 m/s
+      goto blue_flt_02_loop
+   end_route
+   heading 270 deg
+end_platform

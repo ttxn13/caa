@@ -1,0 +1,11 @@
+# Platform type definition only. Runtime equipment is attached in scenario/*.txt.
+platform_type BLUE_BOM WSF_PLATFORM
+   side blue   icon B-52
+   infrared_signature BLUE_AIR_IR_SIG
+   optical_signature BLUE_AIR_OPT_SIG
+   radar_signature BLUE_BOMBER_RADAR_SIG
+   mover WSF_AIR_MOVER
+      default_radial_acceleration 1.2 g
+      update_interval 1 sec
+   end_mover
+end_platform_type

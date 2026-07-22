@@ -1,0 +1,1384 @@
+include ../platform/blue_plat.txt
+
+# WAN - 1
+platform blue_wan_20101 BLUE_WAN commander SELF
+   route
+      navigation
+         label blue_wan_20101_orbit
+            position 39:25:12.000n 135:45:00.000e altitude 11000 m msl
+               speed 170 m/s
+            position 39:33:00.000n 135:33:00.000e altitude 11000 m msl
+               speed 170 m/s
+            position 39:25:12.000n 135:21:00.000e altitude 11000 m msl
+               speed 170 m/s
+            position 39:17:24.000n 135:33:00.000e altitude 11000 m msl
+               speed 170 m/s
+         goto blue_wan_20101_orbit
+      end_navigation
+   end_route
+   heading 270 deg
+end_platform
+# WAN - 2
+platform blue_wan_20201 BLUE_WAN commander SELF
+   route
+      navigation
+         label blue_wan_20201_orbit
+            position 38:15:36.000n 135:45:00.000e altitude 11000 m msl
+               speed 170 m/s
+            position 38:23:24.000n 135:33:00.000e altitude 11000 m msl
+               speed 170 m/s
+            position 38:15:36.000n 135:21:00.000e altitude 11000 m msl
+               speed 170 m/s
+            position 38:07:48.000n 135:33:00.000e altitude 11000 m msl
+               speed 170 m/s
+         goto blue_wan_20201_orbit
+      end_navigation
+   end_route
+   heading 270 deg
+end_platform
+# ELC - 3
+platform blue_elc_20301 BLUE_ELC commander blue_wan_20101
+   route
+      position 39:10:48.000n 134:36:00.000e
+         altitude 9300 m msl
+         speed 230 m/s
+      position 39:09:36.000n 133:30:00.000e
+         altitude 9500 m msl
+         speed 240 m/s
+      position 39:08:24.000n 132:27:00.000e
+         altitude 9700 m msl
+         speed 250 m/s
+      position 39:12:00.000n 131:51:00.000e
+         altitude 9800 m msl
+         speed 255 m/s
+      position 39:22:48.000n 132:21:00.000e
+         altitude 9600 m msl
+         speed 245 m/s
+      position 39:18:00.000n 133:12:00.000e
+         altitude 9400 m msl
+         speed 235 m/s
+      position 39:10:48.000n 134:00:00.000e
+         altitude 9300 m msl
+         speed 230 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_elc_20302 BLUE_ELC commander blue_elc_20301
+   route
+      position 39:08:42.000n 134:39:00.000e
+         altitude 9200 m msl
+         speed 230 m/s
+      position 39:07:30.000n 133:33:00.000e
+         altitude 9400 m msl
+         speed 240 m/s
+      position 39:06:18.000n 132:30:00.000e
+         altitude 9600 m msl
+         speed 250 m/s
+      position 39:09:54.000n 131:54:00.000e
+         altitude 9700 m msl
+         speed 255 m/s
+      position 39:20:42.000n 132:24:00.000e
+         altitude 9500 m msl
+         speed 245 m/s
+      position 39:15:54.000n 133:15:00.000e
+         altitude 9300 m msl
+         speed 235 m/s
+      position 39:08:42.000n 134:03:00.000e
+         altitude 9200 m msl
+         speed 230 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# ELC - 4
+platform blue_elc_20401 BLUE_ELC commander blue_wan_20201
+   route
+      position 38:21:00.000n 134:36:00.000e
+         altitude 9300 m msl
+         speed 230 m/s
+      position 38:22:48.000n 133:30:00.000e
+         altitude 9500 m msl
+         speed 240 m/s
+      position 38:27:00.000n 132:27:00.000e
+         altitude 9700 m msl
+         speed 250 m/s
+      position 38:33:00.000n 131:51:00.000e
+         altitude 9800 m msl
+         speed 255 m/s
+      position 38:19:12.000n 132:21:00.000e
+         altitude 9600 m msl
+         speed 245 m/s
+      position 38:09:00.000n 133:12:00.000e
+         altitude 9400 m msl
+         speed 235 m/s
+      position 38:21:00.000n 134:00:00.000e
+         altitude 9300 m msl
+         speed 230 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_elc_20402 BLUE_ELC commander blue_elc_20401
+   route
+      position 38:18:54.000n 134:39:00.000e
+         altitude 9200 m msl
+         speed 230 m/s
+      position 38:20:42.000n 133:33:00.000e
+         altitude 9400 m msl
+         speed 240 m/s
+      position 38:24:54.000n 132:30:00.000e
+         altitude 9600 m msl
+         speed 250 m/s
+      position 38:30:54.000n 131:54:00.000e
+         altitude 9700 m msl
+         speed 255 m/s
+      position 38:17:06.000n 132:24:00.000e
+         altitude 9500 m msl
+         speed 245 m/s
+      position 38:06:54.000n 133:15:00.000e
+         altitude 9300 m msl
+         speed 235 m/s
+      position 38:18:54.000n 134:03:00.000e
+         altitude 9200 m msl
+         speed 230 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT - 5
+platform blue_flt_20501 BLUE_FLT commander blue_wan_20101
+   route
+      position 39:07:12.000n 134:21:00.000e
+         altitude 10500 m msl
+         speed 320 m/s
+      position 39:03:00.000n 132:54:00.000e
+         altitude 10800 m msl
+         speed 340 m/s
+      position 39:00:00.000n 131:48:00.000e
+         altitude 11000 m msl
+         speed 360 m/s
+      position 38:58:48.000n 130:42:00.000e
+         altitude 10800 m msl
+         speed 365 m/s
+      position 38:57:00.000n 129:54:00.000e
+         altitude 10400 m msl
+         speed 350 m/s
+      position 39:06:00.000n 130:48:00.000e
+         altitude 10000 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20502 BLUE_FLT commander blue_flt_20501
+   route
+      position 39:04:30.000n 134:18:18.000e
+         altitude 10400 m msl
+         speed 320 m/s
+      position 39:00:18.000n 132:51:18.000e
+         altitude 10700 m msl
+         speed 340 m/s
+      position 38:57:18.000n 131:45:18.000e
+         altitude 10900 m msl
+         speed 360 m/s
+      position 38:56:06.000n 130:39:18.000e
+         altitude 10700 m msl
+         speed 365 m/s
+      position 38:54:18.000n 129:51:18.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 39:03:18.000n 130:45:18.000e
+         altitude 9900 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20503 BLUE_FLT commander blue_flt_20501
+   route
+      position 39:04:30.000n 134:23:42.000e
+         altitude 10400 m msl
+         speed 320 m/s
+      position 39:00:18.000n 132:56:42.000e
+         altitude 10700 m msl
+         speed 340 m/s
+      position 38:57:18.000n 131:50:42.000e
+         altitude 10900 m msl
+         speed 360 m/s
+      position 38:56:06.000n 130:44:42.000e
+         altitude 10700 m msl
+         speed 365 m/s
+      position 38:54:18.000n 129:56:42.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 39:03:18.000n 130:50:42.000e
+         altitude 9900 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20504 BLUE_FLT commander blue_flt_20501
+   route
+      position 39:01:48.000n 134:16:12.000e
+         altitude 10300 m msl
+         speed 320 m/s
+      position 38:57:36.000n 132:49:12.000e
+         altitude 10600 m msl
+         speed 340 m/s
+      position 38:54:36.000n 131:43:12.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:53:24.000n 130:37:12.000e
+         altitude 10600 m msl
+         speed 365 m/s
+      position 38:51:36.000n 129:49:12.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 39:00:36.000n 130:43:12.000e
+         altitude 9800 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20505 BLUE_FLT commander blue_flt_20501
+   route
+      position 39:01:48.000n 134:25:48.000e
+         altitude 10300 m msl
+         speed 320 m/s
+      position 38:57:36.000n 132:58:48.000e
+         altitude 10600 m msl
+         speed 340 m/s
+      position 38:54:36.000n 131:52:48.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:53:24.000n 130:46:48.000e
+         altitude 10600 m msl
+         speed 365 m/s
+      position 38:51:36.000n 129:58:48.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 39:00:36.000n 130:52:48.000e
+         altitude 9800 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20506 BLUE_FLT commander blue_flt_20501
+   route
+      position 38:59:06.000n 134:21:00.000e
+         altitude 10200 m msl
+         speed 320 m/s
+      position 38:54:54.000n 132:54:00.000e
+         altitude 10500 m msl
+         speed 340 m/s
+      position 38:51:54.000n 131:48:00.000e
+         altitude 10700 m msl
+         speed 360 m/s
+      position 38:50:42.000n 130:42:00.000e
+         altitude 10500 m msl
+         speed 365 m/s
+      position 38:48:54.000n 129:54:00.000e
+         altitude 10100 m msl
+         speed 350 m/s
+      position 38:57:54.000n 130:48:00.000e
+         altitude 9700 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT - 6
+platform blue_flt_20601 BLUE_FLT commander blue_wan_20201
+   route
+      position 38:36:00.000n 134:21:00.000e
+         altitude 10500 m msl
+         speed 320 m/s
+      position 38:39:00.000n 132:54:00.000e
+         altitude 10800 m msl
+         speed 340 m/s
+      position 38:45:00.000n 131:48:00.000e
+         altitude 11000 m msl
+         speed 360 m/s
+      position 38:49:12.000n 130:42:00.000e
+         altitude 10800 m msl
+         speed 365 m/s
+      position 38:54:00.000n 129:54:00.000e
+         altitude 10400 m msl
+         speed 350 m/s
+      position 38:43:12.000n 130:48:00.000e
+         altitude 10000 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20602 BLUE_FLT commander blue_flt_20601
+   route
+      position 38:33:18.000n 134:18:18.000e
+         altitude 10400 m msl
+         speed 320 m/s
+      position 38:36:18.000n 132:51:18.000e
+         altitude 10700 m msl
+         speed 340 m/s
+      position 38:42:18.000n 131:45:18.000e
+         altitude 10900 m msl
+         speed 360 m/s
+      position 38:46:30.000n 130:39:18.000e
+         altitude 10700 m msl
+         speed 365 m/s
+      position 38:51:18.000n 129:51:18.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 38:40:30.000n 130:45:18.000e
+         altitude 9900 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20603 BLUE_FLT commander blue_flt_20601
+   route
+      position 38:33:18.000n 134:23:42.000e
+         altitude 10400 m msl
+         speed 320 m/s
+      position 38:36:18.000n 132:56:42.000e
+         altitude 10700 m msl
+         speed 340 m/s
+      position 38:42:18.000n 131:50:42.000e
+         altitude 10900 m msl
+         speed 360 m/s
+      position 38:46:30.000n 130:44:42.000e
+         altitude 10700 m msl
+         speed 365 m/s
+      position 38:51:18.000n 129:56:42.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 38:40:30.000n 130:50:42.000e
+         altitude 9900 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20604 BLUE_FLT commander blue_flt_20601
+   route
+      position 38:30:36.000n 134:16:12.000e
+         altitude 10300 m msl
+         speed 320 m/s
+      position 38:33:36.000n 132:49:12.000e
+         altitude 10600 m msl
+         speed 340 m/s
+      position 38:39:36.000n 131:43:12.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:43:48.000n 130:37:12.000e
+         altitude 10600 m msl
+         speed 365 m/s
+      position 38:48:36.000n 129:49:12.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 38:37:48.000n 130:43:12.000e
+         altitude 9800 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20605 BLUE_FLT commander blue_flt_20601
+   route
+      position 38:30:36.000n 134:25:48.000e
+         altitude 10300 m msl
+         speed 320 m/s
+      position 38:33:36.000n 132:58:48.000e
+         altitude 10600 m msl
+         speed 340 m/s
+      position 38:39:36.000n 131:52:48.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:43:48.000n 130:46:48.000e
+         altitude 10600 m msl
+         speed 365 m/s
+      position 38:48:36.000n 129:58:48.000e
+         altitude 10200 m msl
+         speed 350 m/s
+      position 38:37:48.000n 130:52:48.000e
+         altitude 9800 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20606 BLUE_FLT commander blue_flt_20601
+   route
+      position 38:27:54.000n 134:21:00.000e
+         altitude 10200 m msl
+         speed 320 m/s
+      position 38:30:54.000n 132:54:00.000e
+         altitude 10500 m msl
+         speed 340 m/s
+      position 38:36:54.000n 131:48:00.000e
+         altitude 10700 m msl
+         speed 360 m/s
+      position 38:41:06.000n 130:42:00.000e
+         altitude 10500 m msl
+         speed 365 m/s
+      position 38:45:54.000n 129:54:00.000e
+         altitude 10100 m msl
+         speed 350 m/s
+      position 38:35:06.000n 130:48:00.000e
+         altitude 9700 m msl
+         speed 330 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT - 7
+platform blue_flt_20701 BLUE_FLT commander blue_wan_20101
+   route
+      position 39:21:00.000n 134:27:00.000e
+         altitude 10800 m msl
+         speed 315 m/s
+      position 39:15:00.000n 133:03:00.000e
+         altitude 11000 m msl
+         speed 335 m/s
+      position 39:10:48.000n 132:00:00.000e
+         altitude 11200 m msl
+         speed 350 m/s
+      position 39:06:00.000n 130:54:00.000e
+         altitude 11000 m msl
+         speed 360 m/s
+      position 39:01:12.000n 130:06:00.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 39:18:00.000n 131:12:00.000e
+         altitude 10200 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20702 BLUE_FLT commander blue_flt_20701
+   route
+      position 39:18:18.000n 134:24:18.000e
+         altitude 10700 m msl
+         speed 315 m/s
+      position 39:12:18.000n 133:00:18.000e
+         altitude 10900 m msl
+         speed 335 m/s
+      position 39:08:06.000n 131:57:18.000e
+         altitude 11100 m msl
+         speed 350 m/s
+      position 39:03:18.000n 130:51:18.000e
+         altitude 10900 m msl
+         speed 360 m/s
+      position 38:58:30.000n 130:03:18.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 39:15:18.000n 131:09:18.000e
+         altitude 10100 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20703 BLUE_FLT commander blue_flt_20701
+   route
+      position 39:18:18.000n 134:29:42.000e
+         altitude 10700 m msl
+         speed 315 m/s
+      position 39:12:18.000n 133:05:42.000e
+         altitude 10900 m msl
+         speed 335 m/s
+      position 39:08:06.000n 132:02:42.000e
+         altitude 11100 m msl
+         speed 350 m/s
+      position 39:03:18.000n 130:56:42.000e
+         altitude 10900 m msl
+         speed 360 m/s
+      position 38:58:30.000n 130:08:42.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 39:15:18.000n 131:14:42.000e
+         altitude 10100 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20704 BLUE_FLT commander blue_flt_20701
+   route
+      position 39:15:36.000n 134:22:12.000e
+         altitude 10600 m msl
+         speed 315 m/s
+      position 39:09:36.000n 132:58:12.000e
+         altitude 10800 m msl
+         speed 335 m/s
+      position 39:05:24.000n 131:55:12.000e
+         altitude 11000 m msl
+         speed 350 m/s
+      position 39:00:36.000n 130:49:12.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:55:48.000n 130:01:12.000e
+         altitude 10400 m msl
+         speed 350 m/s
+      position 39:12:36.000n 131:07:12.000e
+         altitude 10000 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20705 BLUE_FLT commander blue_flt_20701
+   route
+      position 39:15:36.000n 134:31:48.000e
+         altitude 10600 m msl
+         speed 315 m/s
+      position 39:09:36.000n 133:07:48.000e
+         altitude 10800 m msl
+         speed 335 m/s
+      position 39:05:24.000n 132:04:48.000e
+         altitude 11000 m msl
+         speed 350 m/s
+      position 39:00:36.000n 130:58:48.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:55:48.000n 130:10:48.000e
+         altitude 10400 m msl
+         speed 350 m/s
+      position 39:12:36.000n 131:16:48.000e
+         altitude 10000 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20706 BLUE_FLT commander blue_flt_20701
+   route
+      position 39:12:54.000n 134:27:00.000e
+         altitude 10500 m msl
+         speed 315 m/s
+      position 39:06:54.000n 133:03:00.000e
+         altitude 10700 m msl
+         speed 335 m/s
+      position 39:02:42.000n 132:00:00.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 38:57:54.000n 130:54:00.000e
+         altitude 10700 m msl
+         speed 360 m/s
+      position 38:53:06.000n 130:06:00.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 39:09:54.000n 131:12:00.000e
+         altitude 9900 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT - 8
+platform blue_flt_20801 BLUE_FLT commander blue_wan_20201
+   route
+      position 38:18:00.000n 134:27:00.000e
+         altitude 10800 m msl
+         speed 315 m/s
+      position 38:27:00.000n 133:03:00.000e
+         altitude 11000 m msl
+         speed 335 m/s
+      position 38:34:48.000n 132:00:00.000e
+         altitude 11200 m msl
+         speed 350 m/s
+      position 38:43:12.000n 130:54:00.000e
+         altitude 11000 m msl
+         speed 360 m/s
+      position 38:50:24.000n 130:06:00.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:30:00.000n 131:12:00.000e
+         altitude 10200 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20802 BLUE_FLT commander blue_flt_20801
+   route
+      position 38:15:18.000n 134:24:18.000e
+         altitude 10700 m msl
+         speed 315 m/s
+      position 38:24:18.000n 133:00:18.000e
+         altitude 10900 m msl
+         speed 335 m/s
+      position 38:32:06.000n 131:57:18.000e
+         altitude 11100 m msl
+         speed 350 m/s
+      position 38:40:30.000n 130:51:18.000e
+         altitude 10900 m msl
+         speed 360 m/s
+      position 38:47:42.000n 130:03:18.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 38:27:18.000n 131:09:18.000e
+         altitude 10100 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20803 BLUE_FLT commander blue_flt_20801
+   route
+      position 38:15:18.000n 134:29:42.000e
+         altitude 10700 m msl
+         speed 315 m/s
+      position 38:24:18.000n 133:05:42.000e
+         altitude 10900 m msl
+         speed 335 m/s
+      position 38:32:06.000n 132:02:42.000e
+         altitude 11100 m msl
+         speed 350 m/s
+      position 38:40:30.000n 130:56:42.000e
+         altitude 10900 m msl
+         speed 360 m/s
+      position 38:47:42.000n 130:08:42.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 38:27:18.000n 131:14:42.000e
+         altitude 10100 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20804 BLUE_FLT commander blue_flt_20801
+   route
+      position 38:12:36.000n 134:22:12.000e
+         altitude 10600 m msl
+         speed 315 m/s
+      position 38:21:36.000n 132:58:12.000e
+         altitude 10800 m msl
+         speed 335 m/s
+      position 38:29:24.000n 131:55:12.000e
+         altitude 11000 m msl
+         speed 350 m/s
+      position 38:37:48.000n 130:49:12.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:45:00.000n 130:01:12.000e
+         altitude 10400 m msl
+         speed 350 m/s
+      position 38:24:36.000n 131:07:12.000e
+         altitude 10000 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20805 BLUE_FLT commander blue_flt_20801
+   route
+      position 38:12:36.000n 134:31:48.000e
+         altitude 10600 m msl
+         speed 315 m/s
+      position 38:21:36.000n 133:07:48.000e
+         altitude 10800 m msl
+         speed 335 m/s
+      position 38:29:24.000n 132:04:48.000e
+         altitude 11000 m msl
+         speed 350 m/s
+      position 38:37:48.000n 130:58:48.000e
+         altitude 10800 m msl
+         speed 360 m/s
+      position 38:45:00.000n 130:10:48.000e
+         altitude 10400 m msl
+         speed 350 m/s
+      position 38:24:36.000n 131:16:48.000e
+         altitude 10000 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20806 BLUE_FLT commander blue_flt_20801
+   route
+      position 38:09:54.000n 134:27:00.000e
+         altitude 10500 m msl
+         speed 315 m/s
+      position 38:18:54.000n 133:03:00.000e
+         altitude 10700 m msl
+         speed 335 m/s
+      position 38:26:42.000n 132:00:00.000e
+         altitude 10900 m msl
+         speed 350 m/s
+      position 38:35:06.000n 130:54:00.000e
+         altitude 10700 m msl
+         speed 360 m/s
+      position 38:42:18.000n 130:06:00.000e
+         altitude 10300 m msl
+         speed 350 m/s
+      position 38:21:54.000n 131:12:00.000e
+         altitude 9900 m msl
+         speed 325 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT - 9
+platform blue_flt_20901 BLUE_FLT commander blue_wan_20101
+   route
+      position 39:06:00.000n 135:00:00.000e
+         altitude 10200 m msl
+         speed 300 m/s
+      position 39:03:00.000n 133:24:00.000e
+         altitude 10600 m msl
+         speed 330 m/s
+      position 39:00:00.000n 132:12:00.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:57:36.000n 131:06:00.000e
+         altitude 10600 m msl
+         speed 360 m/s
+      position 38:56:24.000n 130:15:00.000e
+         altitude 10000 m msl
+         speed 355 m/s
+      position 38:55:48.000n 129:45:00.000e
+         altitude 9400 m msl
+         speed 340 m/s
+      position 39:12:00.000n 130:36:00.000e
+         altitude 9800 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg   add sensor strike_radar BLUE_STRIKE_RADAR
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   add weapon standoff BLUE_STANDOFF_WEAPON
+      quantity 2
+   end_weapon
+   add weapon ascm BLUE_ASCM_WEAPON
+      quantity 1
+   end_weapon
+end_platform
+platform blue_flt_20902 BLUE_FLT commander blue_flt_20901
+   route
+      position 39:03:18.000n 134:57:18.000e
+         altitude 10100 m msl
+         speed 300 m/s
+      position 39:00:18.000n 133:21:18.000e
+         altitude 10500 m msl
+         speed 330 m/s
+      position 38:57:18.000n 132:09:18.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:54:54.000n 131:03:18.000e
+         altitude 10500 m msl
+         speed 360 m/s
+      position 38:53:42.000n 130:12:18.000e
+         altitude 9900 m msl
+         speed 355 m/s
+      position 38:53:06.000n 129:42:18.000e
+         altitude 9300 m msl
+         speed 340 m/s
+      position 39:09:18.000n 130:33:18.000e
+         altitude 9700 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20903 BLUE_FLT commander blue_flt_20901
+   route
+      position 39:03:18.000n 135:02:42.000e
+         altitude 10100 m msl
+         speed 300 m/s
+      position 39:00:18.000n 133:26:42.000e
+         altitude 10500 m msl
+         speed 330 m/s
+      position 38:57:18.000n 132:14:42.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:54:54.000n 131:08:42.000e
+         altitude 10500 m msl
+         speed 360 m/s
+      position 38:53:42.000n 130:17:42.000e
+         altitude 9900 m msl
+         speed 355 m/s
+      position 38:53:06.000n 129:47:42.000e
+         altitude 9300 m msl
+         speed 340 m/s
+      position 39:09:18.000n 130:38:42.000e
+         altitude 9700 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20904 BLUE_FLT commander blue_flt_20901
+   route
+      position 39:00:36.000n 134:55:12.000e
+         altitude 10000 m msl
+         speed 300 m/s
+      position 38:57:36.000n 133:19:12.000e
+         altitude 10400 m msl
+         speed 330 m/s
+      position 38:54:36.000n 132:07:12.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:52:12.000n 131:01:12.000e
+         altitude 10400 m msl
+         speed 360 m/s
+      position 38:51:00.000n 130:10:12.000e
+         altitude 9800 m msl
+         speed 355 m/s
+      position 38:50:24.000n 129:40:12.000e
+         altitude 9200 m msl
+         speed 340 m/s
+      position 39:06:36.000n 130:31:12.000e
+         altitude 9600 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg   add sensor strike_radar BLUE_STRIKE_RADAR
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   add weapon standoff BLUE_STANDOFF_WEAPON
+      quantity 2
+   end_weapon
+   add weapon ascm BLUE_ASCM_WEAPON
+      quantity 1
+   end_weapon
+end_platform
+platform blue_flt_20905 BLUE_FLT commander blue_flt_20901
+   route
+      position 39:00:36.000n 135:04:48.000e
+         altitude 10000 m msl
+         speed 300 m/s
+      position 38:57:36.000n 133:28:48.000e
+         altitude 10400 m msl
+         speed 330 m/s
+      position 38:54:36.000n 132:16:48.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:52:12.000n 131:10:48.000e
+         altitude 10400 m msl
+         speed 360 m/s
+      position 38:51:00.000n 130:19:48.000e
+         altitude 9800 m msl
+         speed 355 m/s
+      position 38:50:24.000n 129:49:48.000e
+         altitude 9200 m msl
+         speed 340 m/s
+      position 39:06:36.000n 130:40:48.000e
+         altitude 9600 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20906 BLUE_FLT commander blue_flt_20901
+   route
+      position 38:57:54.000n 135:00:00.000e
+         altitude 9900 m msl
+         speed 300 m/s
+      position 38:54:54.000n 133:24:00.000e
+         altitude 10300 m msl
+         speed 330 m/s
+      position 38:51:54.000n 132:12:00.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 38:49:30.000n 131:06:00.000e
+         altitude 10300 m msl
+         speed 360 m/s
+      position 38:48:18.000n 130:15:00.000e
+         altitude 9700 m msl
+         speed 355 m/s
+      position 38:47:42.000n 129:45:00.000e
+         altitude 9100 m msl
+         speed 340 m/s
+      position 39:03:54.000n 130:36:00.000e
+         altitude 9500 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT - 10
+platform blue_flt_21001 BLUE_FLT commander blue_wan_20201
+   route
+      position 38:33:00.000n 135:00:00.000e
+         altitude 10200 m msl
+         speed 300 m/s
+      position 38:39:00.000n 133:24:00.000e
+         altitude 10600 m msl
+         speed 330 m/s
+      position 38:46:48.000n 132:12:00.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:51:36.000n 131:06:00.000e
+         altitude 10600 m msl
+         speed 360 m/s
+      position 38:54:36.000n 130:15:00.000e
+         altitude 10000 m msl
+         speed 355 m/s
+      position 38:55:48.000n 129:45:00.000e
+         altitude 9400 m msl
+         speed 340 m/s
+      position 38:33:00.000n 130:36:00.000e
+         altitude 9800 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg   add sensor strike_radar BLUE_STRIKE_RADAR
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   add weapon standoff BLUE_STANDOFF_WEAPON
+      quantity 2
+   end_weapon
+   add weapon ascm BLUE_ASCM_WEAPON
+      quantity 1
+   end_weapon
+end_platform
+platform blue_flt_21002 BLUE_FLT commander blue_flt_21001
+   route
+      position 38:30:18.000n 134:57:18.000e
+         altitude 10100 m msl
+         speed 300 m/s
+      position 38:36:18.000n 133:21:18.000e
+         altitude 10500 m msl
+         speed 330 m/s
+      position 38:44:06.000n 132:09:18.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:48:54.000n 131:03:18.000e
+         altitude 10500 m msl
+         speed 360 m/s
+      position 38:51:54.000n 130:12:18.000e
+         altitude 9900 m msl
+         speed 355 m/s
+      position 38:53:06.000n 129:42:18.000e
+         altitude 9300 m msl
+         speed 340 m/s
+      position 38:30:18.000n 130:33:18.000e
+         altitude 9700 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21003 BLUE_FLT commander blue_flt_21001
+   route
+      position 38:30:18.000n 135:02:42.000e
+         altitude 10100 m msl
+         speed 300 m/s
+      position 38:36:18.000n 133:26:42.000e
+         altitude 10500 m msl
+         speed 330 m/s
+      position 38:44:06.000n 132:14:42.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:48:54.000n 131:08:42.000e
+         altitude 10500 m msl
+         speed 360 m/s
+      position 38:51:54.000n 130:17:42.000e
+         altitude 9900 m msl
+         speed 355 m/s
+      position 38:53:06.000n 129:47:42.000e
+         altitude 9300 m msl
+         speed 340 m/s
+      position 38:30:18.000n 130:38:42.000e
+         altitude 9700 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21004 BLUE_FLT commander blue_flt_21001
+   route
+      position 38:27:36.000n 134:55:12.000e
+         altitude 10000 m msl
+         speed 300 m/s
+      position 38:33:36.000n 133:19:12.000e
+         altitude 10400 m msl
+         speed 330 m/s
+      position 38:41:24.000n 132:07:12.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:46:12.000n 131:01:12.000e
+         altitude 10400 m msl
+         speed 360 m/s
+      position 38:49:12.000n 130:10:12.000e
+         altitude 9800 m msl
+         speed 355 m/s
+      position 38:50:24.000n 129:40:12.000e
+         altitude 9200 m msl
+         speed 340 m/s
+      position 38:27:36.000n 130:31:12.000e
+         altitude 9600 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg   add sensor strike_radar BLUE_STRIKE_RADAR
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   add weapon standoff BLUE_STANDOFF_WEAPON
+      quantity 2
+   end_weapon
+   add weapon ascm BLUE_ASCM_WEAPON
+      quantity 1
+   end_weapon
+end_platform
+platform blue_flt_21005 BLUE_FLT commander blue_flt_21001
+   route
+      position 38:27:36.000n 135:04:48.000e
+         altitude 10000 m msl
+         speed 300 m/s
+      position 38:33:36.000n 133:28:48.000e
+         altitude 10400 m msl
+         speed 330 m/s
+      position 38:41:24.000n 132:16:48.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:46:12.000n 131:10:48.000e
+         altitude 10400 m msl
+         speed 360 m/s
+      position 38:49:12.000n 130:19:48.000e
+         altitude 9800 m msl
+         speed 355 m/s
+      position 38:50:24.000n 129:49:48.000e
+         altitude 9200 m msl
+         speed 340 m/s
+      position 38:27:36.000n 130:40:48.000e
+         altitude 9600 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21006 BLUE_FLT commander blue_flt_21001
+   route
+      position 38:24:54.000n 135:00:00.000e
+         altitude 9900 m msl
+         speed 300 m/s
+      position 38:30:54.000n 133:24:00.000e
+         altitude 10300 m msl
+         speed 330 m/s
+      position 38:38:42.000n 132:12:00.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 38:43:30.000n 131:06:00.000e
+         altitude 10300 m msl
+         speed 360 m/s
+      position 38:46:30.000n 130:15:00.000e
+         altitude 9700 m msl
+         speed 355 m/s
+      position 38:47:42.000n 129:45:00.000e
+         altitude 9100 m msl
+         speed 340 m/s
+      position 38:24:54.000n 130:36:00.000e
+         altitude 9500 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT - 11
+platform blue_flt_21101 BLUE_FLT commander blue_wan_20101
+   route
+      position 39:15:00.000n 134:48:00.000e
+         altitude 10600 m msl
+         speed 305 m/s
+      position 39:09:00.000n 133:36:00.000e
+         altitude 10800 m msl
+         speed 325 m/s
+      position 39:04:48.000n 132:30:00.000e
+         altitude 11000 m msl
+         speed 345 m/s
+      position 39:03:00.000n 131:30:00.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 39:01:12.000n 130:30:00.000e
+         altitude 10400 m msl
+         speed 340 m/s
+      position 39:10:48.000n 131:36:00.000e
+         altitude 10200 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21102 BLUE_FLT commander blue_flt_21101
+   route
+      position 39:12:18.000n 134:45:18.000e
+         altitude 10500 m msl
+         speed 305 m/s
+      position 39:06:18.000n 133:33:18.000e
+         altitude 10700 m msl
+         speed 325 m/s
+      position 39:02:06.000n 132:27:18.000e
+         altitude 10900 m msl
+         speed 345 m/s
+      position 39:00:18.000n 131:27:18.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:58:30.000n 130:27:18.000e
+         altitude 10300 m msl
+         speed 340 m/s
+      position 39:08:06.000n 131:33:18.000e
+         altitude 10100 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21103 BLUE_FLT commander blue_flt_21101
+   route
+      position 39:12:18.000n 134:50:42.000e
+         altitude 10500 m msl
+         speed 305 m/s
+      position 39:06:18.000n 133:38:42.000e
+         altitude 10700 m msl
+         speed 325 m/s
+      position 39:02:06.000n 132:32:42.000e
+         altitude 10900 m msl
+         speed 345 m/s
+      position 39:00:18.000n 131:32:42.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:58:30.000n 130:32:42.000e
+         altitude 10300 m msl
+         speed 340 m/s
+      position 39:08:06.000n 131:38:42.000e
+         altitude 10100 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21104 BLUE_FLT commander blue_flt_21101
+   route
+      position 39:09:36.000n 134:43:12.000e
+         altitude 10400 m msl
+         speed 305 m/s
+      position 39:03:36.000n 133:31:12.000e
+         altitude 10600 m msl
+         speed 325 m/s
+      position 38:59:24.000n 132:25:12.000e
+         altitude 10800 m msl
+         speed 345 m/s
+      position 38:57:36.000n 131:25:12.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:55:48.000n 130:25:12.000e
+         altitude 10200 m msl
+         speed 340 m/s
+      position 39:05:24.000n 131:31:12.000e
+         altitude 10000 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21105 BLUE_FLT commander blue_flt_21101
+   route
+      position 39:09:36.000n 134:52:48.000e
+         altitude 10400 m msl
+         speed 305 m/s
+      position 39:03:36.000n 133:40:48.000e
+         altitude 10600 m msl
+         speed 325 m/s
+      position 38:59:24.000n 132:34:48.000e
+         altitude 10800 m msl
+         speed 345 m/s
+      position 38:57:36.000n 131:34:48.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:55:48.000n 130:34:48.000e
+         altitude 10200 m msl
+         speed 340 m/s
+      position 39:05:24.000n 131:40:48.000e
+         altitude 10000 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21106 BLUE_FLT commander blue_flt_21101
+   route
+      position 39:06:54.000n 134:48:00.000e
+         altitude 10300 m msl
+         speed 305 m/s
+      position 39:00:54.000n 133:36:00.000e
+         altitude 10500 m msl
+         speed 325 m/s
+      position 38:56:42.000n 132:30:00.000e
+         altitude 10700 m msl
+         speed 345 m/s
+      position 38:54:54.000n 131:30:00.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 38:53:06.000n 130:30:00.000e
+         altitude 10100 m msl
+         speed 340 m/s
+      position 39:02:42.000n 131:36:00.000e
+         altitude 9900 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT - 12
+platform blue_flt_21201 BLUE_FLT commander blue_wan_20201
+   route
+      position 38:21:00.000n 134:48:00.000e
+         altitude 10600 m msl
+         speed 305 m/s
+      position 38:30:00.000n 133:36:00.000e
+         altitude 10800 m msl
+         speed 325 m/s
+      position 38:39:00.000n 132:30:00.000e
+         altitude 11000 m msl
+         speed 345 m/s
+      position 38:46:48.000n 131:30:00.000e
+         altitude 10800 m msl
+         speed 350 m/s
+      position 38:52:48.000n 130:30:00.000e
+         altitude 10400 m msl
+         speed 340 m/s
+      position 38:36:00.000n 131:36:00.000e
+         altitude 10200 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21202 BLUE_FLT commander blue_flt_21201
+   route
+      position 38:18:18.000n 134:45:18.000e
+         altitude 10500 m msl
+         speed 305 m/s
+      position 38:27:18.000n 133:33:18.000e
+         altitude 10700 m msl
+         speed 325 m/s
+      position 38:36:18.000n 132:27:18.000e
+         altitude 10900 m msl
+         speed 345 m/s
+      position 38:44:06.000n 131:27:18.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:50:06.000n 130:27:18.000e
+         altitude 10300 m msl
+         speed 340 m/s
+      position 38:33:18.000n 131:33:18.000e
+         altitude 10100 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21203 BLUE_FLT commander blue_flt_21201
+   route
+      position 38:18:18.000n 134:50:42.000e
+         altitude 10500 m msl
+         speed 305 m/s
+      position 38:27:18.000n 133:38:42.000e
+         altitude 10700 m msl
+         speed 325 m/s
+      position 38:36:18.000n 132:32:42.000e
+         altitude 10900 m msl
+         speed 345 m/s
+      position 38:44:06.000n 131:32:42.000e
+         altitude 10700 m msl
+         speed 350 m/s
+      position 38:50:06.000n 130:32:42.000e
+         altitude 10300 m msl
+         speed 340 m/s
+      position 38:33:18.000n 131:38:42.000e
+         altitude 10100 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21204 BLUE_FLT commander blue_flt_21201
+   route
+      position 38:15:36.000n 134:43:12.000e
+         altitude 10400 m msl
+         speed 305 m/s
+      position 38:24:36.000n 133:31:12.000e
+         altitude 10600 m msl
+         speed 325 m/s
+      position 38:33:36.000n 132:25:12.000e
+         altitude 10800 m msl
+         speed 345 m/s
+      position 38:41:24.000n 131:25:12.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:47:24.000n 130:25:12.000e
+         altitude 10200 m msl
+         speed 340 m/s
+      position 38:30:36.000n 131:31:12.000e
+         altitude 10000 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21205 BLUE_FLT commander blue_flt_21201
+   route
+      position 38:15:36.000n 134:52:48.000e
+         altitude 10400 m msl
+         speed 305 m/s
+      position 38:24:36.000n 133:40:48.000e
+         altitude 10600 m msl
+         speed 325 m/s
+      position 38:33:36.000n 132:34:48.000e
+         altitude 10800 m msl
+         speed 345 m/s
+      position 38:41:24.000n 131:34:48.000e
+         altitude 10600 m msl
+         speed 350 m/s
+      position 38:47:24.000n 130:34:48.000e
+         altitude 10200 m msl
+         speed 340 m/s
+      position 38:30:36.000n 131:40:48.000e
+         altitude 10000 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_21206 BLUE_FLT commander blue_flt_21201
+   route
+      position 38:12:54.000n 134:48:00.000e
+         altitude 10300 m msl
+         speed 305 m/s
+      position 38:21:54.000n 133:36:00.000e
+         altitude 10500 m msl
+         speed 325 m/s
+      position 38:30:54.000n 132:30:00.000e
+         altitude 10700 m msl
+         speed 345 m/s
+      position 38:38:42.000n 131:30:00.000e
+         altitude 10500 m msl
+         speed 350 m/s
+      position 38:44:42.000n 130:30:00.000e
+         altitude 10100 m msl
+         speed 340 m/s
+      position 38:27:54.000n 131:36:00.000e
+         altitude 9900 m msl
+         speed 320 m/s
+
+   end_route
+   heading 270 deg
+end_platform

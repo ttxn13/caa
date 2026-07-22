@@ -1,0 +1,106 @@
+﻿{
+    "act_domain_list": [
+        "AIR",
+        "SEA",
+        "MIS"
+    ],
+    "reliability": 0.92,
+    "task_mode_list": {
+        "DETECT": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.25,
+                "elevation_sigma_deg": 0.35,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 80,
+                "speed_sigma_ms": 8
+            },
+            "cap_env": {
+                "az_fov_deg": 360,
+                "max_alt_m": 35000,
+                "max_el_deg": 80,
+                "max_range_m": 280000,
+                "min_alt_m": 0,
+                "min_el_deg": -5,
+                "min_range_m": 1000
+            },
+            "cap_prob": {
+                "detection_prob": 0.88,
+                "false_alarm_prob": 0.015,
+                "sensitive_slope": 1.1
+            },
+            "cap_time": {
+                "delay_ms": 160,
+                "update_period_s": 4
+            },
+            "max_task_num": 160
+        },
+        "GUIDE": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.08,
+                "elevation_sigma_deg": 0.1,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 25,
+                "speed_sigma_ms": 3
+            },
+            "cap_env": {
+                "az_fov_deg": 120,
+                "max_alt_m": 30000,
+                "max_el_deg": 75,
+                "max_range_m": 120000,
+                "min_alt_m": 0,
+                "min_el_deg": -5,
+                "min_range_m": 1500
+            },
+            "cap_prob": {
+                "detection_prob": 0.93,
+                "false_alarm_prob": 0.008,
+                "sensitive_slope": 1.2
+            },
+            "cap_time": {
+                "delay_ms": 80,
+                "update_period_s": 0.5
+            },
+            "max_task_num": 8
+        },
+        "TRACK": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.12,
+                "elevation_sigma_deg": 0.16,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 35,
+                "speed_sigma_ms": 4
+            },
+            "cap_env": {
+                "az_fov_deg": 240,
+                "max_alt_m": 35000,
+                "max_el_deg": 80,
+                "max_range_m": 180000,
+                "min_alt_m": 0,
+                "min_el_deg": -5,
+                "min_range_m": 1000
+            },
+            "cap_prob": {
+                "detection_prob": 0.92,
+                "false_alarm_prob": 0.01,
+                "sensitive_slope": 1.15
+            },
+            "cap_time": {
+                "delay_ms": 100,
+                "update_period_s": 1
+            },
+            "max_task_num": 64
+        }
+    },
+    "type": "RADAR",
+    "type_name": "AN_SPY_6_V1"
+}
+

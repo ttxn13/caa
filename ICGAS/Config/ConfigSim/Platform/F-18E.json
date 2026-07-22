@@ -1,0 +1,24 @@
+{
+    "cap": {
+        "air_mover": {
+            "max_alt_m": 15000,
+            "max_climb_vel_ms": 12,
+            "max_drop_vel_ms": 15,
+            "max_linear_load_g": 4,
+            "max_radial_load_g": 3,
+            "max_speed_ms": 300,
+            "min_alt_m": 500,
+            "min_speed_ms": 130
+        }
+    },
+    "domain": "AIR",
+    "icon_path": "FixedWing.F-18E.obj",
+    "mover": "AIR_MOVER",
+    "sign": {
+        "infrared_wsr": 35,
+        "opt_area_m2": 25,
+        "radar_rcs_m2": 15
+    },
+    "type": "ELC",
+    "type_name": "F-18E"
+}

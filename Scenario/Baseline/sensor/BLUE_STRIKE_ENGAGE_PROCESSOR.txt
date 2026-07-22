@@ -1,0 +1,45 @@
+# Auto-split task processor and engagement logic definition.
+behavior BLUE_AUTO_ENGAGE_PRIORITY_TRACK
+   precondition
+      bool trackListEmpty = PLATFORM.TrackList("data_mgr").Empty();
+      if (trackListEmpty) return false;
+      for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+      {
+         WsfWeapon wep = PLATFORM.WeaponEntry(i);
+         if (wep.IsValid() && wep.QuantityRemaining() > 0) return true;
+      }
+      return false;
+   end_precondition
+   execute
+      WsfLocalTrack track = PLATFORM.TrackList("data_mgr")[0];
+      if (track.Target().IsValid())
+      {
+         PLATFORM.SetCurrentTarget(track);
+         bool fired = false;
+         for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+         {
+            WsfWeapon wep = PLATFORM.WeaponEntry(i);
+            if (!fired && wep.IsValid() && wep.QuantityRemaining() > 0)
+            {
+               fired = wep.Fire(track);
+               if (fired)
+               {
+                  writeln("[BLUE_ENGAGE] T=", TIME_NOW,
+                          " launcher=", PLATFORM.Name(),
+                          " weapon=", wep.Name(),
+                          " target=", track.Target().Name());
+               }
+            }
+         }
+      }
+   end_execute
+end_behavior
+
+processor BLUE_STRIKE_ENGAGE_PROCESSOR WSF_TASK_PROCESSOR
+   update_interval 8 sec
+   behavior_tree
+      sequence
+         behavior_node BLUE_AUTO_ENGAGE_PRIORITY_TRACK
+      end_sequence
+   end_behavior_tree
+end_processor

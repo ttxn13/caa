@@ -1,0 +1,59 @@
+# Auto-split task processor and engagement logic definition.
+processor RED_SOJ_TASK_MGR WSF_TASK_PROCESSOR
+   script string JammerType(double aFrequency)
+      string jammerType = "";
+      if (TRACK.FrequencyValid())
+      {
+         if (aFrequency > 8000.e6)
+         {
+            jammerType = "RED_XBAND_JAMMER";
+         }
+      }
+      return jammerType;
+   end_script
+
+   script bool AddSpot()
+      bool startedJamming = false;
+      WsfWeapon jammer;
+      int signalCount = TRACK.SignalCount();
+      for (int signalIndex = 0; signalIndex < signalCount; signalIndex = signalIndex + 1)
+      {
+         double freq = TRACK.SignalFrequency(signalIndex);
+         string requiredType = JammerType(freq);
+         for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+         {
+            jammer = PLATFORM.WeaponEntry(i);
+            if (jammer.Type() == requiredType)
+            {
+               if (PLATFORM.WithinFieldOfView(TRACK, jammer.Name()))
+               {
+                  string jamStr = write_str("Jam", signalIndex);
+                  if (StartJamming(TRACK, jamStr, jammer, freq, 5.e6))
+                  {
+                     writeln("[RED_JAM] T=", TIME_NOW,
+                             " jammer=", PLATFORM.Name(),
+                             " target=", TRACK.TargetName(),
+                             " freq=", freq);
+                     startedJamming = true;
+                  }
+               }
+            }
+         }
+      }
+      return startedJamming;
+   end_script
+
+   evaluation_interval DETECTED 5 sec
+   state DETECTED
+      next_state IS_JAMMING
+         return AddSpot();
+      end_next_state
+   end_state
+
+   evaluation_interval IS_JAMMING 5 sec
+   state IS_JAMMING
+      next_state DETECTED
+         return (TRACK.TimeSinceUpdated() >= 10.0);
+      end_next_state
+   end_state
+end_processor

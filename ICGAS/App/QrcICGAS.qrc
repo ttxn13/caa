@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/UiICGAS">
+        <file alias="UiLaunch.qml">../GUI/UiLaunch/UiLaunch.qml</file>
+        <file alias="UiICGAS.qml">../GUI/UiICGAS/UiICGAS.qml</file>
+        <file alias="UiAFSimTest.qml">../GUI/UiICGAS/UiAFSimTest.qml</file>
+        <file alias="UiScenario.qml">../GUI/UiICGAS/UiScenario.qml</file>
+        <file alias="UiGraph.qml">../GUI/UiICGAS/UiGraph.qml</file>
+        <file alias="UiWorkflow.qml">../GUI/UiICGAS/UiWorkflow.qml</file>
+        <file alias="UiSitMonitor.qml">../GUI/UiICGAS/UiSitMonitor.qml</file>
+        <file alias="pic_main.png">source/pic_main.png</file>
+        <file alias="workflow_situation_monitor.png">source/workflow_situation_monitor.png</file>
+        <file alias="back.png">source/back.png</file>
+        <file alias="msg_box.png">source/msg_box.png</file>
+    </qresource>
+    <qresource prefix="/UiIcon">
+        <file alias="ICGAS.ico">icon/ICGAS.ico</file>
+        <file alias="ICGAS_256.png">icon/ICGAS_256.png</file>
+        <file alias="ICGAS_512.png">icon/ICGAS_512.png</file>
+        <file alias="ICGAS_source.svg">icon/ICGAS_source.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,4 @@
+# Auto-split reusable signature or antenna definition.
+radar_signature RED_SURFACE_RADAR_SIG
+   constant 85 m^2
+end_radar_signature

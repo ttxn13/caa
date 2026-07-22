@@ -1,0 +1,10 @@
+include red_sit.txt
+
+dis_interface   
+   entity_type RED_FLT     1:2:225:1:0:0:0
+
+   # RED FLT - DIS receive ID in ICGAS is 10101/10102.
+   entity_id red_flt_01      10101
+   entity_id red_flt_02      10102
+
+end_dis_interface

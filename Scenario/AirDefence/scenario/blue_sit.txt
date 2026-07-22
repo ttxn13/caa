@@ -1,0 +1,395 @@
+include ../platform/blue_plat.txt
+
+# MIS
+platform blue_mis_20001 BLUE_MIS commander SELF
+   route
+      position 38:55:48.000n 135:22:13.763e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 38:55:48.000n 125:21:52.284e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20002 BLUE_MIS commander SELF
+   route
+      position 38:55:48.000n 135:25:42.221e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 38:55:48.000n 125:25:20.742e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20003 BLUE_MIS commander SELF
+   route
+      position 38:58:30.162n 135:22:13.763e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 38:58:30.162n 125:21:52.284e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20004 BLUE_MIS commander SELF
+   route
+      position 38:58:30.162n 135:25:42.221e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 38:58:30.162n 125:25:20.742e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20005 BLUE_MIS commander SELF
+   route
+      position 39:49:51.243n 135:22:13.763e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:49:51.243n 125:21:52.284e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20006 BLUE_MIS commander SELF
+   route
+      position 39:49:51.243n 135:25:42.221e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:49:51.243n 125:25:20.742e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20007 BLUE_MIS commander SELF
+   route
+      position 39:52:33.405n 135:22:13.763e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:52:33.405n 125:21:52.284e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20008 BLUE_MIS commander SELF
+   route
+      position 39:52:33.405n 135:25:42.221e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:52:33.405n 125:25:20.742e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# ELC
+platform blue_elc_20009 BLUE_ELC commander SELF
+   route
+      position 39:22:49.622n 137:06:27.492e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:22:49.622n 127:06:06.013e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_elc_20010 BLUE_ELC commander SELF
+   route
+      position 40:16:52.865n 137:06:27.492e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:16:52.865n 127:06:06.013e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT
+platform blue_flt_20011 BLUE_FLT commander SELF
+   route
+      position 40:16:52.865n 137:13:24.408e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:16:52.865n 127:13:02.929e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20012 BLUE_FLT commander SELF
+   route
+      position 40:16:52.865n 137:16:52.865e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:16:52.865n 127:16:31.386e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20013 BLUE_FLT commander SELF
+   route
+      position 40:19:35.027n 137:13:24.408e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:19:35.027n 127:13:02.929e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20014 BLUE_FLT commander SELF
+   route
+      position 40:19:35.027n 137:16:52.865e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:19:35.027n 127:16:31.386e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# BOM
+platform blue_bom_20015 BLUE_BOM commander SELF
+   route
+      position 39:49:51.243n 137:13:24.408e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:49:51.243n 127:13:02.929e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_bom_20016 BLUE_BOM commander SELF
+   route
+      position 39:49:51.243n 137:16:52.865e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:49:51.243n 127:16:31.386e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_bom_20017 BLUE_BOM commander SELF
+   route
+      position 39:52:33.405n 137:13:24.408e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:52:33.405n 127:13:02.929e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# UKN
+platform blue_ukn_20018 BLUE_FLT commander SELF
+   route
+      position 39:52:33.405n 137:16:52.865e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:52:33.405n 127:16:31.386e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT
+platform blue_flt_20019 BLUE_FLT commander SELF
+   route
+      position 39:22:49.622n 137:13:24.408e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:22:49.622n 127:13:02.929e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20020 BLUE_FLT commander SELF
+   route
+      position 39:22:49.622n 137:16:52.865e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:22:49.622n 127:16:31.386e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20021 BLUE_FLT commander SELF
+   route
+      position 39:25:31.784n 137:13:24.408e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:25:31.784n 127:13:02.929e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20022 BLUE_FLT commander SELF
+   route
+      position 39:25:31.784n 137:16:52.865e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:25:31.784n 127:16:31.386e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# WAN
+platform blue_wan_20023 BLUE_WAN commander SELF
+   route
+      position 39:22:49.622n 137:41:12.069e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:22:49.622n 127:40:50.590e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_wan_20024 BLUE_WAN commander SELF
+   route
+      position 40:16:52.865n 137:41:12.069e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:16:52.865n 127:40:50.590e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# FLT
+platform blue_flt_20025 BLUE_FLT commander SELF
+   route
+      position 40:16:52.865n 137:48:08.984e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:16:52.865n 127:47:47.505e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20026 BLUE_FLT commander SELF
+   route
+      position 40:19:35.027n 137:48:08.984e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:19:35.027n 127:47:47.505e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20027 BLUE_FLT commander SELF
+   route
+      position 39:22:49.622n 137:48:08.984e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:22:49.622n 127:47:47.505e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_flt_20028 BLUE_FLT commander SELF
+   route
+      position 39:25:31.784n 137:48:08.984e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 39:25:31.784n 127:47:47.505e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+# MIS
+platform blue_mis_20029 BLUE_MIS commander SELF
+   route
+      position 40:43:54.486n 135:22:13.763e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:43:54.486n 125:21:52.284e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20030 BLUE_MIS commander SELF
+   route
+      position 40:43:54.486n 135:25:42.221e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:43:54.486n 125:25:20.742e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20031 BLUE_MIS commander SELF
+   route
+      position 40:46:36.649n 135:22:13.763e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:46:36.649n 125:21:52.284e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform
+platform blue_mis_20032 BLUE_MIS commander SELF
+   route
+      position 40:46:36.649n 135:25:42.221e
+         altitude 10000 m msl
+         speed 240 m/s
+      position 40:46:36.649n 125:25:20.742e
+         altitude 10000 m msl
+         speed 240 m/s
+
+   end_route
+   heading 270 deg
+end_platform

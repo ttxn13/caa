@@ -1,0 +1,9 @@
+# Auto-split reusable signature or antenna definition.
+antenna_pattern RED_XBAND_JAMMER_ANT
+   sine_pattern
+      peak_gain 20 dB
+      minimum_gain -20 dB
+      azimuth_beamwidth 5 deg
+      elevation_beamwidth 5 deg
+   end_sine_pattern
+end_antenna_pattern

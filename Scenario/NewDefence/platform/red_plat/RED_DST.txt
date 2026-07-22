@@ -1,0 +1,48 @@
+# Platform type definition. Runtime platform instances are defined in scenario/*.txt.
+platform_type RED_DST WSF_PLATFORM
+   side red    icon DDG-51
+   infrared_signature RED_AIR_IR_SIG
+   optical_signature RED_AIR_OPT_SIG
+   radar_signature RED_SURFACE_RADAR_SIG
+   mover WSF_SURFACE_MOVER
+      update_interval 2 sec
+   end_mover
+
+   # Mounted subsystem instances.
+   processor data_mgr WSF_TRACK_PROCESSOR
+      master_track_processor
+      purge_interval 120 sec
+      report_interval 3 sec
+   end_processor
+   processor task_mgr RED_SHIP_AIR_DEFENSE_PROCESSOR
+   end_processor
+   comm datalink RED_DATALINK
+      network_name red_surface_net
+      internal_link data_mgr
+      internal_link task_mgr
+   end_comm
+   comm fire_control RED_FIRE_CONTROL_LINK
+      network_name red_fire_control_net
+      internal_link data_mgr
+      internal_link task_mgr
+   end_comm
+   sensor search_radar RED_SHIP_SEARCH_RADAR
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   sensor fcr RED_SHIP_FIRE_CONTROL_RADAR
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   weapon long_sam RED_LONG_SAM
+      quantity 12
+   end_weapon
+   weapon medium_sam RED_MEDIUM_SAM
+      quantity 24
+   end_weapon
+   weapon ciws RED_CIWS
+      quantity 120
+   end_weapon
+end_platform_type

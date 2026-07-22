@@ -1,0 +1,20 @@
+﻿{
+    "cap": {
+        "sea_mover": {
+            "max_linear_acc_ms2": 0.08,
+            "max_radial_acc_ms2": 0.4903,
+            "max_speed_ms": 17.5,
+            "min_speed_ms": 0
+        }
+    },
+    "domain": "SEA",
+    "icon_path": "Watercraft.Type 052D.obj",
+    "mover": "SEA_MOVER",
+    "sign": {
+        "infrared_wsr": 300,
+        "opt_area_m2": 3000,
+        "radar_rcs_m2": 10000
+    },
+    "type": "DST",
+    "type_name": "052D"
+}

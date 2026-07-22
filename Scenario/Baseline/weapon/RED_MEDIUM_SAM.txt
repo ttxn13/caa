@@ -1,0 +1,33 @@
+# Auto-split weapon definition.
+weapon_effects RED_MEDIUM_SAM_EFFECT WSF_GRADUATED_LETHALITY
+   radius_and_pk 105 m 0.70
+end_weapon_effects
+
+platform_type RED_MEDIUM_SAM_MISSILE WSF_PLATFORM
+   icon SM-2
+   radar_signature RED_MISSILE_RADAR_SIG
+   weapon_effects RED_MEDIUM_SAM_EFFECT
+   mover WSF_STRAIGHT_LINE_MOVER
+      average_speed 2100 kts
+      maximum_lateral_acceleration 20 g
+      guidance_mode lead_pursuit
+   end_mover
+   processor seeker WSF_PERFECT_TRACKER
+      update_interval 0.5 sec
+   end_processor
+   processor fuse WSF_AIR_TARGET_FUSE
+      fuse_function_range 40 m
+      max_time_of_flight_to_detonate 160 sec
+   end_processor
+end_platform_type
+
+weapon RED_MEDIUM_SAM WSF_EXPLICIT_WEAPON
+   launched_platform_type RED_MEDIUM_SAM_MISSILE
+   weapon_effects RED_MEDIUM_SAM_EFFECT
+   quantity 24
+   firing_delay 0.5 sec
+   salvo_interval 3 sec
+   slew_mode azimuth_and_elevation
+   azimuth_slew_limits -180 deg 180 deg
+   elevation_slew_limits 0 deg 80 deg
+end_weapon

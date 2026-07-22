@@ -1,0 +1,35 @@
+{
+    "type_name": "KD-20",
+    "icon_path": "",
+    "domain": "MIS",
+    "type": "ASM",
+    "mover": "MIS_MOVER",
+    "mover_cap": {
+        "mis_mover": {
+            "min_speed_ms": 180,
+            "max_speed_ms": 290,
+            "min_alt_m": 30,
+            "max_alt_m": 12000,
+            "max_linear_load_g": 3,
+            "max_radial_load_g": 6,
+            "max_climb_vel_ms": 25,
+            "max_drop_vel_ms": 45,
+            "life_range_m": 2200000,
+            "life_time_s": 7200
+        }
+    },
+    "launch_cap": {
+        "max_range_m": 2200000,
+        "min_range_m": 30000,
+        "firing_delay_s": 0.5
+    },
+    "kill_cap": {
+        "kill_range_m": 250,
+        "kill_prob": 0.78
+    },
+    "sign": {
+        "radar_rcs_m2": 0.2,
+        "opt_area_m2": 1.2,
+        "infrared_wsr": 18
+    }
+}

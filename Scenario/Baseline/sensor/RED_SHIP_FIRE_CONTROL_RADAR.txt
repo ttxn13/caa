@@ -1,0 +1,32 @@
+# Auto-split reusable sensor/communication equipment definition.
+sensor RED_SHIP_FIRE_CONTROL_RADAR WSF_RADAR_SENSOR
+   one_m2_detect_range 110 nm
+   antenna_height 24 m
+   frame_time 1 sec
+   scan_mode azimuth_and_elevation
+   azimuth_scan_limits -120 deg 120 deg
+   elevation_scan_limits 0 deg 80 deg
+   transmitter
+      antenna_pattern RED_SHIP_FCR_ANT
+      power 600 kw
+      frequency 9200 mhz
+      internal_loss 2 dB
+   end_transmitter
+   receiver
+      antenna_pattern RED_SHIP_FCR_ANT
+      bandwidth 1 mhz
+      noise_power -166 dBw
+      internal_loss 6 dB
+   end_receiver
+   probability_of_false_alarm 1.0e-6
+   required_pd 0.65
+   swerling_case 1
+   hits_to_establish_track 1 2
+   hits_to_maintain_track 1 2
+   track_quality 0.92
+   reports_range
+   reports_bearing
+   reports_elevation
+   reports_velocity
+   reports_iff
+end_sensor

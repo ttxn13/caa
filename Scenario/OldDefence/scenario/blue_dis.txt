@@ -1,0 +1,79 @@
+include blue_sit.txt
+
+dis_interface   
+   entity_type BLUE_WAN    1:2:225:8:0:0:0
+   entity_type BLUE_ELC    1:2:225:6:0:0:0
+   entity_type BLUE_FLT    1:2:225:1:0:0:0
+   entity_type BLUE_BOM    1:2:225:3:0:0:0
+   
+   entity_type BLUE_AAM_BVR_MISSILE     2:6:225:1:0:0:0
+   entity_type BLUE_AAM_IR_MISSILE      2:6:225:1:0:0:0
+   entity_type BLUE_STANDOFF_MISSILE    2:6:225:1:0:0:0
+   entity_type BLUE_ASCM_MISSILE        2:6:225:1:0:0:0
+   
+   # WAN - 1 2
+   entity_id blue_wan_20101   20101
+   entity_id blue_wan_20201   20201
+   # ELC - 3 4
+   entity_id blue_elc_20301   20301
+   entity_id blue_elc_20302   20302
+   entity_id blue_elc_20401   20401
+   entity_id blue_elc_20402   20402
+   # FLT - 5
+   entity_id blue_flt_20501   20501
+   entity_id blue_flt_20502   20502
+   entity_id blue_flt_20503   20503
+   entity_id blue_flt_20504   20504
+   entity_id blue_flt_20505   20505
+   entity_id blue_flt_20506   20506
+   # FLT - 6
+   entity_id blue_flt_20601   20601
+   entity_id blue_flt_20602   20602
+   entity_id blue_flt_20603   20603
+   entity_id blue_flt_20604   20604
+   entity_id blue_flt_20605   20605
+   entity_id blue_flt_20606   20606
+   # FLT - 7
+   entity_id blue_flt_20701   20701
+   entity_id blue_flt_20702   20702
+   entity_id blue_flt_20703   20703
+   entity_id blue_flt_20704   20704
+   entity_id blue_flt_20705   20705
+   entity_id blue_flt_20706   20706
+   # FLT - 8
+   entity_id blue_flt_20801   20801
+   entity_id blue_flt_20802   20802
+   entity_id blue_flt_20803   20803
+   entity_id blue_flt_20804   20804
+   entity_id blue_flt_20805   20805
+   entity_id blue_flt_20806   20806
+   # FLT - 9
+   entity_id blue_flt_20901   20901
+   entity_id blue_flt_20902   20902
+   entity_id blue_flt_20903   20903
+   entity_id blue_flt_20904   20904
+   entity_id blue_flt_20905   20905
+   entity_id blue_flt_20906   20906
+   # FLT - 10
+   entity_id blue_flt_21001   21001
+   entity_id blue_flt_21002   21002
+   entity_id blue_flt_21003   21003
+   entity_id blue_flt_21004   21004
+   entity_id blue_flt_21005   21005
+   entity_id blue_flt_21006   21006
+   # FLT - 11
+   entity_id blue_flt_21101   21101
+   entity_id blue_flt_21102   21102
+   entity_id blue_flt_21103   21103
+   entity_id blue_flt_21104   21104
+   entity_id blue_flt_21105   21105
+   entity_id blue_flt_21106   21106
+   # FLT - 12
+   entity_id blue_flt_21201   21201
+   entity_id blue_flt_21202   21202
+   entity_id blue_flt_21203   21203
+   entity_id blue_flt_21204   21204
+   entity_id blue_flt_21205   21205
+   entity_id blue_flt_21206   21206
+
+end_dis_interface

@@ -1,0 +1,65 @@
+include ../platform/red_plat.txt
+
+# FLT - 1
+platform red_flt_01 RED_FLT commander SELF
+   route
+      label red_flt_01_loop position 38:45:00.000n 129:00:00.000e
+         altitude 9000 m msl
+         speed 250 m/s
+      position 38:40:36.000n 129:17:00.000e
+         altitude 9000 m msl
+         speed 250 m/s
+      position 38:30:00.000n 129:24:00.000e
+         altitude 9000 m msl
+         speed 250 m/s
+      position 38:19:24.000n 129:17:00.000e
+         altitude 9000 m msl
+         speed 250 m/s
+      position 38:15:00.000n 129:00:00.000e
+         altitude 9000 m msl
+         speed 250 m/s
+      position 38:19:24.000n 128:43:00.000e
+         altitude 9000 m msl
+         speed 250 m/s
+      position 38:30:00.000n 128:36:00.000e
+         altitude 9000 m msl
+         speed 250 m/s
+      position 38:40:36.000n 128:43:00.000e
+         altitude 9000 m msl
+         speed 250 m/s
+      goto red_flt_01_loop
+   end_route
+   heading 90 deg
+end_platform
+
+# FLT - 2
+platform red_flt_02 RED_FLT commander red_flt_01
+   route
+      label red_flt_02_loop position 39:45:00.000n 129:00:00.000e
+         altitude 9200 m msl
+         speed 250 m/s
+      position 39:40:36.000n 129:17:00.000e
+         altitude 9200 m msl
+         speed 250 m/s
+      position 39:30:00.000n 129:24:00.000e
+         altitude 9200 m msl
+         speed 250 m/s
+      position 39:19:24.000n 129:17:00.000e
+         altitude 9200 m msl
+         speed 250 m/s
+      position 39:15:00.000n 129:00:00.000e
+         altitude 9200 m msl
+         speed 250 m/s
+      position 39:19:24.000n 128:43:00.000e
+         altitude 9200 m msl
+         speed 250 m/s
+      position 39:30:00.000n 128:36:00.000e
+         altitude 9200 m msl
+         speed 250 m/s
+      position 39:40:36.000n 128:43:00.000e
+         altitude 9200 m msl
+         speed 250 m/s
+      goto red_flt_02_loop
+   end_route
+   heading 90 deg
+end_platform

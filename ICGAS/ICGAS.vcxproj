@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="18.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App\ICGAS.cpp" />
+    <ClCompile Include="App\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Store\InfoExpert.cpp" />
+    <ClCompile Include="Core\Util\UtilCoor.cpp" />
+    <ClCompile Include="Core\Util\UtilDisPdu.cpp" />
+    <ClCompile Include="Core\Util\UtilEnum.cpp" />
+    <ClCompile Include="Core\Util\UtilJson.cpp" />
+    <ClCompile Include="Simulation\Controller\SimController.cpp" />
+    <ClCompile Include="Simulation\Controller\UtilSimConfig.cpp" />
+    <ClCompile Include="Simulation\Mover\SimAirMover.cpp" />
+    <ClCompile Include="Simulation\Mover\SimMisMover.cpp" />
+    <ClCompile Include="Simulation\Mover\SimSeaMover.cpp" />
+    <ClCompile Include="Simulation\Mover\SimMover.cpp" />
+    <ClCompile Include="Simulation\Platform\SimPlatform.cpp" />
+    <ClCompile Include="Simulation\Weapon\SimWeapon.cpp" />
+    <ClCompile Include="GUI\UiICGAS\UiAFSimTest.cpp" />
+    <ClCompile Include="GUI\UiICGAS\UiGraph.cpp" />
+    <ClCompile Include="GUI\UiICGAS\UiInitMap.cpp" />
+    <ClCompile Include="GUI\UiICGAS\UiICGAS.cpp" />
+    <ClCompile Include="GUI\UiICGAS\UiScenario.cpp" />
+    <ClCompile Include="GUI\UiICGAS\UiSitMonitor.cpp" />
+    <ClCompile Include="GUI\UiICGAS\UiWorkflow.cpp" />
+    <ClCompile Include="GUI\UiLaunch\UiLaunch.cpp" />
+    <ClCompile Include="Protocol\AfsimClient.cpp" />
+    <ClCompile Include="Protocol\TacviewServer.cpp" />
+    <ClCompile Include="Module\DataManage\ModuleBvrSolver.cpp" />
+    <ClCompile Include="Module\DataManage\ModuleGraph.cpp" />
+    <ClCompile Include="Module\ModuleDatabase.cpp" />
+    <ClCompile Include="Module\DataManage\ModuleMission.cpp" />
+    <ClCompile Include="Module\OurAnalysis\ModuleEmyGroup.cpp" />
+    <ClCompile Include="Module\OurAnalysis\ModuleEmyIntent.cpp" />
+    <ClCompile Include="Module\OurAnalysis\ModuleEmyThreat.cpp" />
+    <ClCompile Include="Module\OurAnalysis\ModuleOurCOG.cpp" />
+    <ClCompile Include="Module\OurAnalysis\ModuleOurLOO.cpp" />
+    <ClCompile Include="Module\OurAnalysis\ModuleOurCOA.cpp" />
+    <ClCompile Include="Module\EmyAnalysis\ModuleOurGroup.cpp" />
+    <ClCompile Include="Module\EmyAnalysis\ModuleOurIntent.cpp" />
+    <ClCompile Include="Module\EmyAnalysis\ModuleOurThreat.cpp" />
+    <ClCompile Include="Module\EmyAnalysis\ModuleEmyCOG.cpp" />
+    <ClCompile Include="Module\EmyAnalysis\ModuleEmyLOO.cpp" />
+    <ClCompile Include="Module\EmyAnalysis\ModuleEmyCOA.cpp" />
+    <ClCompile Include="Protocol\AfsimServer.cpp" />
+    <ClCompile Include="GUI\UiICGAS\UiOsgInitMap.cpp" />
+    <ClCompile Include="OsgEarth\src\AfsCameraController.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsCoordinateUtil.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsEarthLayerManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsMapPreferences.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsMapViewer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsPlatformLayer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="App\icon\ICGAS.APS" />
+    <None Include="App\icon\ICGAS_source.svg" />
+    <None Include="App\icon\RCa67356" />
+    <None Include="GUI\UiICGAS\UiAFSimTest.qml" />
+    <None Include="GUI\UiICGAS\UiGraph.qml" />
+    <None Include="GUI\UiICGAS\UiICGAS.qml" />
+    <None Include="GUI\UiICGAS\UiScenario.qml" />
+    <None Include="GUI\UiICGAS\UiSitMonitor.qml" />
+    <None Include="GUI\UiICGAS\UiWorkflow.qml" />
+    <None Include="GUI\UiLaunch\UiLaunch.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App\icon\resource.h" />
+    <ClInclude Include="App\pch.hpp" />
+    <ClInclude Include="Core\Comm\CoreDefine.hpp" />
+    <ClInclude Include="Core\Comm\CoreGraph.hpp" />
+    <ClInclude Include="Core\Comm\CoreSystem.hpp" />
+    <ClInclude Include="Core\IncCore.hpp" />
+    <ClInclude Include="Core\Model\DefDisPdu.hpp" />
+    <ClInclude Include="Core\Model\DefCoor.hpp" />
+    <ClInclude Include="Core\Model\DefEngage.hpp" />
+    <ClInclude Include="Core\Sim\CoreSimEnum.hpp" />
+    <ClInclude Include="Core\Sim\DefPlatform.hpp" />
+    <ClInclude Include="Core\Sim\DefSensor.hpp" />
+    <ClInclude Include="Core\Sim\DefSimMover.hpp" />
+    <ClInclude Include="Core\Sim\DefWeapon.hpp" />
+    <ClInclude Include="Core\Store\InfoExpert.hpp" />
+    <ClInclude Include="Core\Util\UtilCoor.hpp" />
+    <ClInclude Include="Core\Util\UtilDisPdu.hpp" />
+    <ClInclude Include="Core\Util\UtilEnum.hpp" />
+    <ClInclude Include="Core\Util\UtilJson.hpp" />
+    <QtMoc Include="Simulation\Controller\SimController.hpp" />
+    <ClInclude Include="Simulation\Controller\UtilSimConfig.hpp" />
+    <ClInclude Include="Simulation\Mover\SimAirMover.hpp" />
+    <ClInclude Include="Simulation\Mover\SimMisMover.hpp" />
+    <ClInclude Include="Simulation\Mover\SimSeaMover.hpp" />
+    <ClInclude Include="Simulation\Mover\SimMover.hpp" />
+    <ClInclude Include="Simulation\Platform\SimPlatform.hpp" />
+    <ClInclude Include="Simulation\Weapon\SimWeapon.hpp" />
+    <QtMoc Include="GUI\UiICGAS\UiAFSimTest.hpp" />
+    <QtMoc Include="GUI\UiICGAS\UiGraph.hpp" />
+    <QtMoc Include="GUI\UiICGAS\UiInitMap.hpp" />
+    <QtMoc Include="GUI\UiICGAS\UiICGAS.hpp" />
+    <QtMoc Include="GUI\UiICGAS\UiScenario.hpp" />
+    <QtMoc Include="GUI\UiICGAS\UiSitMonitor.hpp" />
+    <QtMoc Include="GUI\UiICGAS\UiWorkflow.hpp" />
+    <QtMoc Include="GUI\UiLaunch\UiLaunch.hpp" />
+    <QtMoc Include="Protocol\AfsimClient.hpp" />
+    <QtMoc Include="Protocol\TacviewServer.hpp" />
+    <QtMoc Include="Module\DataManage\ModuleBvrSolver.hpp" />
+    <QtMoc Include="Module\DataManage\ModuleGraph.hpp" />
+    <QtMoc Include="Module\ModuleDatabase.hpp" />
+    <QtMoc Include="Module\DataManage\ModuleMission.hpp" />
+    <QtMoc Include="Module\OurAnalysis\ModuleEmyGroup.hpp" />
+    <QtMoc Include="Module\OurAnalysis\ModuleEmyIntent.hpp" />
+    <QtMoc Include="Module\OurAnalysis\ModuleEmyThreat.hpp" />
+    <QtMoc Include="Module\OurAnalysis\ModuleOurCOG.hpp" />
+    <QtMoc Include="Module\OurAnalysis\ModuleOurLOO.hpp" />
+    <QtMoc Include="Module\OurAnalysis\ModuleOurCOA.hpp" />
+    <QtMoc Include="Module\EmyAnalysis\ModuleOurGroup.hpp" />
+    <QtMoc Include="Module\EmyAnalysis\ModuleOurIntent.hpp" />
+    <QtMoc Include="Module\EmyAnalysis\ModuleOurThreat.hpp" />
+    <QtMoc Include="Module\EmyAnalysis\ModuleEmyCOG.hpp" />
+    <QtMoc Include="Module\EmyAnalysis\ModuleEmyLOO.hpp" />
+    <QtMoc Include="Module\EmyAnalysis\ModuleEmyCOA.hpp" />
+    <QtMoc Include="Protocol\AfsimServer.hpp" />
+    <QtMoc Include="GUI\UiICGAS\UiOsgInitMap.hpp" />
+    <ClInclude Include="OsgEarth\src\AfsCameraController.hpp" />
+    <ClInclude Include="OsgEarth\src\AfsCoordinateUtil.hpp" />
+    <ClInclude Include="OsgEarth\src\AfsEarthLayerManager.hpp" />
+    <ClInclude Include="OsgEarth\src\AfsMapPreferences.hpp" />
+    <ClInclude Include="OsgEarth\src\AfsMapTypes.hpp" />
+    <ClInclude Include="OsgEarth\src\AfsMapViewer.hpp" />
+    <ClInclude Include="OsgEarth\src\AfsPlatformLayer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="App\QrcICGAS.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="App\icon\ICGAS.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="App\source\back.png" />
+    <Image Include="App\source\workflow_situation_monitor.png" />
+    <Image Include="App\icon\ICGAS.ico" />
+    <Image Include="App\icon\ICGAS_256.png" />
+    <Image Include="App\icon\ICGAS_512.png" />
+    <Image Include="App\source\pic_main.png" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{593ABAE3-0787-4D53-9504-50C497FC4A06}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.11.1_msvc2022_64</QtInstall>
+    <QtModules>core;gui;network;qml;quick;widgets;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;printsupport;xml;charts;datavisualization;3dquick;quick3d;opengl</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.8.3_msvc2022_64</QtInstall>
+    <QtModules>core;gui;network;qml;quick;widgets;3dcore;3danimation;3dextras;3dinput;3dlogic;3drender;printsupport;xml;charts;datavisualization;3dquick;quick3d;opengl</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(SolutionDir)build\ICGAS\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(SolutionDir)build\ICGAS\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.hpp</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\include;$(ProjectDir)OsgEarth\src;$(ProjectDir)App;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(ProjectDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)OsgEarth\plugin\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>osgEarthd.lib;osgViewerd.lib;osgGAd.lib;osgDBd.lib;osgUtild.lib;osgTextd.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>osgEarthd.dll;osgViewerd.dll;osgGAd.dll;osgDBd.dll;osgUtild.dll;osgTextd.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(ProjectDir)OsgEarth\plugin\debug\bin" mkdir "$(ProjectDir)OsgEarth\plugin\debug\bin"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\debug\bin\*.dll" "$(ProjectDir)OsgEarth\plugin\debug\bin\"
+if not exist "$(ProjectDir)OsgEarth\plugin\debug\lib" mkdir "$(ProjectDir)OsgEarth\plugin\debug\lib"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\debug\lib\*.lib" "$(ProjectDir)OsgEarth\plugin\debug\lib\"
+if not exist "$(ProjectDir)OsgEarth\plugin\debug\osgPlugins-3.6.5" mkdir "$(ProjectDir)OsgEarth\plugin\debug\osgPlugins-3.6.5"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\debug\plugins\osgPlugins-3.6.5\*.dll" "$(ProjectDir)OsgEarth\plugin\debug\osgPlugins-3.6.5\"
+if not exist "$(ProjectDir)OsgEarth\plugin\share\gdal" mkdir "$(ProjectDir)OsgEarth\plugin\share\gdal"
+xcopy /Y /D /E /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\share\gdal\*" "$(ProjectDir)OsgEarth\plugin\share\gdal\"
+if not exist "$(ProjectDir)OsgEarth\plugin\share\proj" mkdir "$(ProjectDir)OsgEarth\plugin\share\proj"
+xcopy /Y /D /E /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\share\proj\*" "$(ProjectDir)OsgEarth\plugin\share\proj\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\11782\Desktop\KnowGraph\vcpkg\installed\x64-windows\include;$(ProjectDir)OsgEarth\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)OsgEarth\plugin\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>osgEarthd.lib;osgViewerd.lib;osgGAd.lib;osgDBd.lib;osgUtild.lib;osgTextd.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>osgEarthd.dll;osgViewerd.dll;osgGAd.dll;osgDBd.dll;osgUtild.dll;osgTextd.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(ProjectDir)OsgEarth\plugin\debug\bin" mkdir "$(ProjectDir)OsgEarth\plugin\debug\bin"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\debug\bin\*.dll" "$(ProjectDir)OsgEarth\plugin\debug\bin\"
+if not exist "$(ProjectDir)OsgEarth\plugin\debug\lib" mkdir "$(ProjectDir)OsgEarth\plugin\debug\lib"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\debug\lib\*.lib" "$(ProjectDir)OsgEarth\plugin\debug\lib\"
+if not exist "$(ProjectDir)OsgEarth\plugin\debug\osgPlugins-3.6.5" mkdir "$(ProjectDir)OsgEarth\plugin\debug\osgPlugins-3.6.5"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\debug\plugins\osgPlugins-3.6.5\*.dll" "$(ProjectDir)OsgEarth\plugin\debug\osgPlugins-3.6.5\"
+if not exist "$(ProjectDir)OsgEarth\plugin\share\gdal" mkdir "$(ProjectDir)OsgEarth\plugin\share\gdal"
+xcopy /Y /D /E /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\share\gdal\*" "$(ProjectDir)OsgEarth\plugin\share\gdal\"
+if not exist "$(ProjectDir)OsgEarth\plugin\share\proj" mkdir "$(ProjectDir)OsgEarth\plugin\share\proj"
+xcopy /Y /D /E /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\share\proj\*" "$(ProjectDir)OsgEarth\plugin\share\proj\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\include;$(ProjectDir)OsgEarth\src;$(ProjectDir)App;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(ProjectDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)OsgEarth\plugin\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>osgEarth.lib;osgViewer.lib;osgGA.lib;osgDB.lib;osgUtil.lib;osgText.lib;osg.lib;OpenThreads.lib;opengl32.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>osgEarth.dll;osgViewer.dll;osgGA.dll;osgDB.dll;osgUtil.dll;osgText.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(ProjectDir)OsgEarth\plugin\release\bin" mkdir "$(ProjectDir)OsgEarth\plugin\release\bin"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\bin\*.dll" "$(ProjectDir)OsgEarth\plugin\release\bin\"
+if not exist "$(ProjectDir)OsgEarth\plugin\release\lib" mkdir "$(ProjectDir)OsgEarth\plugin\release\lib"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\lib\*.lib" "$(ProjectDir)OsgEarth\plugin\release\lib\"
+if not exist "$(ProjectDir)OsgEarth\plugin\release\osgPlugins-3.6.5" mkdir "$(ProjectDir)OsgEarth\plugin\release\osgPlugins-3.6.5"
+xcopy /Y /D /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\plugins\osgPlugins-3.6.5\*.dll" "$(ProjectDir)OsgEarth\plugin\release\osgPlugins-3.6.5\"
+if not exist "$(ProjectDir)OsgEarth\plugin\share\gdal" mkdir "$(ProjectDir)OsgEarth\plugin\share\gdal"
+xcopy /Y /D /E /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\share\gdal\*" "$(ProjectDir)OsgEarth\plugin\share\gdal\"
+if not exist "$(ProjectDir)OsgEarth\plugin\share\proj" mkdir "$(ProjectDir)OsgEarth\plugin\share\proj"
+xcopy /Y /D /E /I "D:\WYM\Pragram\Code\vcpkg\installed\x64-windows\share\proj\*" "$(ProjectDir)OsgEarth\plugin\share\proj\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

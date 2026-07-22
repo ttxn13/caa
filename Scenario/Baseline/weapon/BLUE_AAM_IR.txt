@@ -1,0 +1,33 @@
+# Auto-split weapon definition.
+weapon_effects BLUE_AAM_IR_EFFECT WSF_GRADUATED_LETHALITY
+   radius_and_pk 70 m 0.58
+end_weapon_effects
+
+platform_type BLUE_AAM_IR_MISSILE WSF_PLATFORM
+   icon AIM-9
+   radar_signature BLUE_MISSILE_RADAR_SIG
+   weapon_effects BLUE_AAM_IR_EFFECT
+   mover WSF_STRAIGHT_LINE_MOVER
+      average_speed 1200 kts
+      maximum_lateral_acceleration 28 g
+      guidance_mode pure_pursuit
+   end_mover
+   processor seeker WSF_PERFECT_TRACKER
+      update_interval 0.5 sec
+   end_processor
+   processor fuse WSF_AIR_TARGET_FUSE
+      fuse_function_range 25 m
+      max_time_of_flight_to_detonate 80 sec
+   end_processor
+end_platform_type
+
+weapon BLUE_AAM_IR WSF_EXPLICIT_WEAPON
+   launched_platform_type BLUE_AAM_IR_MISSILE
+   weapon_effects BLUE_AAM_IR_EFFECT
+   quantity 2
+   firing_delay 0.2 sec
+   salvo_interval 3 sec
+   slew_mode azimuth_and_elevation
+   azimuth_slew_limits -90 deg 90 deg
+   elevation_slew_limits -30 deg 60 deg
+end_weapon

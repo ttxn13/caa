@@ -1,0 +1,30 @@
+# Auto-split weapon definition.
+weapon_effects RED_CIWS_EFFECT WSF_GRADUATED_LETHALITY
+   radius_and_pk 35 m 0.45
+end_weapon_effects
+
+platform_type RED_CIWS_ROUND WSF_PLATFORM
+   icon BULLET
+   radar_signature RED_MISSILE_RADAR_SIG
+   weapon_effects RED_CIWS_EFFECT
+   mover WSF_STRAIGHT_LINE_MOVER
+      average_speed 950 m/s
+      maximum_lateral_acceleration 3 g
+      guidance_mode lead_pursuit
+   end_mover
+   processor fuse WSF_AIR_TARGET_FUSE
+      fuse_function_range 15 m
+      max_time_of_flight_to_detonate 15 sec
+   end_processor
+end_platform_type
+
+weapon RED_CIWS WSF_EXPLICIT_WEAPON
+   launched_platform_type RED_CIWS_ROUND
+   weapon_effects RED_CIWS_EFFECT
+   quantity 120
+   firing_delay 0.05 sec
+   salvo_interval 0.5 sec
+   slew_mode azimuth_and_elevation
+   azimuth_slew_limits -180 deg 180 deg
+   elevation_slew_limits -5 deg 80 deg
+end_weapon

@@ -1,0 +1,40 @@
+# Platform type definition. Runtime platform instances are defined in scenario/*.txt.
+platform_type BLUE_FLT WSF_PLATFORM
+   side blue   icon F-15
+   infrared_signature BLUE_AIR_IR_SIG
+   optical_signature BLUE_AIR_OPT_SIG
+   radar_signature BLUE_FIGHTER_RADAR_SIG
+   mover WSF_AIR_MOVER
+      default_radial_acceleration 2.5 g
+      update_interval 1 sec
+   end_mover
+
+   # Mounted subsystem instances.
+   processor data_mgr WSF_TRACK_PROCESSOR
+      purge_interval 60 sec
+      report_interval 3 sec
+   end_processor
+   processor task_mgr BLUE_STRIKE_ENGAGE_PROCESSOR
+   end_processor
+   comm datalink BLUE_DATALINK
+      network_name blue_air_net
+      internal_link data_mgr
+      internal_link task_mgr
+   end_comm
+   sensor radar BLUE_FIGHTER_SEARCH_RADAR
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   sensor fcr BLUE_FIGHTER_FIRE_CONTROL_RADAR
+      on
+      internal_link data_mgr
+      ignore_same_side
+   end_sensor
+   weapon bvr_aam BLUE_AAM_BVR
+      quantity 4
+   end_weapon
+   weapon ir_aam BLUE_AAM_IR
+      quantity 2
+   end_weapon
+end_platform_type

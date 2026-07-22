@@ -1,0 +1,35 @@
+{
+    "domain": "MIS",
+    "icon_path": "",
+    "kill_cap": {
+        "kill_prob": 0.7,
+        "kill_range_m": 35
+    },
+    "launch_cap": {
+        "firing_delay_s": 0.2,
+        "max_range_m": 180000,
+        "min_range_m": 500
+    },
+    "mover": "MIS_MOVER",
+    "mover_cap": {
+        "mis_mover": {
+            "life_range_m": 9000,
+            "life_time_s": 25,
+            "max_alt_m": 6000,
+            "max_climb_vel_ms": 120,
+            "max_drop_vel_ms": 150,
+            "max_linear_load_g": 14,
+            "max_radial_load_g": 35,
+            "max_speed_ms": 850,
+            "min_alt_m": 1.5,
+            "min_speed_ms": 180
+        }
+    },
+    "sign": {
+        "infrared_wsr": 3,
+        "opt_area_m2": 0.18,
+        "radar_rcs_m2": 0.02
+    },
+    "type": "SAM",
+    "type_name": "HQ-10"
+}

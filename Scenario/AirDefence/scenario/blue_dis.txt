@@ -1,0 +1,57 @@
+include blue_sit.txt
+
+dis_interface   
+   entity_type BLUE_WAN    1:2:225:8:0:0:0
+   entity_type BLUE_ELC    1:2:225:6:0:0:0
+   entity_type BLUE_FLT    1:2:225:1:0:0:0
+   entity_type BLUE_BOM    1:2:225:3:0:0:0
+   entity_type BLUE_MIS    2:6:225:1:0:0:0
+
+   entity_type BLUE_AAM_BVR_MISSILE     2:6:225:1:0:0:0
+   entity_type BLUE_AAM_IR_MISSILE      2:6:225:1:0:0:0
+   entity_type BLUE_STANDOFF_MISSILE    2:6:225:1:0:0:0
+   entity_type BLUE_ASCM_MISSILE        2:6:225:1:0:0:0
+
+   # MIS
+   entity_id blue_mis_20001     20001
+   entity_id blue_mis_20002     20002
+   entity_id blue_mis_20003     20003
+   entity_id blue_mis_20004     20004
+   entity_id blue_mis_20005     20005
+   entity_id blue_mis_20006     20006
+   entity_id blue_mis_20007     20007
+   entity_id blue_mis_20008     20008
+   # ELC
+   entity_id blue_elc_20009     20009
+   entity_id blue_elc_20010     20010
+   # FLT
+   entity_id blue_flt_20011     20011
+   entity_id blue_flt_20012     20012
+   entity_id blue_flt_20013     20013
+   entity_id blue_flt_20014     20014
+   # BOM
+   entity_id blue_bom_20015     20015
+   entity_id blue_bom_20016     20016
+   entity_id blue_bom_20017     20017
+   # UKN
+   entity_id blue_ukn_20018     20018
+   # FLT
+   entity_id blue_flt_20019     20019
+   entity_id blue_flt_20020     20020
+   entity_id blue_flt_20021     20021
+   entity_id blue_flt_20022     20022
+   # WAN
+   entity_id blue_wan_20023     20023
+   entity_id blue_wan_20024     20024
+   # FLT
+   entity_id blue_flt_20025     20025
+   entity_id blue_flt_20026     20026
+   entity_id blue_flt_20027     20027
+   entity_id blue_flt_20028     20028
+   # MIS
+   entity_id blue_mis_20029     20029
+   entity_id blue_mis_20030     20030
+   entity_id blue_mis_20031     20031
+   entity_id blue_mis_20032     20032
+
+end_dis_interface

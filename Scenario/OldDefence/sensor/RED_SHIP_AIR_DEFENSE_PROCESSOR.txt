@@ -1,0 +1,102 @@
+# Ship-specific air-defense processor.
+# Purpose: impose explicit range gates and salvo constraints for shipborne air defense.
+# The processor prevents ships from firing simply because a track exists.
+# It only fires after the target enters the corresponding weapon layer.
+
+behavior RED_SHIP_ENGAGE_RANGE_GATED
+   precondition
+      bool trackListEmpty = PLATFORM.TrackList("data_mgr").Empty();
+      if (trackListEmpty) return false;
+
+      for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+      {
+         WsfWeapon wep = PLATFORM.WeaponEntry(i);
+         if (wep.IsValid() && wep.QuantityRemaining() > 0) return true;
+      }
+
+      return false;
+   end_precondition
+
+   execute
+      WsfLocalTrack track = PLATFORM.TrackList("data_mgr")[0];
+
+      if (track.Target().IsValid())
+      {
+         PLATFORM.SetCurrentTarget(track);
+
+         double target_range_m = PLATFORM.SlantRangeTo(track);
+
+         int max_launch_count = 2;
+         int launch_count = 0;
+
+         for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+         {
+            WsfWeapon wep = PLATFORM.WeaponEntry(i);
+            string weapon_name = wep.Name();
+
+            bool in_range = false;
+
+            # Long-range SAM layer: approximately 30-220 km.
+            if (weapon_name == "long_sam")
+            {
+               in_range = ((target_range_m >= 30000.0) &&
+                           (target_range_m <= 220000.0));
+            }
+
+            # Medium SAM layer: approximately 8-120 km.
+            if (weapon_name == "medium_sam")
+            {
+               in_range = ((target_range_m >= 8000.0) &&
+                           (target_range_m <= 120000.0));
+            }
+
+            # CIWS layer: terminal defense within 8 km.
+            if (weapon_name == "ciws")
+            {
+               in_range = (target_range_m <= 8000.0);
+            }
+
+            if (launch_count < max_launch_count &&
+                in_range &&
+                wep.IsValid() &&
+                wep.QuantityRemaining() > 0)
+            {
+               bool fired = wep.Fire(track);
+
+               if (fired)
+               {
+                  launch_count = launch_count + 1;
+                  writeln("[RED_SHIP_ENGAGE] T=", TIME_NOW,
+                          " launcher=", PLATFORM.Name(),
+                          " weapon=", weapon_name,
+                          " target=", track.Target().Name(),
+                          " range_m=", target_range_m,
+                          " launch_count=", launch_count,
+                          " max_launch_count=", max_launch_count);
+               }
+            }
+            else
+            {
+               if (wep.IsValid() && wep.QuantityRemaining() > 0)
+               {
+                  writeln("[RED_SHIP_HOLD] T=", TIME_NOW,
+                          " launcher=", PLATFORM.Name(),
+                          " weapon=", weapon_name,
+                          " target=", track.Target().Name(),
+                          " range_m=", target_range_m,
+                          " reason=OUT_OF_LAYER_OR_SALVO_LIMIT");
+               }
+            }
+         }
+      }
+   end_execute
+end_behavior
+
+processor RED_SHIP_AIR_DEFENSE_PROCESSOR WSF_TASK_PROCESSOR
+   update_interval 8 sec
+   behavior_tree
+      sequence
+         behavior_node RED_SHIP_ENGAGE_RANGE_GATED
+      end_sequence
+   end_behavior_tree
+end_processor

@@ -1,0 +1,74 @@
+﻿{
+    "act_domain_list": [
+        "AIR",
+        "MIS"
+    ],
+    "reliability": 0.86,
+    "task_mode_list": {
+        "DETECT": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.08,
+                "elevation_sigma_deg": 0.08,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": false,
+                "measure_speed": false,
+                "range_sigma_m": 0,
+                "speed_sigma_ms": 0
+            },
+            "cap_env": {
+                "az_fov_deg": 120,
+                "max_alt_m": 25000,
+                "max_el_deg": 70,
+                "max_range_m": 45000,
+                "min_alt_m": 0,
+                "min_el_deg": -5,
+                "min_range_m": 500
+            },
+            "cap_prob": {
+                "detection_prob": 0.78,
+                "false_alarm_prob": 0.03,
+                "sensitive_slope": 1
+            },
+            "cap_time": {
+                "delay_ms": 120,
+                "update_period_s": 2
+            },
+            "max_task_num": 24
+        },
+        "TRACK": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.04,
+                "elevation_sigma_deg": 0.04,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": false,
+                "measure_speed": false,
+                "range_sigma_m": 0,
+                "speed_sigma_ms": 0
+            },
+            "cap_env": {
+                "az_fov_deg": 60,
+                "max_alt_m": 25000,
+                "max_el_deg": 70,
+                "max_range_m": 35000,
+                "min_alt_m": 0,
+                "min_el_deg": -5,
+                "min_range_m": 500
+            },
+            "cap_prob": {
+                "detection_prob": 0.84,
+                "false_alarm_prob": 0.02,
+                "sensitive_slope": 1.1
+            },
+            "cap_time": {
+                "delay_ms": 90,
+                "update_period_s": 0.8
+            },
+            "max_task_num": 8
+        }
+    },
+    "type": "INFRARED",
+    "type_name": "IRST21"
+}
+

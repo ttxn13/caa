@@ -1,0 +1,4 @@
+# Auto-split reusable signature or antenna definition.
+radar_signature BLUE_MISSILE_RADAR_SIG
+   constant 0.45 m^2
+end_radar_signature

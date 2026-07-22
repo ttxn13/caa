@@ -1,0 +1,19 @@
+# Auto-split weapon definition.
+weapon BLUE_XBAND_JAMMER WSF_RF_JAMMER
+   maximum_number_of_beams 2
+   beam_power_distribution average
+   maximum_spots_per_beam 2
+   spot_power_distribution average
+   azimuth_field_of_view -70 deg 70 deg
+   elevation_field_of_view -60 deg 60 deg
+   maximum_range 250 km
+   slew_mode azimuth_and_elevation
+   azimuth_slew_limits -65 deg 65 deg
+   elevation_slew_limits -55 deg 55 deg
+   transmitter
+      antenna_pattern BLUE_XBAND_JAMMER_ANT
+      frequency_band 8 ghz 12 ghz
+      power 1.6 kw
+      internal_loss 0 dB
+   end_transmitter
+end_weapon

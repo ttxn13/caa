@@ -1,0 +1,9 @@
+# Auto-split reusable signature or antenna definition.
+antenna_pattern RED_SHIP_FCR_ANT
+   rectangular_pattern
+      peak_gain 30 dB
+      minimum_gain -18 dB
+      azimuth_beamwidth 2 deg
+      elevation_beamwidth 2 deg
+   end_rectangular_pattern
+end_antenna_pattern

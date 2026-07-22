@@ -1,0 +1,6 @@
+{
+    "sim_ctrl": {
+        "sim_iter_ms": 1000,
+        "time_acc_ratio": 1
+    }
+}

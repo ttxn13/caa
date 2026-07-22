@@ -1,0 +1,181 @@
+# Ship-specific air-defense processor.
+# Purpose: impose explicit range gates and salvo constraints for shipborne air defense.
+# The processor prevents ships from firing simply because a track exists.
+# It only fires after the target enters the corresponding weapon layer.
+
+behavior RED_SHIP_ENGAGE_RANGE_GATED
+   script_variables
+      double mObserveIntervalSec = 45.0;
+      string mNextAllowedShotTimeKey = "red_ship_next_allowed_shot_time";
+   end_script_variables
+
+   script bool ReadyForNextShot()
+      return (TIME_NOW >= PLATFORM.AuxDataDouble(mNextAllowedShotTimeKey));
+   end_script
+
+   script double StartObserveWindow()
+      double next_allowed_shot_time = TIME_NOW + mObserveIntervalSec;
+      PLATFORM.SetAuxData(mNextAllowedShotTimeKey, next_allowed_shot_time);
+      return next_allowed_shot_time;
+   end_script
+
+   script bool IsAirTarget(WsfTrack aTrack)
+      return (aTrack.TargetType() == "BLUE_FLT" ||
+              aTrack.TargetType() == "BLUE_WAN" ||
+              aTrack.TargetType() == "BLUE_ELC" ||
+              aTrack.TargetType() == "BLUE_BOM");
+   end_script
+
+   script bool IsIncomingWeaponTarget(WsfTrack aTrack)
+      return (aTrack.TargetType() == "BLUE_AAM_BVR_MISSILE" ||
+              aTrack.TargetType() == "BLUE_AAM_IR_MISSILE" ||
+              aTrack.TargetType() == "BLUE_STANDOFF_MISSILE" ||
+              aTrack.TargetType() == "BLUE_ASCM_MISSILE");
+   end_script
+
+   script bool WeaponCanEngageTrack(WsfWeapon aWeapon, WsfTrack aTrack)
+      if (!aWeapon.IsValid() || aWeapon.QuantityRemaining() <= 0) return false;
+      if (!aTrack.Target().IsValid()) return false;
+      if (!ReadyForNextShot()) return false;
+
+      string weapon_name = aWeapon.Name();
+      double target_range_m = PLATFORM.SlantRangeTo(aTrack);
+      double attack_angle_deg = MATH.Fabs(PLATFORM.RelativeBearingTo(aTrack));
+
+      if (weapon_name == "long_sam")
+      {
+         if (!IsAirTarget(aTrack)) return false;
+         return ((target_range_m >= 30000.0) &&
+                 (target_range_m <= 170000.0) &&
+                 (attack_angle_deg <= 180.0));
+      }
+
+      if (weapon_name == "medium_sam")
+      {
+         if (!IsAirTarget(aTrack)) return false;
+         return ((target_range_m >= 8000.0) &&
+                 (target_range_m <= 120000.0) &&
+                 (attack_angle_deg <= 180.0));
+      }
+
+      if (weapon_name == "ciws")
+      {
+         if (!(IsAirTarget(aTrack) || IsIncomingWeaponTarget(aTrack))) return false;
+         return ((target_range_m <= 8000.0) &&
+                 (attack_angle_deg <= 180.0));
+      }
+
+      return false;
+   end_script
+
+   script bool TrackCanBeEngaged(WsfTrack aTrack)
+      if (!aTrack.Target().IsValid()) return false;
+
+      for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+      {
+         WsfWeapon wep = PLATFORM.WeaponEntry(i);
+         if (WeaponCanEngageTrack(wep, aTrack)) return true;
+      }
+
+      return false;
+   end_script
+
+   script WsfLocalTrack SelectBestAttackAngleTrack()
+      WsfLocalTrack best_track;
+      double best_attack_angle_deg = 9999.0;
+
+      foreach (WsfLocalTrack track in PLATFORM.TrackList("data_mgr"))
+      {
+         if (TrackCanBeEngaged(track))
+         {
+            double attack_angle_deg = MATH.Fabs(PLATFORM.RelativeBearingTo(track));
+            if (attack_angle_deg < best_attack_angle_deg)
+            {
+               best_attack_angle_deg = attack_angle_deg;
+               best_track = track;
+            }
+         }
+      }
+
+      return best_track;
+   end_script
+
+   precondition
+      bool trackListEmpty = PLATFORM.TrackList("data_mgr").Empty();
+      if (trackListEmpty) return false;
+
+      foreach (WsfLocalTrack track in PLATFORM.TrackList("data_mgr"))
+      {
+         if (TrackCanBeEngaged(track)) return true;
+      }
+
+      return false;
+   end_precondition
+
+   execute
+      WsfLocalTrack track = SelectBestAttackAngleTrack();
+
+      if (track.Target().IsValid())
+      {
+         PLATFORM.SetCurrentTarget(track);
+
+         double target_range_m = PLATFORM.SlantRangeTo(track);
+         double attack_angle_deg = MATH.Fabs(PLATFORM.RelativeBearingTo(track));
+
+         int max_launch_count = 1;
+         int launch_count = 0;
+
+         for (int i = 0; i < PLATFORM.WeaponCount(); i = i + 1)
+         {
+            WsfWeapon wep = PLATFORM.WeaponEntry(i);
+            string weapon_name = wep.Name();
+
+            if (launch_count < max_launch_count &&
+                WeaponCanEngageTrack(wep, track))
+            {
+               bool fired = wep.Fire(track);
+
+               if (fired)
+               {
+                  launch_count = launch_count + 1;
+                  double next_allowed_shot_time = StartObserveWindow();
+                  writeln("[RED_SHIP_ENGAGE] T=", TIME_NOW,
+                          " launcher=", PLATFORM.Name(),
+                          " weapon=", weapon_name,
+                          " target=", track.Target().Name(),
+                          " range_m=", target_range_m,
+                          " attack_angle_deg=", attack_angle_deg,
+                          " launch_count=", launch_count,
+                          " max_launch_count=", max_launch_count,
+                          " observe_until=", next_allowed_shot_time);
+               }
+            }
+            else
+            {
+               if (wep.IsValid() && wep.QuantityRemaining() > 0)
+               {
+                  string hold_reason = "OUT_OF_LAYER_OR_SALVO_LIMIT";
+                  if (!ReadyForNextShot()) hold_reason = "OBSERVING_AFTER_SHOT";
+
+                  writeln("[RED_SHIP_HOLD] T=", TIME_NOW,
+                          " launcher=", PLATFORM.Name(),
+                          " weapon=", weapon_name,
+                          " target=", track.Target().Name(),
+                          " range_m=", target_range_m,
+                          " attack_angle_deg=", attack_angle_deg,
+                          " reason=", hold_reason);
+               }
+            }
+         }
+      }
+   end_execute
+end_behavior
+
+processor RED_SHIP_AIR_DEFENSE_PROCESSOR WSF_TASK_PROCESSOR
+   update_interval 8 sec
+   behavior_tree
+      sequence
+         behavior_node RED_SHIP_ENGAGE_RANGE_GATED
+      end_sequence
+   end_behavior_tree
+end_processor

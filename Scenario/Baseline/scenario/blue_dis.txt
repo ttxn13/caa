@@ -1,0 +1,10 @@
+include blue_sit.txt
+
+dis_interface   
+   entity_type BLUE_FLT    1:2:225:1:0:0:0
+   
+   # BLUE FLT - DIS receive ID in ICGAS is 20101/20102.
+   entity_id blue_flt_01   20101
+   entity_id blue_flt_02   20102
+
+end_dis_interface

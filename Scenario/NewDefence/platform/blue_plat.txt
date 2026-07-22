@@ -1,0 +1,4 @@
+include blue_plat/BLUE_WAN.txt
+include blue_plat/BLUE_ELC.txt
+include blue_plat/BLUE_FLT.txt
+include blue_plat/BLUE_BOM.txt

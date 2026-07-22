@@ -1,0 +1,38 @@
+include red_sit.txt
+
+dis_interface   
+   entity_type RED_WAN     1:2:225:8:0:0:0
+   entity_type RED_ELC     1:2:225:6:0:0:0
+   entity_type RED_FLT     1:2:225:1:0:0:0
+   entity_type RED_CAR     1:3:225:1:0:0:0
+   entity_type RED_DST     1:3:225:4:0:0:0
+
+   entity_type RED_AAM_BVR_MISSILE      2:6:225:1:0:0:0
+   entity_type RED_AAM_IR_MISSILE       2:6:225:1:0:0:0
+   entity_type RED_LONG_SAM_MISSILE     2:6:225:1:0:0:0
+   entity_type RED_MEDIUM_SAM_MISSILE   2:6:225:1:0:0:0
+   entity_type RED_CIWS_ROUND           2:6:225:1:0:0:0
+
+   # CAR - 1
+   entity_id red_car_10101      10101
+   # WAN - 2
+   entity_id red_wan_10201      10201
+   # ELC - 3
+   entity_id red_elc_10301      10301
+   # DST - 4
+   entity_id red_dst_10401      10401
+   entity_id red_dst_10402      10402
+   entity_id red_dst_10403      10403
+   entity_id red_dst_10404      10404
+   # FLT - 6
+   entity_id red_flt_10601      10601
+   entity_id red_flt_10602      10602
+   entity_id red_flt_10603      10603
+   entity_id red_flt_10604      10604
+   # FLT - 7
+   entity_id red_flt_10701      10701
+   entity_id red_flt_10702      10702
+   entity_id red_flt_10703      10703
+   entity_id red_flt_10704      10704
+
+end_dis_interface

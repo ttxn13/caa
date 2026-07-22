@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{6193f79a-b5cf-451c-86eb-6f9d866c8d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Util">
+      <UniqueIdentifier>{cf9d1237-60b5-43ae-8bd6-d6fba8c1b60e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Store">
+      <UniqueIdentifier>{d042f7eb-c31c-4e6d-8966-58d306b7295e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Model">
+      <UniqueIdentifier>{73a486a6-1006-4ebc-9837-267ccd33aea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Sim">
+      <UniqueIdentifier>{4b80d4d2-3fb0-40a4-930a-a394466cba5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APP">
+      <UniqueIdentifier>{58e270e9-dc44-43eb-9f00-9b680c136668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{e9963905-4960-419d-abc1-e0ac071d6c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\UiLaunch">
+      <UniqueIdentifier>{fdb05d83-6f5c-44c1-a4bb-a7aaefd4ad39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\UiICGAS">
+      <UniqueIdentifier>{9379fc33-a6c2-4f6a-b155-f25f26f45cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Comm">
+      <UniqueIdentifier>{c714f7fc-2bd7-4e6e-90bb-77c5f8c3d50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{cadd52ef-7112-42c0-a33b-0dc1db361dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\AfsimClient">
+      <UniqueIdentifier>{3e0143a8-bb9c-438a-a349-c79e28d44eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\TacviewServer">
+      <UniqueIdentifier>{be08a305-0918-49a7-a7f6-d2b4acb00871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APP\source">
+      <UniqueIdentifier>{9e052de4-7c76-461b-a55c-dd09985885ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APP\icon">
+      <UniqueIdentifier>{2b4fd5bb-52b5-4df6-a1db-05e9212215e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\AfsimServer">
+      <UniqueIdentifier>{b6509dfb-397e-4653-882f-4b292f0113cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{7527c88c-8bf8-48d9-8d88-6f4316bc3f3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\DataManage">
+      <UniqueIdentifier>{1a205f8c-89cf-4c2b-814c-c4f28cda8685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\OurAnalysis">
+      <UniqueIdentifier>{51c0e7de-d8de-4a2c-802f-9d31a4f72501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\EmyAnalysis">
+      <UniqueIdentifier>{6a291ba0-7e3d-4e0f-b21d-a88f75b3f443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation">
+      <UniqueIdentifier>{d1360bd1-d06b-47a2-8f0a-38df4e4d2f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation\Mover">
+      <UniqueIdentifier>{02702a09-7764-43e5-a1ca-626cdd0af09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation\Platform">
+      <UniqueIdentifier>{6897f64a-ae68-43de-9f7a-0351b9f0a9ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation\Controller">
+      <UniqueIdentifier>{ac035a25-e9b3-4a5c-b725-936c41197b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation\Weapon">
+      <UniqueIdentifier>{d086e1d0-1763-4084-a442-c5c88594aef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\UiAFSimTest">
+      <UniqueIdentifier>{e739a0b7-34c3-4be3-9da7-18128b77f93c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\UiWorkflow">
+      <UniqueIdentifier>{2fd92dce-cbcc-44c3-b7b8-6a208cd6b531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\UiGraph">
+      <UniqueIdentifier>{47973a96-9bdb-4336-9dff-a92566844acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\UiScenario">
+      <UniqueIdentifier>{e19651ac-f0c9-4414-97f6-1b02f637d666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\UiSitMonitor">
+      <UniqueIdentifier>{f4bc1834-1d8f-4e66-b6b0-2a6e2e6a8c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OsgEarth">
+      <UniqueIdentifier>{2e5fe7c3-2ac4-4874-85db-7357bbac8765}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Store\InfoExpert.cpp">
+      <Filter>Core\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Util\UtilCoor.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Util\UtilEnum.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Util\UtilJson.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="App\ICGAS.cpp">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiLaunch\UiLaunch.cpp">
+      <Filter>GUI\UiLaunch</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiICGAS\UiICGAS.cpp">
+      <Filter>GUI\UiICGAS</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol\AfsimClient.cpp">
+      <Filter>Protocol\AfsimClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol\TacviewServer.cpp">
+      <Filter>Protocol\TacviewServer</Filter>
+    </ClCompile>
+    <ClCompile Include="App\pch.cpp">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Util\UtilDisPdu.cpp">
+      <Filter>Core\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Controller\SimController.cpp">
+      <Filter>Simulation\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Controller\UtilSimConfig.cpp">
+      <Filter>Simulation\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Mover\SimAirMover.cpp">
+      <Filter>Simulation\Mover</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Mover\SimMisMover.cpp">
+      <Filter>Simulation\Mover</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Mover\SimSeaMover.cpp">
+      <Filter>Simulation\Mover</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Mover\SimMover.cpp">
+      <Filter>Simulation\Mover</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Platform\SimPlatform.cpp">
+      <Filter>Simulation\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\DataManage\ModuleBvrSolver.cpp">
+      <Filter>Module\DataManage</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\DataManage\ModuleGraph.cpp">
+      <Filter>Module\DataManage</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\ModuleDatabase.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\DataManage\ModuleMission.cpp">
+      <Filter>Module\DataManage</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\OurAnalysis\ModuleEmyGroup.cpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\OurAnalysis\ModuleEmyIntent.cpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\OurAnalysis\ModuleEmyThreat.cpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\OurAnalysis\ModuleOurCOG.cpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\OurAnalysis\ModuleOurLOO.cpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\OurAnalysis\ModuleOurCOA.cpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\EmyAnalysis\ModuleOurGroup.cpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\EmyAnalysis\ModuleOurIntent.cpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\EmyAnalysis\ModuleOurThreat.cpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\EmyAnalysis\ModuleEmyCOG.cpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\EmyAnalysis\ModuleEmyLOO.cpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\EmyAnalysis\ModuleEmyCOA.cpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol\AfsimServer.cpp">
+      <Filter>Protocol\AfsimServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Weapon\SimWeapon.cpp">
+      <Filter>Simulation\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiICGAS\UiAFSimTest.cpp">
+      <Filter>GUI\UiAFSimTest</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiICGAS\UiWorkflow.cpp">
+      <Filter>GUI\UiWorkflow</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiICGAS\UiGraph.cpp">
+      <Filter>GUI\UiGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiICGAS\UiScenario.cpp">
+      <Filter>GUI\UiScenario</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiICGAS\UiSitMonitor.cpp">
+      <Filter>GUI\UiSitMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiICGAS\UiInitMap.cpp">
+      <Filter>GUI\UiScenario</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\UiICGAS\UiOsgInitMap.cpp">
+      <Filter>GUI\UiScenario</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsCameraController.cpp">
+      <Filter>OsgEarth</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsCoordinateUtil.cpp">
+      <Filter>OsgEarth</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsEarthLayerManager.cpp">
+      <Filter>OsgEarth</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsMapPreferences.cpp">
+      <Filter>OsgEarth</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsMapViewer.cpp">
+      <Filter>OsgEarth</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth\src\AfsPlatformLayer.cpp">
+      <Filter>OsgEarth</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="App\icon\ICGAS.APS">
+      <Filter>APP\icon</Filter>
+    </None>
+    <None Include="App\icon\ICGAS_source.svg">
+      <Filter>APP\icon</Filter>
+    </None>
+    <None Include="App\icon\RCa67356">
+      <Filter>APP\icon</Filter>
+    </None>
+    <None Include="GUI\UiLaunch\UiLaunch.qml">
+      <Filter>GUI\UiLaunch</Filter>
+    </None>
+    <None Include="GUI\UiICGAS\UiICGAS.qml">
+      <Filter>GUI\UiICGAS</Filter>
+    </None>
+    <None Include="GUI\UiICGAS\UiAFSimTest.qml">
+      <Filter>GUI\UiAFSimTest</Filter>
+    </None>
+    <None Include="GUI\UiICGAS\UiWorkflow.qml">
+      <Filter>GUI\UiWorkflow</Filter>
+    </None>
+    <None Include="GUI\UiICGAS\UiGraph.qml">
+      <Filter>GUI\UiGraph</Filter>
+    </None>
+    <None Include="GUI\UiICGAS\UiScenario.qml">
+      <Filter>GUI\UiScenario</Filter>
+    </None>
+    <None Include="GUI\UiICGAS\UiSitMonitor.qml">
+      <Filter>GUI\UiSitMonitor</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\IncCore.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Model\DefDisPdu.hpp">
+      <Filter>Core\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Model\DefCoor.hpp">
+      <Filter>Core\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Sim\DefPlatform.hpp">
+      <Filter>Core\Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Sim\DefSensor.hpp">
+      <Filter>Core\Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Store\InfoExpert.hpp">
+      <Filter>Core\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Util\UtilCoor.hpp">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Util\UtilEnum.hpp">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Util\UtilJson.hpp">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <QtMoc Include="GUI\UiLaunch\UiLaunch.hpp">
+      <Filter>GUI\UiLaunch</Filter>
+    </QtMoc>
+    <QtMoc Include="GUI\UiICGAS\UiICGAS.hpp">
+      <Filter>GUI\UiICGAS</Filter>
+    </QtMoc>
+    <ClInclude Include="Core\Comm\CoreGraph.hpp">
+      <Filter>Core\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Comm\CoreDefine.hpp">
+      <Filter>Core\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Comm\CoreSystem.hpp">
+      <Filter>Core\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="App\pch.hpp">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <QtMoc Include="Protocol\AfsimClient.hpp">
+      <Filter>Protocol\AfsimClient</Filter>
+    </QtMoc>
+    <QtMoc Include="Protocol\TacviewServer.hpp">
+      <Filter>Protocol\TacviewServer</Filter>
+    </QtMoc>
+    <ClInclude Include="Core\Util\UtilDisPdu.hpp">
+      <Filter>Core\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation\Mover\SimAirMover.hpp">
+      <Filter>Simulation\Mover</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation\Mover\SimMisMover.hpp">
+      <Filter>Simulation\Mover</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation\Mover\SimSeaMover.hpp">
+      <Filter>Simulation\Mover</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation\Mover\SimMover.hpp">
+      <Filter>Simulation\Mover</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation\Platform\SimPlatform.hpp">
+      <Filter>Simulation\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="App\icon\resource.h">
+      <Filter>APP\icon</Filter>
+    </ClInclude>
+    <QtMoc Include="Module\DataManage\ModuleBvrSolver.hpp">
+      <Filter>Module\DataManage</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\DataManage\ModuleGraph.hpp">
+      <Filter>Module\DataManage</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\ModuleDatabase.hpp">
+      <Filter>Module</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\DataManage\ModuleMission.hpp">
+      <Filter>Module\DataManage</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\OurAnalysis\ModuleEmyGroup.hpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\OurAnalysis\ModuleEmyIntent.hpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\OurAnalysis\ModuleEmyThreat.hpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\OurAnalysis\ModuleOurCOG.hpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\OurAnalysis\ModuleOurLOO.hpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\OurAnalysis\ModuleOurCOA.hpp">
+      <Filter>Module\OurAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\EmyAnalysis\ModuleOurGroup.hpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\EmyAnalysis\ModuleOurIntent.hpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\EmyAnalysis\ModuleOurThreat.hpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\EmyAnalysis\ModuleEmyCOG.hpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\EmyAnalysis\ModuleEmyLOO.hpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Module\EmyAnalysis\ModuleEmyCOA.hpp">
+      <Filter>Module\EmyAnalysis</Filter>
+    </QtMoc>
+    <QtMoc Include="Protocol\AfsimServer.hpp">
+      <Filter>Protocol\AfsimServer</Filter>
+    </QtMoc>
+    <QtMoc Include="Simulation\Controller\SimController.hpp">
+      <Filter>Simulation\Controller</Filter>
+    </QtMoc>
+    <ClInclude Include="Simulation\Controller\UtilSimConfig.hpp">
+      <Filter>Simulation\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Model\DefEngage.hpp">
+      <Filter>Core\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Sim\CoreSimEnum.hpp">
+      <Filter>Core\Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Sim\DefSimMover.hpp">
+      <Filter>Core\Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Sim\DefWeapon.hpp">
+      <Filter>Core\Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation\Weapon\SimWeapon.hpp">
+      <Filter>Simulation\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth\src\AfsCameraController.hpp">
+      <Filter>OsgEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth\src\AfsCoordinateUtil.hpp">
+      <Filter>OsgEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth\src\AfsEarthLayerManager.hpp">
+      <Filter>OsgEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth\src\AfsMapPreferences.hpp">
+      <Filter>OsgEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth\src\AfsMapTypes.hpp">
+      <Filter>OsgEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth\src\AfsMapViewer.hpp">
+      <Filter>OsgEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth\src\AfsPlatformLayer.hpp">
+      <Filter>OsgEarth</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="App\QrcICGAS.qrc">
+      <Filter>APP</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="App\icon\ICGAS.rc">
+      <Filter>APP\icon</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="App\source\back.png">
+      <Filter>APP\source</Filter>
+    </Image>
+    <Image Include="App\source\workflow_situation_monitor.png">
+      <Filter>APP\source</Filter>
+    </Image>
+    <Image Include="App\icon\ICGAS.ico">
+      <Filter>APP\icon</Filter>
+    </Image>
+    <Image Include="App\icon\ICGAS_256.png">
+      <Filter>APP\icon</Filter>
+    </Image>
+    <Image Include="App\icon\ICGAS_512.png">
+      <Filter>APP\icon</Filter>
+    </Image>
+    <Image Include="App\source\pic_main.png">
+      <Filter>APP\source</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="GUI\UiICGAS\UiAFSimTest.hpp">
+      <Filter>GUI\UiAFSimTest</Filter>
+    </QtMoc>
+    <QtMoc Include="GUI\UiICGAS\UiWorkflow.hpp">
+      <Filter>GUI\UiWorkflow</Filter>
+    </QtMoc>
+    <QtMoc Include="GUI\UiICGAS\UiGraph.hpp">
+      <Filter>GUI\UiGraph</Filter>
+    </QtMoc>
+    <QtMoc Include="GUI\UiICGAS\UiScenario.hpp">
+      <Filter>GUI\UiScenario</Filter>
+    </QtMoc>
+    <QtMoc Include="GUI\UiICGAS\UiSitMonitor.hpp">
+      <Filter>GUI\UiSitMonitor</Filter>
+    </QtMoc>
+    <QtMoc Include="GUI\UiICGAS\UiInitMap.hpp">
+      <Filter>GUI\UiScenario</Filter>
+    </QtMoc>
+    <QtMoc Include="GUI\UiICGAS\UiOsgInitMap.hpp">
+      <Filter>GUI\UiScenario</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

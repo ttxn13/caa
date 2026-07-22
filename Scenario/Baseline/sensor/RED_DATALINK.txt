@@ -1,0 +1,4 @@
+# Auto-split reusable sensor/communication equipment definition.
+comm RED_DATALINK WSF_COMM_TRANSCEIVER
+   transfer_rate 100 mbits/sec
+end_comm

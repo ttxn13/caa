@@ -1,0 +1,16 @@
+# Auto-split reusable sensor/communication equipment definition.
+sensor RED_ESM_SENSOR WSF_ESM_SENSOR
+   frame_time 4 sec
+   slew_mode fixed
+   maximum_range 280 km
+   receiver
+      antenna_pattern RED_ESM_ANT
+      detection_threshold 5 dB
+      noise_power -180 dBw
+      internal_loss 0 dB
+   end_receiver
+   frequency_band 0.1 ghz 20 ghz
+   reports_location
+   reports_type
+   reports_frequency
+end_sensor

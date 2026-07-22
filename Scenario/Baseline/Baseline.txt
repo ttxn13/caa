@@ -1,0 +1,35 @@
+include scenario/red_dis.txt
+include scenario/blue_dis.txt
+
+include signature/BLUE_AIR_IR_SIG.txt
+include signature/BLUE_AIR_OPT_SIG.txt
+include signature/BLUE_FIGHTER_RADAR_ANT.txt
+include signature/BLUE_FIGHTER_RADAR_SIG.txt
+include signature/RED_FIGHTER_RADAR_ANT.txt
+
+include sensor/BLUE_DATALINK.txt
+include sensor/BLUE_FIGHTER_FIRE_CONTROL_RADAR.txt
+include sensor/BLUE_FIGHTER_SEARCH_RADAR.txt
+include sensor/RED_FIGHTER_FIRE_CONTROL_RADAR.txt
+include sensor/RED_FIGHTER_SEARCH_RADAR.txt
+
+define_path_variable CASE Baseline
+
+log_file       output/$(CASE).log
+event_output   file output/$(CASE).evt end_event_output
+event_pipe     file output/$(CASE).aer end_event_pipe
+
+dis_interface
+   broadcast      192.168.50.255
+   send_port      8888
+   receive_port   9999
+
+   force red  1
+   force blue 2
+
+   exercise 1 site 1 application 1  # DIS Setting
+   heartbeat_timer         1 sec    # PDU Entity State                  5 sec
+   sensor_update_interval  1 sec    # PDU Electromagnetic Emission      0 sec
+end_dis_interface
+
+end_time 1 h

@@ -1,0 +1,35 @@
+{
+    "type_name": "HQ-15",
+    "icon_path": "",
+    "domain": "MIS",
+    "type": "SAM",
+    "mover": "MIS_MOVER",
+    "mover_cap": {
+        "mis_mover": {
+            "min_speed_ms": 350,
+            "max_speed_ms": 2000,
+            "min_alt_m": 10,
+            "max_alt_m": 27000,
+            "max_linear_load_g": 12,
+            "max_radial_load_g": 30,
+            "max_climb_vel_ms": 180,
+            "max_drop_vel_ms": 220,
+            "life_range_m": 200000,
+            "life_time_s": 160
+        }
+    },
+    "launch_cap": {
+        "max_range_m": 200000,
+        "min_range_m": 6000,
+        "firing_delay_s": 0.3
+    },
+    "kill_cap": {
+        "kill_range_m": 120,
+        "kill_prob": 0.72
+    },
+    "sign": {
+        "radar_rcs_m2": 0.08,
+        "opt_area_m2": 0.45,
+        "infrared_wsr": 8
+    }
+}

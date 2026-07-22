@@ -1,0 +1,9 @@
+# Auto-split reusable signature or antenna definition.
+antenna_pattern RED_SHIP_SEARCH_RADAR_ANT
+   rectangular_pattern
+      peak_gain 26 dB
+      minimum_gain -12 dB
+      azimuth_beamwidth 5 deg
+      elevation_beamwidth 6 deg
+   end_rectangular_pattern
+end_antenna_pattern

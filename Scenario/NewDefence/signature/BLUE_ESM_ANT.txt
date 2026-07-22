@@ -1,0 +1,4 @@
+# Auto-split reusable signature or antenna definition.
+antenna_pattern BLUE_ESM_ANT
+   constant 0 dB
+end_antenna_pattern

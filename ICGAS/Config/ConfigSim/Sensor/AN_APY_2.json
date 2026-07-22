@@ -1,0 +1,75 @@
+﻿{
+    "act_domain_list": [
+        "AIR",
+        "SEA",
+        "MIS"
+    ],
+    "reliability": 0.94,
+    "task_mode_list": {
+        "DETECT": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.28,
+                "elevation_sigma_deg": 0.4,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 100,
+                "speed_sigma_ms": 8
+            },
+            "cap_env": {
+                "az_fov_deg": 360,
+                "max_alt_m": 40000,
+                "max_el_deg": 75,
+                "max_range_m": 420000,
+                "min_alt_m": 0,
+                "min_el_deg": -10,
+                "min_range_m": 2000
+            },
+            "cap_prob": {
+                "detection_prob": 0.9,
+                "false_alarm_prob": 0.012,
+                "sensitive_slope": 1.05
+            },
+            "cap_time": {
+                "delay_ms": 200,
+                "update_period_s": 6
+            },
+            "max_task_num": 240
+        },
+        "TRACK": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.18,
+                "elevation_sigma_deg": 0.28,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 70,
+                "speed_sigma_ms": 6
+            },
+            "cap_env": {
+                "az_fov_deg": 360,
+                "max_alt_m": 40000,
+                "max_el_deg": 75,
+                "max_range_m": 300000,
+                "min_alt_m": 0,
+                "min_el_deg": -10,
+                "min_range_m": 2000
+            },
+            "cap_prob": {
+                "detection_prob": 0.88,
+                "false_alarm_prob": 0.01,
+                "sensitive_slope": 1.1
+            },
+            "cap_time": {
+                "delay_ms": 160,
+                "update_period_s": 2
+            },
+            "max_task_num": 96
+        }
+    },
+    "type": "RADAR",
+    "type_name": "AN_APY_2"
+}
+

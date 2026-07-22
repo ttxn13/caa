@@ -1,0 +1,6 @@
+{
+	"DATA_BASE": {
+		"plt_timeout_ms": 10000,
+		"algo_step_ms": 1000
+	}
+}

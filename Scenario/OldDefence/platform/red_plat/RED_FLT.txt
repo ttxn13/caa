@@ -1,0 +1,33 @@
+radar_signature      RED_FLT_RDR    constant 5 m^2                end_radar_signature
+optical_signature    RED_FLT_OPT    constant 1 m^2                end_optical_signature
+infrared_signature   RED_FLT_IFR    constant 25 watts/steradian   end_infrared_signature
+
+platform_type RED_FLT WSF_PLATFORM  side red    icon F-15
+   radar_signature      RED_FLT_RDR    # Radar   
+   optical_signature    RED_FLT_OPT    # Optical
+   infrared_signature   RED_FLT_IFR    # Infrared
+   
+   mover WSF_AIR_MOVER
+      default_radial_acceleration 2.5 g
+      update_interval 1 sec
+   end_mover
+
+   weapon bvr_aam RED_AAM_BVR quantity 4  end_weapon
+   weapon ir_aam  RED_AAM_IR  quantity 2  end_weapon
+   
+   processor data_mgr WSF_TRACK_PROCESSOR       end_processor
+   processor task_mgr RED_AIR_DEFENSE_PROCESSOR end_processor
+   
+   comm datalink WSF_COMM_TRANSCEIVER  network_name red_link_net
+      internal_link data_mgr  internal_link task_mgr
+   end_comm
+   
+   sensor radar RED_FIGHTER_SEARCH_RADAR on
+      ignore_same_side internal_link data_mgr
+   end_sensor
+   
+   sensor fcr RED_FIGHTER_FIRE_CONTROL_RADAR on
+      ignore_same_side internal_link data_mgr
+   end_sensor
+   
+end_platform_type

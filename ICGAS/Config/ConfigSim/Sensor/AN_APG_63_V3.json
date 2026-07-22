@@ -1,0 +1,106 @@
+﻿{
+    "act_domain_list": [
+        "AIR",
+        "SEA",
+        "MIS"
+    ],
+    "reliability": 0.9,
+    "task_mode_list": {
+        "DETECT": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.3,
+                "elevation_sigma_deg": 0.4,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 90,
+                "speed_sigma_ms": 8
+            },
+            "cap_env": {
+                "az_fov_deg": 120,
+                "max_alt_m": 30000,
+                "max_el_deg": 65,
+                "max_range_m": 180000,
+                "min_alt_m": 0,
+                "min_el_deg": -10,
+                "min_range_m": 500
+            },
+            "cap_prob": {
+                "detection_prob": 0.84,
+                "false_alarm_prob": 0.018,
+                "sensitive_slope": 1
+            },
+            "cap_time": {
+                "delay_ms": 140,
+                "update_period_s": 3
+            },
+            "max_task_num": 48
+        },
+        "GUIDE": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.1,
+                "elevation_sigma_deg": 0.12,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 30,
+                "speed_sigma_ms": 3
+            },
+            "cap_env": {
+                "az_fov_deg": 70,
+                "max_alt_m": 25000,
+                "max_el_deg": 60,
+                "max_range_m": 90000,
+                "min_alt_m": 0,
+                "min_el_deg": -10,
+                "min_range_m": 500
+            },
+            "cap_prob": {
+                "detection_prob": 0.9,
+                "false_alarm_prob": 0.01,
+                "sensitive_slope": 1.15
+            },
+            "cap_time": {
+                "delay_ms": 70,
+                "update_period_s": 0.4
+            },
+            "max_task_num": 4
+        },
+        "TRACK": {
+            "cap_acc": {
+                "azimuth_sigma_deg": 0.14,
+                "elevation_sigma_deg": 0.18,
+                "measure_az": true,
+                "measure_el": true,
+                "measure_range": true,
+                "measure_speed": true,
+                "range_sigma_m": 40,
+                "speed_sigma_ms": 4
+            },
+            "cap_env": {
+                "az_fov_deg": 100,
+                "max_alt_m": 30000,
+                "max_el_deg": 65,
+                "max_range_m": 120000,
+                "min_alt_m": 0,
+                "min_el_deg": -10,
+                "min_range_m": 500
+            },
+            "cap_prob": {
+                "detection_prob": 0.88,
+                "false_alarm_prob": 0.012,
+                "sensitive_slope": 1.1
+            },
+            "cap_time": {
+                "delay_ms": 90,
+                "update_period_s": 0.8
+            },
+            "max_task_num": 24
+        }
+    },
+    "type": "RADAR",
+    "type_name": "AN_APG_63_V3"
+}
+

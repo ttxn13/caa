@@ -1,0 +1,5 @@
+include red_plat/RED_WAN.txt
+include red_plat/RED_ELC.txt
+include red_plat/RED_FLT.txt
+include red_plat/RED_DST.txt
+include red_plat/RED_CAR.txt

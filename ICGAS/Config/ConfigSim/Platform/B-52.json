@@ -1,0 +1,24 @@
+{
+    "cap": {
+        "air_mover": {
+            "max_alt_m": 15000,
+            "max_climb_vel_ms": 15,
+            "max_drop_vel_ms": 25,
+            "max_linear_load_g": 5,
+            "max_radial_load_g": 4,
+            "max_speed_ms": 300,
+            "min_alt_m": 500,
+            "min_speed_ms": 140
+        }
+    },
+    "domain": "AIR",
+    "icon_path": "FixedWing.B-52.obj",
+    "mover": "AIR_MOVER",
+    "sign": {
+        "infrared_wsr": 25,
+        "opt_area_m2": 8,
+        "radar_rcs_m2": 45
+    },
+    "type": "BOM",
+    "type_name": "B-52"
+}

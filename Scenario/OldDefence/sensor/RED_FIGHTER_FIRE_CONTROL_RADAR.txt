@@ -1,0 +1,31 @@
+# Auto-split reusable sensor/communication equipment definition.
+sensor RED_FIGHTER_FIRE_CONTROL_RADAR WSF_RADAR_SENSOR
+   one_m2_detect_range 70 nm
+   frame_time 1 sec
+   scan_mode azimuth_and_elevation
+   azimuth_scan_limits -60 deg 60 deg
+   elevation_scan_limits -20 deg 60 deg
+   transmitter
+      antenna_pattern RED_FIGHTER_RADAR_ANT
+      power 180 kw
+      frequency 9800 mhz
+      internal_loss 2 dB
+   end_transmitter
+   receiver
+      antenna_pattern RED_FIGHTER_RADAR_ANT
+      bandwidth 1 mhz
+      noise_power -162 dBw
+      internal_loss 5 dB
+   end_receiver
+   probability_of_false_alarm 1.0e-6
+   required_pd 0.6
+   swerling_case 1
+   hits_to_establish_track 1 2
+   hits_to_maintain_track 1 2
+   track_quality 0.9
+   reports_range
+   reports_bearing
+   reports_elevation
+   reports_velocity
+   reports_iff
+end_sensor

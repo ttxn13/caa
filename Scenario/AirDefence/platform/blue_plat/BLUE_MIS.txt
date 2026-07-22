@@ -1,0 +1,9 @@
+# Platform type definition for PAD enemy cruise missiles.
+platform_type BLUE_MIS WSF_PLATFORM
+   side blue   icon MISSILE
+   radar_signature BLUE_MISSILE_RADAR_SIG
+   mover WSF_AIR_MOVER
+      default_radial_acceleration 1.0 g
+      update_interval 0.5 sec
+   end_mover
+end_platform_type

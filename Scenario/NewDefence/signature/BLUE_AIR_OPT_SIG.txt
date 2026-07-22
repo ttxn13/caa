@@ -1,0 +1,4 @@
+# Auto-split reusable signature or antenna definition.
+optical_signature BLUE_AIR_OPT_SIG
+   constant 8 m^2
+end_optical_signature
